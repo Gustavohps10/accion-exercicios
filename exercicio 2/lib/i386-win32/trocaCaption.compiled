@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <Compiler Value="C:\lazarus\fpc\3.2.2\bin\i386-win32\fpc.exe" Date="1449426723"/>
+  <Params Value=" -MObjFPC -Scghi -O1 -gw3 -gl -WG -l -vewnhibq &quot;-FiC:\Users\professor\Documents\Gustavo\exercicio 2\lib\i386-win32&quot; -FuC:\lazarus\lcl\units\i386-win32\win32 -FuC:\lazarus\lcl\units\i386-win32 -FuC:\lazarus\components\freetype\lib\i386-win32 -FuC:\lazarus\components\lazutils\lib\i386-win32 -FuC:\lazarus\packager\units\i386-win32 &quot;-FuC:\Users\professor\Documents\Gustavo\exercicio 2\&quot; &quot;-FUC:\Users\professor\Documents\Gustavo\exercicio 2\lib\i386-win32\&quot; &quot;-FEC:\Users\professor\Documents\Gustavo\exercicio 2\&quot; &quot;-oC:\Users\professor\Documents\Gustavo\exercicio 2\trocaCaption.exe&quot; -dLCL -dLCLwin32 trocaCaption.lpr"/>
+</CONFIG>
