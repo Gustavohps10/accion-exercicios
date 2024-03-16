@@ -1,0 +1,101 @@
+object frmPrimProgr: TfrmPrimProgr
+  Left = 468
+  Height = 437
+  Top = 256
+  Width = 573
+  Caption = 'Primeiro Programa'
+  ClientHeight = 437
+  ClientWidth = 573
+  LCLVersion = '2.2.6.0'
+  object btnMensagem: TButton
+    Left = 72
+    Height = 49
+    Top = 256
+    Width = 104
+    Caption = 'Mensagem'
+    OnClick = btnMensagemClick
+    TabOrder = 0
+  end
+  object pnlTopo: TPanel
+    Left = 0
+    Height = 56
+    Top = 0
+    Width = 573
+    Align = alTop
+    BevelColor = clWindow
+    Caption = 'Primeiro Programa'
+    Color = clHighlight
+    Font.Color = clWhite
+    Font.Height = -29
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 1
+  end
+  object pnlContainerSoma: TPanel
+    Left = 32
+    Height = 146
+    Top = 88
+    Width = 488
+    BevelOuter = bvNone
+    ClientHeight = 146
+    ClientWidth = 488
+    TabOrder = 2
+    object edtN1: TEdit
+      Left = 40
+      Height = 48
+      Top = 8
+      Width = 80
+      Font.Height = -29
+      ParentFont = False
+      TabOrder = 0
+    end
+    object edtN2: TEdit
+      Left = 160
+      Height = 48
+      Top = 8
+      Width = 80
+      Font.Height = -29
+      ParentFont = False
+      TabOrder = 1
+    end
+    object Label1: TLabel
+      Left = 128
+      Height = 40
+      Top = 16
+      Width = 20
+      Caption = '+'
+      Font.Height = -29
+      ParentColor = False
+      ParentFont = False
+    end
+    object Label2: TLabel
+      Left = 248
+      Height = 40
+      Top = 16
+      Width = 20
+      Caption = '='
+      Font.Height = -29
+      ParentColor = False
+      ParentFont = False
+    end
+    object btnSomar: TButton
+      Left = 40
+      Height = 57
+      Top = 80
+      Width = 104
+      Caption = 'Somar'
+      Font.Height = -16
+      OnClick = btnSomarClick
+      ParentFont = False
+      TabOrder = 2
+    end
+    object ColorBox1: TColorBox
+      Left = 368
+      Height = 24
+      Top = 56
+      Width = 100
+      ItemHeight = 16
+      TabOrder = 3
+    end
+  end
+end
