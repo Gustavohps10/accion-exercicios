@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="formatarPalavra.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="20"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uformatarpalavra.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmFormatarTexto"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uFormatarPalavra"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="43"/>
+        <CursorPos X="26" Y="57"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="3">
+      <Position>
+        <Filename Value="uformatarpalavra.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="uformatarpalavra.pas"/>
+        <Caret Line="36" Column="19" TopLine="27"/>
+      </Position>
+      <Position>
+        <Filename Value="uformatarpalavra.pas"/>
+        <Caret Line="46" Column="29" TopLine="33"/>
+      </Position>
+      <Position>
+        <Filename Value="uformatarpalavra.pas"/>
+        <Caret Line="52" Column="20" TopLine="43"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

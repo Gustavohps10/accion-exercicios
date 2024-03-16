@@ -1,0 +1,77 @@
+object frmFormatarTexto: TfrmFormatarTexto
+  Left = 572
+  Height = 315
+  Top = 207
+  Width = 327
+  Caption = 'Formatar Texto'
+  ClientHeight = 315
+  ClientWidth = 327
+  Position = poScreenCenter
+  LCLVersion = '3.2.0.0'
+  object edtTexto: TEdit
+    Left = 56
+    Height = 40
+    Top = 104
+    Width = 211
+    Font.Height = -24
+    ParentFont = False
+    TabOrder = 0
+  end
+  object lblTexto: TLabel
+    Left = 56
+    Height = 32
+    Top = 64
+    Width = 199
+    Caption = 'Digite algum texto'
+    Font.Height = -24
+    ParentFont = False
+  end
+  object btnMaiusculo: TButton
+    Cursor = crHandPoint
+    Left = 32
+    Height = 41
+    Top = 168
+    Width = 120
+    Caption = 'Maiúsculo'
+    Font.Height = -13
+    ParentFont = False
+    TabOrder = 1
+    OnClick = btnMaiusculoClick
+  end
+  object btnMinusculo: TButton
+    Cursor = crHandPoint
+    Left = 168
+    Height = 41
+    Top = 168
+    Width = 120
+    Caption = 'Minúsculo'
+    Font.Height = -13
+    ParentFont = False
+    TabOrder = 2
+    OnClick = btnMinusculoClick
+  end
+  object btnPrimeiraMaiuscula: TButton
+    Cursor = crHandPoint
+    Left = 32
+    Height = 41
+    Top = 216
+    Width = 120
+    Caption = 'Primeira Maiúscula'
+    Font.Height = -13
+    ParentFont = False
+    TabOrder = 3
+    OnClick = btnPrimeiraMaiusculaClick
+  end
+  object btnPrimeiraMinuscula: TButton
+    Cursor = crHandPoint
+    Left = 168
+    Height = 41
+    Top = 216
+    Width = 120
+    Caption = 'Primeira Minúscula'
+    Font.Height = -13
+    ParentFont = False
+    TabOrder = 4
+    OnClick = btnPrimeiraMinusculaClick
+  end
+end
