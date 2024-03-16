@@ -13,7 +13,8 @@ type
 
   TfrmTrocaImagem = class(TForm)
     btnEscondeImagem: TButton;
-    Image1: TImage;
+    imgEsconder: TImage;
+    procedure btnEscondeImagemClick(Sender: TObject);
   private
 
   public
@@ -26,6 +27,13 @@ var
 implementation
 
 {$R *.lfm}
+
+{ TfrmTrocaImagem }
+
+procedure TfrmTrocaImagem.btnEscondeImagemClick(Sender: TObject);
+begin
+  imgEsconder.Visible := Not imgEsconder.Visible;
+end;
 
 end.
 

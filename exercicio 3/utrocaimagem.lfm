@@ -6,17 +6,17 @@ object frmTrocaImagem: TfrmTrocaImagem
   Caption = 'Esconder Imagem'
   ClientHeight = 463
   ClientWidth = 604
-  LCLVersion = '2.2.6.0'
+  LCLVersion = '3.2.0.0'
   object btnEscondeImagem: TButton
-    Left = 232
+    Left = 208
     Height = 33
     Top = 328
-    Width = 136
-    Caption = 'Esconder Imagem'
-    OnClick = btnEscondeImagemClick
+    Width = 176
+    Caption = 'Esconder/Mostrar Imagem'
     TabOrder = 0
+    OnClick = btnEscondeImagemClick
   end
-  object Image1: TImage
+  object imgEsconder: TImage
     Left = 176
     Height = 218
     Top = 64
