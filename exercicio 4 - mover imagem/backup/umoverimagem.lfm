@@ -1,10 +1,10 @@
 object frmMoverImagem: TfrmMoverImagem
-  Left = 275
-  Height = 372
-  Top = 163
+  Left = 301
+  Height = 379
+  Top = 119
   Width = 478
   Caption = 'Mover Imagem'
-  ClientHeight = 372
+  ClientHeight = 379
   ClientWidth = 478
   OnKeyDown = FormKeyDown
   Position = poDesktopCenter
@@ -22,8 +22,8 @@ object frmMoverImagem: TfrmMoverImagem
     Left = 240
     Height = 32
     Top = 296
-    Width = 203
-    Caption = 'para Mover a Nave'
+    Width = 202
+    Caption = 'para mover a Nave'
     Font.Height = -24
     ParentFont = False
   end
@@ -40,7 +40,7 @@ object frmMoverImagem: TfrmMoverImagem
     ParentColor = False
     TabOrder = 0
     object imgNave: TImage
-      Left = 128
+      Left = 120
       Height = 64
       Top = 152
       Width = 66

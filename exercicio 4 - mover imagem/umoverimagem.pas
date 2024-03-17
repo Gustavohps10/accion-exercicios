@@ -5,7 +5,8 @@ unit uMoverImagem;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls,
+  Menus;
 
 type
 
@@ -35,24 +36,13 @@ implementation
 
 procedure TfrmMoverImagem.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
-var horizontal: array[37..40] of integer;
-var vertical: array[37..40] of integer;
+var horizontal: array[37..40] of integer = (-20, 0, 20, 0); // esquerda, cima, direita, baixo
+var vertical: array[37..40] of integer = (0, -20, 0, 20); // esquerda, cima, direita, baixo
 begin
     if(Key < 37) or (Key > 40) then
          Exit;
-    horizontal[37] := -10; // esquerda
-    horizontal[39] := 10; // direita
-    horizontal[40] := 0; // baixo
-    horizontal[38] := 0; // cima
-
-    vertical[38] := -10; // cima
-    vertical[40] := 10; // baixo
-    vertical[39] := 0; //  direita
-    vertical[37] := 0; // esquerda
-
-    imgNave.Left := imgNave.left + horizontal[Key];
+    imgNave.Left := imgNave.Left + horizontal[Key];
     imgNave.Top := imgNave.Top + vertical[Key];
-
 end;
 
 end.

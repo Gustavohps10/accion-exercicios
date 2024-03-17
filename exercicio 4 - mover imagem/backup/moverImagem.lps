@@ -18,88 +18,40 @@
         <Filename Value="umoverimagem.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmMoverImagem"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uMoverImagem"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="43"/>
-        <CursorPos X="15" Y="55"/>
+        <CursorPos X="68" Y="36"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="16">
+    <JumpHistory HistoryIndex="2">
       <Position>
         <Filename Value="umoverimagem.pas"/>
+        <Caret Line="54" Column="52" TopLine="44"/>
       </Position>
       <Position>
         <Filename Value="umoverimagem.pas"/>
-        <Caret Line="39" Column="31" TopLine="27"/>
+        <Caret Line="41" Column="44" TopLine="34"/>
       </Position>
       <Position>
         <Filename Value="umoverimagem.pas"/>
-        <Caret Line="40" Column="13" TopLine="27"/>
-      </Position>
-      <Position>
-        <Filename Value="umoverimagem.pas"/>
-        <Caret Line="39" Column="21" TopLine="29"/>
-      </Position>
-      <Position>
-        <Filename Value="umoverimagem.pas"/>
-        <Caret Line="38" Column="26" TopLine="29"/>
-      </Position>
-      <Position>
-        <Filename Value="umoverimagem.pas"/>
-        <Caret Line="46" Column="64" TopLine="34"/>
-      </Position>
-      <Position>
-        <Filename Value="umoverimagem.pas"/>
-        <Caret Line="38" Column="35" TopLine="29"/>
-      </Position>
-      <Position>
-        <Filename Value="umoverimagem.pas"/>
-        <Caret Line="47" Column="23" TopLine="31"/>
-      </Position>
-      <Position>
-        <Filename Value="umoverimagem.pas"/>
-        <Caret Line="46" Column="52" TopLine="34"/>
-      </Position>
-      <Position>
-        <Filename Value="umoverimagem.pas"/>
-        <Caret Line="47" Column="28" TopLine="34"/>
-      </Position>
-      <Position>
-        <Filename Value="umoverimagem.pas"/>
-        <Caret Line="40" Column="3" TopLine="30"/>
-      </Position>
-      <Position>
-        <Filename Value="umoverimagem.pas"/>
-        <Caret Line="38" Column="31" TopLine="30"/>
-      </Position>
-      <Position>
-        <Filename Value="umoverimagem.pas"/>
-        <Caret Line="46" Column="13" TopLine="38"/>
-      </Position>
-      <Position>
-        <Filename Value="umoverimagem.pas"/>
-        <Caret Line="39" Column="25" TopLine="32"/>
-      </Position>
-      <Position>
-        <Filename Value="umoverimagem.pas"/>
-        <Caret Line="50" Column="55" TopLine="38"/>
-      </Position>
-      <Position>
-        <Filename Value="umoverimagem.pas"/>
-        <Caret Line="38" Column="46" TopLine="29"/>
-      </Position>
-      <Position>
-        <Filename Value="umoverimagem.pas"/>
-        <Caret Line="46" Column="5" TopLine="38"/>
+        <Caret Line="40" Column="44" TopLine="33"/>
       </Position>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode=""/>
     </RunParams>
+    <HistoryLists>
+      <List Name="WorkingDirectory" Type="File" Count="1"/>
+      <List Name="LaunchingApplication" Type="File" Count="1">
+        <Item1 Value="C:\WINDOWS\system32\cmd.exe /C ${TargetCmdLine}"/>
+      </List>
+      <List Name="CommandLineParameters" Count="1"/>
+    </HistoryLists>
   </ProjectSession>
 </CONFIG>
