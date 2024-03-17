@@ -15,7 +15,7 @@ O curso tem 4 semanas de duração com conteúdos teóricos e práticos com foco
 
 # :hammer_and_wrench: Technologies
 Tools:
-- Delhpi
+- Delphi
 - Lazarus
 - PostgreSQL
 
