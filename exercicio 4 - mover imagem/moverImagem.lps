@@ -12,7 +12,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="21"/>
+        <UsageCount Value="24"/>
       </Unit>
       <Unit>
         <Filename Value="umoverimagem.pas"/>
@@ -22,14 +22,14 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uMoverImagem"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="32"/>
-        <CursorPos X="48" Y="45"/>
-        <UsageCount Value="21"/>
+        <TopLine Value="30"/>
+        <CursorPos X="39" Y="44"/>
+        <UsageCount Value="24"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="2">
+    <JumpHistory HistoryIndex="9">
       <Position>
         <Filename Value="umoverimagem.pas"/>
         <Caret Line="54" Column="52" TopLine="44"/>
@@ -42,17 +42,43 @@
         <Filename Value="umoverimagem.pas"/>
         <Caret Line="40" Column="44" TopLine="33"/>
       </Position>
+      <Position>
+        <Filename Value="umoverimagem.pas"/>
+        <Caret Line="39" Column="43" TopLine="30"/>
+      </Position>
+      <Position>
+        <Filename Value="umoverimagem.pas"/>
+        <Caret Line="40" Column="40" TopLine="30"/>
+      </Position>
+      <Position>
+        <Filename Value="umoverimagem.pas"/>
+        <Caret Line="39" Column="25" TopLine="30"/>
+      </Position>
+      <Position>
+        <Filename Value="umoverimagem.pas"/>
+        <Caret Line="40" Column="81" TopLine="31"/>
+      </Position>
+      <Position>
+        <Filename Value="umoverimagem.pas"/>
+        <Caret Line="39" Column="20" TopLine="30"/>
+      </Position>
+      <Position>
+        <Filename Value="umoverimagem.pas"/>
+        <Caret Line="44" Column="44" TopLine="31"/>
+      </Position>
+      <Position>
+        <Filename Value="umoverimagem.pas"/>
+        <Caret Line="39" Column="26" TopLine="30"/>
+      </Position>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode=""/>
     </RunParams>
     <HistoryLists>
-      <List Name="WorkingDirectory" Type="File" Count="1"/>
       <List Name="LaunchingApplication" Type="File" Count="1">
         <Item1 Value="C:\WINDOWS\system32\cmd.exe /C ${TargetCmdLine}"/>
       </List>
-      <List Name="CommandLineParameters" Count="1"/>
     </HistoryLists>
   </ProjectSession>
 </CONFIG>

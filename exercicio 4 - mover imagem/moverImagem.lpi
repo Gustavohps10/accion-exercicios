@@ -38,6 +38,7 @@
         <Filename Value="umoverimagem.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmMoverImagem"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uMoverImagem"/>
       </Unit>
