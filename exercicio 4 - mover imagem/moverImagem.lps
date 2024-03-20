@@ -12,7 +12,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="24"/>
+        <UsageCount Value="30"/>
       </Unit>
       <Unit>
         <Filename Value="umoverimagem.pas"/>
@@ -22,55 +22,16 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uMoverImagem"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="30"/>
-        <CursorPos X="39" Y="44"/>
-        <UsageCount Value="24"/>
-        <Loaded Value="True"/>
-        <LoadedDesigner Value="True"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="31"/>
+        <CursorPos X="61" Y="41"/>
+        <UsageCount Value="30"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="9">
-      <Position>
-        <Filename Value="umoverimagem.pas"/>
-        <Caret Line="54" Column="52" TopLine="44"/>
-      </Position>
-      <Position>
-        <Filename Value="umoverimagem.pas"/>
-        <Caret Line="41" Column="44" TopLine="34"/>
-      </Position>
-      <Position>
-        <Filename Value="umoverimagem.pas"/>
-        <Caret Line="40" Column="44" TopLine="33"/>
-      </Position>
-      <Position>
-        <Filename Value="umoverimagem.pas"/>
-        <Caret Line="39" Column="43" TopLine="30"/>
-      </Position>
-      <Position>
-        <Filename Value="umoverimagem.pas"/>
-        <Caret Line="40" Column="40" TopLine="30"/>
-      </Position>
-      <Position>
-        <Filename Value="umoverimagem.pas"/>
-        <Caret Line="39" Column="25" TopLine="30"/>
-      </Position>
-      <Position>
-        <Filename Value="umoverimagem.pas"/>
-        <Caret Line="40" Column="81" TopLine="31"/>
-      </Position>
-      <Position>
-        <Filename Value="umoverimagem.pas"/>
-        <Caret Line="39" Column="20" TopLine="30"/>
-      </Position>
-      <Position>
-        <Filename Value="umoverimagem.pas"/>
-        <Caret Line="44" Column="44" TopLine="31"/>
-      </Position>
-      <Position>
-        <Filename Value="umoverimagem.pas"/>
-        <Caret Line="39" Column="26" TopLine="30"/>
-      </Position>
-    </JumpHistory>
+    <General>
+      <ActiveWindowIndexAtStart Value="-1"/>
+    </General>
+    <JumpHistory HistoryIndex="-1"/>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode=""/>

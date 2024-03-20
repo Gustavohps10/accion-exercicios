@@ -36,12 +36,12 @@ implementation
 
 procedure TfrmMoverImagem.FormKeyDown(Sender: TObject; var Key: Word;
   Shift: TShiftState);
-var eixo: array of array[37..40] of integer = ((-20, 0, 20, 0), (0, -20, 0, 20)); // esquerda, cima, direita, baixo
+var eixos: array['x'..'y'] of array[37..40] of integer = ((-20, 0, 20, 0), (0, -20, 0, 20)); // -20 esquerda, +20 direita, -20 cima, +20 baixo
 begin
-    if(Key < 37) or (Key > 40) then
+    if (Key < 37) or (Key > 40) then  //aceita somente keys 37,38,39 e 40 ← ↑ → ↓
          Exit;
-    imgNave.Left := imgNave.Left + eixo[0][Key]; // eixo 0 - horizontal
-    imgNave.Top := imgNave.Top + eixo[1][Key];   // eixo 1 - vertical
+    imgNave.Left := imgNave.Left + eixos['x'][Key]; // eixo x - horizontal
+    imgNave.Top := imgNave.Top + eixos['y'][Key];   // eixo y - vertical
 end;
 
 end.
