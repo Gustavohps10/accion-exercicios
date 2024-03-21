@@ -1,0 +1,55 @@
+object principalF: TprincipalF
+  Left = 617
+  Height = 266
+  Top = 354
+  Width = 473
+  Caption = 'Duração do evento da fábrica'
+  ClientHeight = 266
+  ClientWidth = 473
+  Color = 16514043
+  LCLVersion = '2.2.6.0'
+  object edtTempoSegundos: TEdit
+    Left = 48
+    Height = 40
+    Top = 120
+    Width = 192
+    Font.Height = -24
+    OnChange = edtTempoSegundosChange
+    ParentFont = False
+    TabOrder = 0
+  end
+  object lblTempoSegundos: TLabel
+    Left = 48
+    Height = 30
+    Top = 80
+    Width = 194
+    Caption = 'Tempo em Segundos'
+    Font.Height = -21
+    ParentColor = False
+    ParentFont = False
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 473
+    Align = alTop
+    Caption = 'Converter segundos para h-m-s'
+    Color = 15889421
+    Font.Color = clWhite
+    Font.Height = -21
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 1
+  end
+  object lblHorasMinutosSegundos: TLabel
+    Left = 48
+    Height = 32
+    Top = 200
+    Width = 370
+    Caption = 'Horas: 0 | Minutos: 0 | Segundos: 0'
+    Font.Height = -24
+    ParentColor = False
+    ParentFont = False
+  end
+end
