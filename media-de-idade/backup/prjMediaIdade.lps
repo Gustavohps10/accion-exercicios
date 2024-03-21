@@ -18,18 +18,18 @@
         <Filename Value="uprincipal.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="principalF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uPrincipal"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="17"/>
-        <CursorPos X="13" Y="51"/>
-        <ComponentState Value="1"/>
+        <TopLine Value="38"/>
+        <CursorPos X="45" Y="51"/>
         <UsageCount Value="20"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
     </Units>
-    <JumpHistory HistoryIndex="24">
+    <JumpHistory HistoryIndex="25">
       <Position>
         <Filename Value="uprincipal.pas"/>
       </Position>
@@ -127,7 +127,11 @@
       </Position>
       <Position>
         <Filename Value="uprincipal.pas"/>
-        <Caret Line="52" Column="20" TopLine="18"/>
+        <Caret Line="52" Column="40" TopLine="40"/>
+      </Position>
+      <Position>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="43" Column="29" TopLine="38"/>
       </Position>
     </JumpHistory>
     <RunParams>

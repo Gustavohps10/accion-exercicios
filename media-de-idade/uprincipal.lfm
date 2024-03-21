@@ -4,9 +4,9 @@ object principalF: TprincipalF
   Top = 285
   Width = 341
   Caption = 'Média de Idade'
-  ClientHeight = 0
-  ClientWidth = 0
-  LCLVersion = '2.2.6.0'
+  ClientHeight = 341
+  ClientWidth = 341
+  LCLVersion = '3.2.0.0'
   object lblPessoa1: TLabel
     Left = 96
     Height = 15
@@ -73,8 +73,8 @@ object principalF: TprincipalF
     Top = 242
     Width = 80
     Caption = 'Calcular'
-    OnClick = btnCalcularClick
     TabOrder = 4
+    OnClick = btnCalcularClick
   end
   object edtMedia: TEdit
     Left = 152

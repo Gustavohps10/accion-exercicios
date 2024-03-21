@@ -5,7 +5,7 @@ unit uPrincipal;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Math;
 
 type
 
@@ -27,7 +27,6 @@ type
   private
 
   public
-    function calculaMedia(idades: array of double): double;
 
   end;
 
@@ -47,10 +46,9 @@ begin
           StrToFloat(edtPessoa1.text),
           StrToFloat(edtPessoa2.text),
           StrToFloat(edtPessoa3.text),
-          StrToFloat(edtPessoa4.text),
-          2
+          StrToFloat(edtPessoa4.text)
           ];
-    edtMedia.text := FloatToStr(calculaMedia(idades));
+    edtMedia.text := FloatToStr(Mean(idades));
 end;
 
 function TprincipalF.calculaMedia(idades: array of Double): Double;

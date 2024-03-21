@@ -5,7 +5,7 @@ unit uPrincipal;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, Math;
 
 type
 
@@ -27,7 +27,6 @@ type
   private
 
   public
-    function calculaMedia(idades: array of double): double;
 
   end;
 
@@ -47,23 +46,10 @@ begin
           StrToFloat(edtPessoa1.text),
           StrToFloat(edtPessoa2.text),
           StrToFloat(edtPessoa3.text),
-          StrToFloat(edtPessoa4.text),
+          StrToFloat(edtPessoa4.text)
           ];
-    edtMedia.text := FloatToStr(calculaMedia(idades));
+    edtMedia.text := FloatToStr(Mean(idades));
 end;
-
-function TprincipalF.calculaMedia(idades: array of Double): Double;
-var totalIdades: double = 0;
-var idade: double;
-begin
-    for idade in idades do
-    begin
-       totalIdades := totalIdades + idade;
-    end;
-
-    Result := totalIdades / Length(idades);
-end;
-
 
 end.
 
