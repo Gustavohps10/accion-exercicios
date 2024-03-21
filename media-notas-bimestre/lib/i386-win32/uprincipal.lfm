@@ -3,21 +3,22 @@ object PrincipalF: TPrincipalF
   Height = 236
   Top = 241
   Width = 376
+  BorderStyle = bsSingle
   Caption = 'Média de notas'
   ClientHeight = 236
   ClientWidth = 376
-  LCLVersion = '2.2.6.0'
+  LCLVersion = '3.2.0.0'
   object edtNota1: TEdit
     Left = 89
     Height = 23
-    Top = 64
+    Top = 80
     Width = 80
     TabOrder = 0
   end
   object lblNota1: TLabel
     Left = 48
     Height = 15
-    Top = 70
+    Top = 86
     Width = 35
     Caption = 'Nota 1'
     ParentColor = False
@@ -25,14 +26,14 @@ object PrincipalF: TPrincipalF
   object edtNota2: TEdit
     Left = 89
     Height = 23
-    Top = 96
+    Top = 112
     Width = 80
     TabOrder = 1
   end
   object lblNota2: TLabel
     Left = 48
     Height = 15
-    Top = 102
+    Top = 118
     Width = 35
     Caption = 'Nota 2'
     ParentColor = False
@@ -40,14 +41,14 @@ object PrincipalF: TPrincipalF
   object edtNota3: TEdit
     Left = 89
     Height = 23
-    Top = 128
+    Top = 144
     Width = 80
     TabOrder = 2
   end
   object lblNota3: TLabel
     Left = 48
     Height = 15
-    Top = 134
+    Top = 150
     Width = 35
     Caption = 'Nota 3'
     ParentColor = False
@@ -55,14 +56,14 @@ object PrincipalF: TPrincipalF
   object edtNota4: TEdit
     Left = 89
     Height = 23
-    Top = 164
+    Top = 176
     Width = 80
     TabOrder = 3
   end
   object lblNota4: TLabel
     Left = 48
     Height = 15
-    Top = 170
+    Top = 182
     Width = 35
     Caption = 'Nota 4'
     ParentColor = False
@@ -70,23 +71,23 @@ object PrincipalF: TPrincipalF
   object edtMedia: TEdit
     Left = 224
     Height = 23
-    Top = 128
+    Top = 142
     Width = 81
     TabOrder = 4
   end
   object btnCalcular: TButton
     Left = 223
     Height = 25
-    Top = 160
+    Top = 174
     Width = 82
     Caption = 'Calcular'
-    OnClick = btnCalcularClick
     TabOrder = 5
+    OnClick = btnCalcularClick
   end
   object lblMedia: TLabel
     Left = 184
     Height = 15
-    Top = 136
+    Top = 150
     Width = 33
     Caption = 'Média'
     ParentColor = False
@@ -94,16 +95,32 @@ object PrincipalF: TPrincipalF
   object edtFaltas: TEdit
     Left = 225
     Height = 23
-    Top = 64
+    Top = 80
     Width = 80
     TabOrder = 6
   end
   object lblFaltas: TLabel
     Left = 189
     Height = 15
-    Top = 72
+    Top = 88
     Width = 30
     Caption = 'Faltas'
     ParentColor = False
+  end
+  object pnlTopo: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 376
+    Align = alTop
+    Caption = 'Calcular Média de Notas'
+    Color = 15095682
+    Font.Color = clWhite
+    Font.Height = -19
+    Font.Name = 'Roboto'
+    ParentBackground = False
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 7
   end
 end
