@@ -1,21 +1,21 @@
 object principalF: TprincipalF
-  Left = 324
+  Left = 775
   Height = 502
-  Top = 51
+  Top = 267
   Width = 527
   Caption = 'Calcular salário anual'
   ClientHeight = 502
   ClientWidth = 527
   Color = 16514043
-  LCLVersion = '3.2.0.0'
-  object Edit1: TEdit
+  LCLVersion = '2.2.6.0'
+  object edtTotalLiquido: TEdit
     Left = 370
     Height = 23
     Top = 448
     Width = 86
     TabOrder = 0
   end
-  object Edit2: TEdit
+  object edtTotalBruto: TEdit
     Left = 370
     Height = 23
     Top = 416
@@ -28,6 +28,7 @@ object principalF: TprincipalF
     Top = 423
     Width = 60
     Caption = 'Total Bruto:'
+    ParentColor = False
   end
   object lblTotalLiquido: TLabel
     Left = 288
@@ -35,6 +36,7 @@ object principalF: TprincipalF
     Top = 456
     Width = 71
     Caption = 'Total Líquido:'
+    ParentColor = False
   end
   object grdSalario: TStringGrid
     Left = 80
@@ -61,10 +63,10 @@ object principalF: TprincipalF
         Width = 111
       end>
     GridLineColor = clScrollBar
-    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goAlwaysShowEditor, goSmoothScroll]
+    Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goEditing, goSmoothScroll]
     RowCount = 13
     TabOrder = 2
-    OnDrawCell = grdSalarioDrawCell
+    OnEditingDone = grdSalarioEditingDone
     ColWidths = (
       64
       107

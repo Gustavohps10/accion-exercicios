@@ -13,15 +13,14 @@ type
   { TprincipalF }
 
   TprincipalF = class(TForm)
-    Edit1: TEdit;
-    Edit2: TEdit;
+    edtTotalLiquido: TEdit;
+    edtTotalBruto: TEdit;
     lblTotalBruto: TLabel;
     lblTotalLiquido: TLabel;
     pnlTopo: TPanel;
     grdSalario: TStringGrid;
-    procedure btnCalcularClick(Sender: TObject);
-    procedure grdSalarioDrawCell(Sender: TObject; aCol, aRow: Integer;
-      aRect: TRect; aState: TGridDrawState);
+    procedure grdSalarioEditingDone(Sender: TObject);
+
   private
 
   public
@@ -37,16 +36,26 @@ implementation
 
 { TprincipalF }
 
-procedure TprincipalF.btnCalcularClick(Sender: TObject);
+procedure TprincipalF.grdSalarioEditingDone(Sender: TObject);
+var i: integer;
+var salarioBruto: double;
+var salarioLiquido: double;
+var desconto: double;
+var totalBruto: double = 0;
+var totalLiquido: double = 0;
 begin
+   for i := 1 to 12 do
+    begin
+      salarioBruto := StrToFloat(grdSalario.Cells[1, i]);
+      desconto := StrToFloat(grdSalario.Cells[2, i]);
+      salarioLiquido := salarioBruto - salarioBruto / 100 * desconto;
+      grdSalario.Cells[3, i] := floattostrF(salarioLiquido, ffCurrency, 8, 2);
+      totalBruto := totalBruto + salarioBruto;
+      totalLiquido:= totalLiquido + salarioLiquido;
 
-end;
-
-procedure TprincipalF.grdSalarioDrawCell(Sender: TObject; aCol, aRow: Integer;
-  aRect: TRect; aState: TGridDrawState);
-begin
-  if (aCol = 0) and (aRow = 1) then
-     ShowMessage(grdSalario.Cells[aCol, aRow]);
+      edtTotalBruto.Text := FloatToStrF(totalBruto, ffCurrency, 8, 2);
+      edtTotalLiquido.Text := FloatToStrF(totalLiquido, ffCurrency, 8, 2);;
+    end;
 end;
 
 end.
