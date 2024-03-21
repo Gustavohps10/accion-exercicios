@@ -1,0 +1,69 @@
+object principalF: TprincipalF
+  Left = 1051
+  Height = 217
+  Top = 404
+  Width = 378
+  Caption = 'Converter Graus (Celsius / Fahrenheit)'
+  ClientHeight = 217
+  ClientWidth = 378
+  LCLVersion = '2.2.6.0'
+  object edtCelsius: TEdit
+    Left = 232
+    Height = 48
+    Top = 72
+    Width = 106
+    Font.Height = -29
+    OnEditingDone = edtCelsiusEditingDone
+    ParentFont = False
+    TabOrder = 0
+    Text = '1'
+  end
+  object lblCelsius: TLabel
+    Left = 24
+    Height = 27
+    Top = 88
+    Width = 147
+    Caption = 'Grau Celsius:'
+    Font.Height = -24
+    Font.Name = 'Roboto'
+    ParentColor = False
+    ParentFont = False
+  end
+  object edtFahrenheit: TEdit
+    Left = 232
+    Height = 48
+    Top = 136
+    Width = 106
+    Font.Height = -29
+    OnEditingDone = edtFahrenheitEditingDone
+    ParentFont = False
+    TabOrder = 1
+    Text = '33,8'
+  end
+  object lblFahrenheit: TLabel
+    Left = 24
+    Height = 27
+    Top = 152
+    Width = 184
+    Caption = 'Grau Fahrenheit:'
+    Font.Height = -24
+    Font.Name = 'Roboto'
+    ParentColor = False
+    ParentFont = False
+  end
+  object pnlTop: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 378
+    Align = alTop
+    Caption = 'Conversor Celsius/Fahrenheit'
+    Color = 15095682
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Roboto'
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 2
+  end
+end
