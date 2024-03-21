@@ -1,0 +1,59 @@
+object principalF: TprincipalF
+  Left = 857
+  Height = 226
+  Top = 325
+  Width = 396
+  Caption = 'Expressar idade anos/meses/dias'
+  ClientHeight = 226
+  ClientWidth = 396
+  Color = 16514043
+  LCLVersion = '2.2.6.0'
+  object Panel1: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 396
+    Align = alTop
+    Caption = 'Expressar idade em anos, meses e dias'
+    Color = 15095682
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Roboto'
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+  end
+  object lblIdadeDias: TLabel
+    Left = 24
+    Height = 18
+    Top = 72
+    Width = 102
+    Caption = 'Idade em Dias'
+    Font.Height = -16
+    Font.Name = 'Roboto'
+    ParentColor = False
+    ParentFont = False
+  end
+  object edtIdadeDias: TEdit
+    Left = 24
+    Height = 40
+    Top = 96
+    Width = 152
+    Font.Height = -24
+    OnChange = edtIdadeDiasChange
+    ParentFont = False
+    TabOrder = 1
+  end
+  object lblAnoMesDia: TLabel
+    Left = 24
+    Height = 27
+    Top = 168
+    Width = 205
+    Caption = 'Anos: Meses: Dias:'
+    Font.Height = -24
+    Font.Name = 'Roboto'
+    Font.Quality = fqAntialiased
+    ParentColor = False
+    ParentFont = False
+  end
+end
