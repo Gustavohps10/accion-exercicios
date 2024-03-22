@@ -1,0 +1,74 @@
+object principalF: TprincipalF
+  Left = 700
+  Height = 324
+  Top = 303
+  Width = 303
+  Caption = 'Contagem Regressiva'
+  ClientHeight = 324
+  ClientWidth = 303
+  Font.Name = 'Roboto'
+  LCLVersion = '2.2.6.0'
+  object pnlTopo: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 303
+    Align = alTop
+    Caption = 'Contagem Regressiva'
+    Color = 5735142
+    Font.Color = clWhite
+    Font.Height = -21
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+  end
+  object lnlNumero1: TLabel
+    Left = 59
+    Height = 15
+    Top = 82
+    Width = 55
+    Caption = 'Numero 1'
+    ParentColor = False
+  end
+  object edtNumero1: TEdit
+    Left = 59
+    Height = 23
+    Top = 96
+    Width = 80
+    TabOrder = 1
+    Text = '10'
+  end
+  object lnlNumero2: TLabel
+    Left = 160
+    Height = 15
+    Top = 82
+    Width = 55
+    Caption = 'Numero 2'
+    ParentColor = False
+  end
+  object edtNumero2: TEdit
+    Left = 160
+    Height = 23
+    Top = 96
+    Width = 80
+    TabOrder = 2
+    Text = '5'
+  end
+  object btnContar: TButton
+    Left = 59
+    Height = 25
+    Top = 128
+    Width = 75
+    Caption = 'Contar'
+    OnClick = btnContarClick
+    TabOrder = 3
+  end
+  object mmoContagem: TMemo
+    Left = 59
+    Height = 130
+    Top = 168
+    Width = 182
+    ReadOnly = True
+    TabOrder = 4
+  end
+end
