@@ -3,6 +3,7 @@ object principalF: TprincipalF
   Height = 406
   Top = 298
   Width = 348
+  BorderStyle = bsSingle
   Caption = 'Loop Tabuada'
   ClientHeight = 406
   ClientWidth = 348
@@ -28,6 +29,7 @@ object principalF: TprincipalF
     Height = 192
     Top = 160
     Width = 120
+    ReadOnly = True
     TabOrder = 3
   end
   object btnCalcular: TButton

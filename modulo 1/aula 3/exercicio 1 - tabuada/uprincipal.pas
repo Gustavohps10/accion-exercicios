@@ -38,7 +38,7 @@ var numeroDigitado: integer;
 var i: integer;
 begin
   mmoTabuada.Clear();
-  numeroDigitado := StrToInt(edtNumero.text);
+  numeroDigitado := StrToIntDef(edtNumero.text, 1);
   for i := 1 to 10 do
   begin
       mmoTabuada.Append(inttostr(numeroDigitado) + ' x '+ inttostr(i) + ' = ' + inttostr(numeroDigitado*i));
