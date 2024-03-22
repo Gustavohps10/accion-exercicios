@@ -1,0 +1,44 @@
+object principalF: TprincipalF
+  Left = 749
+  Height = 242
+  Top = 457
+  Width = 260
+  BorderStyle = bsSingle
+  Caption = 'Encontrar 3 pares'
+  ClientHeight = 242
+  ClientWidth = 260
+  Font.Name = 'Roboto'
+  LCLVersion = '2.2.6.0'
+  object btnLoop: TButton
+    Left = 40
+    Height = 25
+    Top = 72
+    Width = 75
+    Caption = 'Achar pares'
+    OnClick = btnLoopClick
+    TabOrder = 0
+  end
+  object mmoPares: TMemo
+    Left = 40
+    Height = 104
+    Top = 112
+    Width = 136
+    ReadOnly = True
+    TabOrder = 1
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 260
+    Align = alTop
+    Caption = 'Achar pares'
+    Color = 15095700
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Roboto'
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 2
+  end
+end
