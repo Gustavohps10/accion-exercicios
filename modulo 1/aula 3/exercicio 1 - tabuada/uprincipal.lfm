@@ -1,0 +1,57 @@
+object principalF: TprincipalF
+  Left = 638
+  Height = 406
+  Top = 298
+  Width = 348
+  Caption = 'Loop Tabuada'
+  ClientHeight = 406
+  ClientWidth = 348
+  Font.Name = 'Roboto'
+  LCLVersion = '2.2.6.0'
+  object edtNumero: TEdit
+    Left = 48
+    Height = 23
+    Top = 96
+    Width = 101
+    TabOrder = 1
+  end
+  object lblDigiteNumero: TLabel
+    Left = 48
+    Height = 15
+    Top = 80
+    Width = 101
+    Caption = 'Digite um Número'
+    ParentColor = False
+  end
+  object mmoTabuada: TMemo
+    Left = 48
+    Height = 192
+    Top = 160
+    Width = 120
+    TabOrder = 3
+  end
+  object btnCalcular: TButton
+    Left = 48
+    Height = 25
+    Top = 120
+    Width = 101
+    Caption = 'Calcular'
+    OnClick = btnCalcularClick
+    TabOrder = 2
+  end
+  object pnlTopo: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 348
+    Align = alTop
+    Caption = 'Tabuada'
+    Color = 16736882
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Roboto'
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 0
+  end
+end

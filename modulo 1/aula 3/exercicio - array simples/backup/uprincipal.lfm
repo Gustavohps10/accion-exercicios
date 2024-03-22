@@ -1,0 +1,19 @@
+object principalF: TprincipalF
+  Left = 636
+  Height = 263
+  Top = 309
+  Width = 324
+  Caption = 'Exercicio array simples'
+  ClientHeight = 263
+  ClientWidth = 324
+  LCLVersion = '2.2.6.0'
+  object btnMostrarFrutas: TButton
+    Left = 112
+    Height = 25
+    Top = 112
+    Width = 104
+    Caption = 'Mostrar Frutas'
+    OnClick = btnMostrarFrutasClick
+    TabOrder = 0
+  end
+end
