@@ -1,0 +1,79 @@
+object principalF: TprincipalF
+  Left = 585
+  Height = 284
+  Top = 287
+  Width = 390
+  Caption = 'Laço impares'
+  ClientHeight = 284
+  ClientWidth = 390
+  Font.Name = 'Roboto'
+  LCLVersion = '2.2.6.0'
+  object btnMostrarImpares: TButton
+    Left = 24
+    Height = 25
+    Top = 80
+    Width = 96
+    Caption = 'Mostrar Impares'
+    OnClick = btnMostrarImparesClick
+    TabOrder = 0
+  end
+  object pnlTopo: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 390
+    Align = alTop
+    Caption = 'Ímpares de 0 a 10'
+    Color = 5238410
+    Font.Color = clWhite
+    Font.Height = -21
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 1
+  end
+  object mmoImpares1: TMemo
+    Left = 24
+    Height = 136
+    Top = 128
+    Width = 104
+    TabOrder = 2
+  end
+  object mmoImpares2: TMemo
+    Left = 144
+    Height = 136
+    Top = 128
+    Width = 104
+    TabOrder = 3
+  end
+  object mmoImpares3: TMemo
+    Left = 264
+    Height = 136
+    Top = 128
+    Width = 104
+    TabOrder = 4
+  end
+  object lblFor: TLabel
+    Left = 24
+    Height = 15
+    Top = 112
+    Width = 18
+    Caption = 'For'
+    ParentColor = False
+  end
+  object lblWhile: TLabel
+    Left = 144
+    Height = 15
+    Top = 112
+    Width = 31
+    Caption = 'While'
+    ParentColor = False
+  end
+  object lblRepeat: TLabel
+    Left = 264
+    Height = 15
+    Top = 112
+    Width = 40
+    Caption = 'Repeat'
+    ParentColor = False
+  end
+end
