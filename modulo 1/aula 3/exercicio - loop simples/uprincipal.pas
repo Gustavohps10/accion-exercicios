@@ -12,11 +12,12 @@ type
   { TprincipalF }
 
   TprincipalF = class(TForm)
-    btnForDecrementa: TButton;
     btnWhile: TButton;
     btnFor: TButton;
     btnRepeat: TButton;
+    btnForDownto: TButton;
     procedure btnForClick(Sender: TObject);
+    procedure btnForDowntoClick(Sender: TObject);
     procedure btnRepeatClick(Sender: TObject);
     procedure btnWhileClick(Sender: TObject);
   private
@@ -48,6 +49,15 @@ procedure TprincipalF.btnForClick(Sender: TObject);
 var i: integer = 0;
 begin
      for i:=0 to 10 do
+     begin
+       ShowMessage('numero: '+ inttostr(i));
+     end;
+end;
+
+procedure TprincipalF.btnForDowntoClick(Sender: TObject);
+var i: integer;
+begin
+     for i:=10 downto 0 do
      begin
        ShowMessage('numero: '+ inttostr(i));
      end;
