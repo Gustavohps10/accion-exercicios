@@ -1,0 +1,82 @@
+object principalF: TprincipalF
+  Left = 374
+  Height = 248
+  Top = 211
+  Width = 298
+  BorderStyle = bsSingle
+  Caption = 'Parar Loop no 5'
+  ClientHeight = 248
+  ClientWidth = 298
+  Color = 16514043
+  Font.Name = 'Roboto'
+  LCLVersion = '3.2.0.0'
+  object btnLoop: TButton
+    Cursor = crHandPoint
+    Left = 24
+    Height = 25
+    Top = 64
+    Width = 75
+    Caption = 'Loop'
+    TabOrder = 0
+    OnClick = btnLoopClick
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 298
+    Align = alTop
+    BevelOuter = bvNone
+    Caption = 'Parar Loop no 5'
+    Color = 8542182
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Roboto'
+    ParentBackground = False
+    ParentColor = False
+    ParentFont = False
+    TabOrder = 1
+  end
+  object mmoLoop1: TMemo
+    Left = 24
+    Height = 106
+    Top = 120
+    Width = 80
+    TabOrder = 2
+  end
+  object mmoLoop2: TMemo
+    Left = 112
+    Height = 106
+    Top = 120
+    Width = 80
+    TabOrder = 3
+  end
+  object mmoLoop3: TMemo
+    Left = 200
+    Height = 106
+    Top = 120
+    Width = 80
+    TabOrder = 4
+  end
+  object lblFor: TLabel
+    Left = 24
+    Height = 14
+    Top = 104
+    Width = 18
+    Caption = 'For'
+  end
+  object lblWhile: TLabel
+    Left = 112
+    Height = 14
+    Top = 104
+    Width = 29
+    Caption = 'While'
+  end
+  object lblRepeat: TLabel
+    Left = 200
+    Height = 14
+    Top = 104
+    Width = 38
+    Caption = 'Repeat'
+  end
+end
