@@ -1,21 +1,24 @@
 object principalF: TprincipalF
-  Left = 585
+  Left = 500
   Height = 284
-  Top = 287
+  Top = 224
   Width = 390
+  BorderStyle = bsSingle
   Caption = 'Laço impares'
   ClientHeight = 284
   ClientWidth = 390
+  Color = 16514043
   Font.Name = 'Roboto'
-  LCLVersion = '2.2.6.0'
+  LCLVersion = '3.2.0.0'
   object btnMostrarImpares: TButton
+    Cursor = crHandPoint
     Left = 24
     Height = 25
-    Top = 80
+    Top = 64
     Width = 96
     Caption = 'Mostrar Impares'
-    OnClick = btnMostrarImparesClick
     TabOrder = 0
+    OnClick = btnMostrarImparesClick
   end
   object pnlTopo: TPanel
     Left = 0
@@ -23,10 +26,12 @@ object principalF: TprincipalF
     Top = 0
     Width = 390
     Align = alTop
+    BevelOuter = bvNone
     Caption = 'Ímpares de 0 a 10'
-    Color = 5238410
+    Color = 9238916
     Font.Color = clWhite
     Font.Height = -21
+    ParentBackground = False
     ParentColor = False
     ParentFont = False
     TabOrder = 1
@@ -34,45 +39,45 @@ object principalF: TprincipalF
   object mmoImpares1: TMemo
     Left = 24
     Height = 136
-    Top = 128
+    Top = 120
     Width = 104
     TabOrder = 2
   end
   object mmoImpares2: TMemo
     Left = 144
     Height = 136
-    Top = 128
+    Top = 120
     Width = 104
     TabOrder = 3
   end
   object mmoImpares3: TMemo
     Left = 264
     Height = 136
-    Top = 128
+    Top = 120
     Width = 104
     TabOrder = 4
   end
   object lblFor: TLabel
     Left = 24
-    Height = 15
-    Top = 112
+    Height = 14
+    Top = 104
     Width = 18
     Caption = 'For'
     ParentColor = False
   end
   object lblWhile: TLabel
     Left = 144
-    Height = 15
-    Top = 112
-    Width = 31
+    Height = 14
+    Top = 104
+    Width = 29
     Caption = 'While'
     ParentColor = False
   end
   object lblRepeat: TLabel
     Left = 264
-    Height = 15
-    Top = 112
-    Width = 40
+    Height = 14
+    Top = 104
+    Width = 38
     Caption = 'Repeat'
     ParentColor = False
   end
