@@ -1,0 +1,96 @@
+object principalF: TprincipalF
+  Left = 615
+  Height = 379
+  Top = 392
+  Width = 702
+  Caption = 'Bloco de notas'
+  ClientHeight = 359
+  ClientWidth = 702
+  Menu = MainMenu1
+  LCLVersion = '2.2.6.0'
+  object mmoPrincipal: TMemo
+    Left = 0
+    Height = 359
+    Top = 0
+    Width = 702
+    Align = alClient
+    BorderStyle = bsNone
+    Font.Name = 'Arial'
+    ParentFont = False
+    TabOrder = 0
+  end
+  object MainMenu1: TMainMenu
+    Left = 368
+    Top = 8
+    object menuArquivo: TMenuItem
+      Caption = 'Arquivo'
+      object menuNovo: TMenuItem
+        Caption = 'Novo'
+        OnClick = menuNovoClick
+      end
+      object menuAbrir: TMenuItem
+        Caption = 'Abrir'
+        OnClick = menuAbrirClick
+      end
+      object menuSalvar: TMenuItem
+        Caption = 'Salvar'
+        OnClick = menuSalvarClick
+      end
+      object menuImprimir: TMenuItem
+        Caption = 'Imprimir'
+        OnClick = menuImprimirClick
+      end
+    end
+    object menuEditar: TMenuItem
+      Caption = 'Editar'
+      object menuLocalizar: TMenuItem
+        Caption = 'Localizar'
+        OnClick = menuLocalizarClick
+      end
+      object menuSubstituir: TMenuItem
+        Caption = 'Substituir'
+        OnClick = menuSubstituirClick
+      end
+    end
+    object menuFormatar: TMenuItem
+      Caption = 'Formatar'
+      object menuFonte: TMenuItem
+        Caption = 'Fonte'
+        OnClick = menuFonteClick
+      end
+    end
+  end
+  object OpenDialog1: TOpenDialog
+    Filter = '.txt|*.txt'
+    Left = 16
+    Top = 8
+  end
+  object SaveDialog1: TSaveDialog
+    Filter = 'txt|.txt'
+    Left = 16
+    Top = 64
+  end
+  object PrintDialog1: TPrintDialog
+    Left = 16
+    Top = 120
+  end
+  object FindDialog1: TFindDialog
+    Options = [frDown, frFindNext]
+    OnFind = FindDialog1Find
+    Left = 88
+    Top = 8
+  end
+  object ReplaceDialog1: TReplaceDialog
+    Options = [frDown, frReplace, frReplaceAll, frHidePromptOnReplace]
+    OnReplace = ReplaceDialog1Replace
+    Left = 88
+    Top = 80
+  end
+  object FontDialog1: TFontDialog
+    MinFontSize = 0
+    MaxFontSize = 0
+    OnApplyClicked = FontDialog1ApplyClicked
+    Left = 168
+    Top = 8
+  end
+end

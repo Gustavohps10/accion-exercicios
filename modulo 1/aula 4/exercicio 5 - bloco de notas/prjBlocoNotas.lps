@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="prjBlocoNotas.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos Y="24"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="uprincipal.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="principalF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uPrincipal"/>
+        <IsVisibleTab Value="True"/>
+        <TopLine Value="55"/>
+        <CursorPos X="23" Y="82"/>
+        <FoldState Value=" T3j20d5 PWiX0}"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="2">
+      <Position>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="81" Column="55" TopLine="52"/>
+      </Position>
+      <Position>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="79" Column="31" TopLine="49"/>
+      </Position>
+      <Position>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="88" Column="18" TopLine="43"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>
