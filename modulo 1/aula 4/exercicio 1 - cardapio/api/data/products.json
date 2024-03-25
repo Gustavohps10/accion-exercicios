@@ -1,0 +1,38 @@
+[
+    {
+        "id": 1,
+        "name" : "Cachorro Quente",
+        "price": 12.00,
+        "image": "cachorro-quente.png"
+    },
+    {
+        "id": 2,
+        "name" : "Bauru Simples",
+        "price": 13.00,
+        "image": "bauru-simples.png"
+    },
+    {
+        "id": 3,
+        "name" : "Bauru com Ovo",
+        "price": 15.00,
+        "image": "bauru-com-ovo.png"
+    },
+    {
+        "id": 4,
+        "name" : "Hambúrguer",
+        "price": 12.00,
+        "image": "hamburguer.png"
+    },
+    {
+        "id": 5,
+        "name" : "Cheeseburguer",
+        "price": 13.00,
+        "image": "cheeseburguer.png"
+    },
+    {
+        "id": 6,
+        "name" : "Refrigerante",
+        "price": 5.00,
+        "image": "refrigerante.png"
+    }
+]
