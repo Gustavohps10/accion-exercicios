@@ -1,0 +1,146 @@
+inherited CadUsuariosF: TCadUsuariosF
+  Left = 567
+  Top = 312
+  Width = 529
+  Caption = 'Cadastro de Usuários'
+  ClientWidth = 529
+  inherited pnlHeader: TPanel
+    Width = 529
+    Caption = 'Cadastro de Usuários'
+  end
+  object lblIdCadUsu: TLabel[2]
+    Left = 176
+    Height = 15
+    Top = 96
+    Width = 11
+    Caption = 'ID'
+    ParentColor = False
+  end
+  object edtIdCadUsu: TEdit[3]
+    Left = 176
+    Height = 23
+    Top = 111
+    Width = 118
+    TabOrder = 2
+  end
+  object lblCpfCnpj: TLabel[4]
+    Left = 310
+    Height = 15
+    Top = 96
+    Width = 53
+    Caption = 'CPF/CNPJ'
+    ParentColor = False
+  end
+  object edtCpfCnpj: TEdit[5]
+    Left = 310
+    Height = 23
+    Top = 111
+    Width = 112
+    TabOrder = 3
+  end
+  object lblNomeFantasia: TLabel[6]
+    Left = 176
+    Height = 15
+    Top = 143
+    Width = 79
+    Caption = 'Nome Fantasia'
+    ParentColor = False
+  end
+  object edtNomeFantasia: TEdit[7]
+    Left = 176
+    Height = 23
+    Top = 159
+    Width = 118
+    TabOrder = 4
+  end
+  object lblRazaoSocial: TLabel[8]
+    Left = 310
+    Height = 15
+    Top = 143
+    Width = 65
+    Caption = 'Razão Social'
+    ParentColor = False
+  end
+  object edtRazaoSocial: TEdit[9]
+    Left = 310
+    Height = 23
+    Top = 159
+    Width = 112
+    TabOrder = 5
+  end
+  object lblEndereco: TLabel[10]
+    Left = 176
+    Height = 15
+    Top = 191
+    Width = 49
+    Caption = 'Endereço'
+    ParentColor = False
+  end
+  object edtEndereco: TEdit[11]
+    Left = 176
+    Height = 23
+    Top = 207
+    Width = 247
+    TabOrder = 6
+  end
+  object lblTelefone: TLabel[12]
+    Left = 177
+    Height = 15
+    Top = 239
+    Width = 44
+    Caption = 'Telefone'
+    ParentColor = False
+  end
+  object edtTelefone: TEdit[13]
+    Left = 177
+    Height = 23
+    Top = 255
+    Width = 118
+    TabOrder = 7
+  end
+  object lblEmail: TLabel[14]
+    Left = 311
+    Height = 15
+    Top = 239
+    Width = 29
+    Caption = 'Email'
+    ParentColor = False
+  end
+  object edtEmail: TEdit[15]
+    Left = 311
+    Height = 23
+    Top = 255
+    Width = 112
+    TabOrder = 8
+  end
+  object lblNomeUsuario: TLabel[16]
+    Left = 177
+    Height = 15
+    Top = 288
+    Width = 92
+    Caption = 'Nome de Usuário'
+    ParentColor = False
+  end
+  object edtNomeUsuario: TEdit[17]
+    Left = 176
+    Height = 23
+    Top = 304
+    Width = 119
+    TabOrder = 9
+  end
+  object lblSenha: TLabel[18]
+    Left = 311
+    Height = 15
+    Top = 288
+    Width = 32
+    Caption = 'Senha'
+    ParentColor = False
+  end
+  object edtSenha: TEdit[19]
+    Left = 310
+    Height = 23
+    Top = 304
+    Width = 113
+    TabOrder = 10
+  end
+end

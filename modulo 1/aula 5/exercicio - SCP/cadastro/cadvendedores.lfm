@@ -1,0 +1,114 @@
+inherited CadVendedoresF: TCadVendedoresF
+  Width = 500
+  Caption = 'Cadastro de Vendedores'
+  ClientWidth = 500
+  inherited pnlHeader: TPanel
+    Width = 500
+    Caption = 'Cadastro de Vendedores'
+  end
+  object edtIdVend: TEdit[2]
+    Left = 178
+    Height = 23
+    Top = 120
+    Width = 118
+    TabOrder = 2
+  end
+  object lblCpfCnpj: TLabel[3]
+    Left = 312
+    Height = 15
+    Top = 105
+    Width = 53
+    Caption = 'CPF/CNPJ'
+    ParentColor = False
+  end
+  object edtCpfCnpj: TEdit[4]
+    Left = 312
+    Height = 23
+    Top = 120
+    Width = 112
+    TabOrder = 3
+  end
+  object lblNomeFantasia: TLabel[5]
+    Left = 178
+    Height = 15
+    Top = 152
+    Width = 79
+    Caption = 'Nome Fantasia'
+    ParentColor = False
+  end
+  object edtNomeFantasia: TEdit[6]
+    Left = 178
+    Height = 23
+    Top = 168
+    Width = 118
+    TabOrder = 4
+  end
+  object lblRazaoSocial: TLabel[7]
+    Left = 312
+    Height = 15
+    Top = 152
+    Width = 65
+    Caption = 'Razão Social'
+    ParentColor = False
+  end
+  object edtRazaoSocial: TEdit[8]
+    Left = 312
+    Height = 23
+    Top = 168
+    Width = 112
+    TabOrder = 5
+  end
+  object lblEndereco: TLabel[9]
+    Left = 178
+    Height = 15
+    Top = 200
+    Width = 49
+    Caption = 'Endereço'
+    ParentColor = False
+  end
+  object edtEndereco: TEdit[10]
+    Left = 178
+    Height = 23
+    Top = 216
+    Width = 247
+    TabOrder = 6
+  end
+  object lblTelefone: TLabel[11]
+    Left = 179
+    Height = 15
+    Top = 248
+    Width = 44
+    Caption = 'Telefone'
+    ParentColor = False
+  end
+  object edtTelefone: TEdit[12]
+    Left = 179
+    Height = 23
+    Top = 264
+    Width = 118
+    TabOrder = 7
+  end
+  object lblEmail: TLabel[13]
+    Left = 313
+    Height = 15
+    Top = 248
+    Width = 29
+    Caption = 'Email'
+    ParentColor = False
+  end
+  object edtEmail: TEdit[14]
+    Left = 313
+    Height = 23
+    Top = 264
+    Width = 112
+    TabOrder = 8
+  end
+  object lblIdVend: TLabel[15]
+    Left = 179
+    Height = 15
+    Top = 105
+    Width = 11
+    Caption = 'ID'
+    ParentColor = False
+  end
+end

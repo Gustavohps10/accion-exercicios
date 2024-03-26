@@ -1,0 +1,34 @@
+object MenuPrincipalF: TMenuPrincipalF
+  Left = 532
+  Height = 512
+  Top = 187
+  Width = 658
+  Caption = 'Menu Principal'
+  Menu = MainMenu1
+  LCLVersion = '2.2.6.0'
+  object MainMenu1: TMainMenu
+    Left = 328
+    Top = 96
+    object menuCadastro: TMenuItem
+      Caption = 'Cadastro'
+      object menuCadProduto: TMenuItem
+        Caption = 'Produto'
+      end
+      object menuCadCliente: TMenuItem
+        Caption = 'Cliente'
+      end
+      object menuCadUsuario: TMenuItem
+        Caption = 'Usuário'
+      end
+      object menuCadFornecedor: TMenuItem
+        Caption = 'Fornecedor'
+      end
+      object menuCadVendedor: TMenuItem
+        Caption = 'Vendedor'
+      end
+    end
+    object menuSobre: TMenuItem
+      Caption = 'Sobre'
+    end
+  end
+end
