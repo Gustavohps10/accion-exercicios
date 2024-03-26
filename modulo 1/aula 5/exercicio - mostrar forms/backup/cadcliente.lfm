@@ -1,0 +1,19 @@
+object CadClienteF: TCadClienteF
+  Left = 694
+  Height = 435
+  Top = 314
+  Width = 524
+  Caption = 'Cadastro de Cliente'
+  ClientHeight = 435
+  ClientWidth = 524
+  OnClose = FormClose
+  LCLVersion = '2.2.6.0'
+  object btnFechar: TButton
+    Left = 416
+    Height = 25
+    Top = 379
+    Width = 75
+    Caption = 'Fechar'
+    TabOrder = 0
+  end
+end

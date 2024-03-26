@@ -1,0 +1,24 @@
+object principalF: TprincipalF
+  Left = 680
+  Height = 433
+  Top = 332
+  Width = 572
+  Caption = 'Principal'
+  Menu = MainMenu1
+  LCLVersion = '2.2.6.0'
+  object MainMenu1: TMainMenu
+    Left = 216
+    Top = 8
+    object menuCadastro: TMenuItem
+      Caption = 'Cadastro'
+      object menuCadCliente: TMenuItem
+        Caption = 'Cliente'
+        OnClick = menuCadClienteClick
+      end
+      object menuCadUsuario: TMenuItem
+        Caption = 'Usuario'
+        OnClick = menuCadUsuarioClick
+      end
+    end
+  end
+end
