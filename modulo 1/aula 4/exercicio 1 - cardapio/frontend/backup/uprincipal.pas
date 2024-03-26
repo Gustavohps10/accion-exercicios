@@ -6,8 +6,8 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
-  ComCtrls, Frame.Produto, FPHTTPClient, RESTRequest4D, DataSet.Serialize, fpjson, jsonparser,
-  memds;
+  ComCtrls, Grids, Frame.Produto, FPHTTPClient, RESTRequest4D,
+  DataSet.Serialize.Adapter.RESTRequest4D, memds, fpjsondataset, DB, BufDataset, FPImage;
 
 type
 
@@ -16,11 +16,12 @@ type
   TprincipalF = class(TForm)
     FrameProduto1: TFrameProduto;
     Image1: TImage;
-    ListView1: TListView;
-    MemDataset: TMemDataset;
+    dsProdutos: TJSONDataSet;
+    pnlTitleProdutos: TPanel;
     pnlTopo: TPanel;
     pnlPrincipal: TPanel;
     pnlTotal: TPanel;
+    ScrollBox1: TScrollBox;
     procedure FormShow(Sender: TObject);
   private
     procedure ListarProdutos();
@@ -31,7 +32,6 @@ type
 
 var
   principalF: TprincipalF;
-  Produtos: TJSONArray;
 
 implementation
 
@@ -39,19 +39,66 @@ implementation
 
 { TprincipalF }
 procedure TprincipalF.ListarProdutos();
-  var url: string = 'http://localhost:9000/products';
-  var jsonData: TJSONData;
-  var produto: TJSONObject;
-  var LResponse: IResponse;
+var
+  url: string = 'http://localhost:9000/products';
+  LResponse: IResponse;
+  frame: TFrameProduto;
+  frameWidth: integer = 200;
+  frameHeight: integer = 250;
+  cols: integer = 3;
+  gap: integer = 10;
+  itemCount: integer = 0;
+  topSpace: integer;
+  leftSpace: integer;
+  img: TImage;
 begin
-     LResponse := TRequest.New.BaseURL(url)
-    .Accept('application/json')
-    .DataSetAdapter(MemDataset)
-    .Get;
-  if LResponse.StatusCode = 200 then
-    jsonData := GetJSON(LResponse.Content);
-  Produtos := jsonData as TJSONArray;
+  topSpace := gap;
+  leftSpace := gap;
+   LResponse := TRequest.New.BaseURL(url)
+   .Adapters(TDataSetSerializeAdapter.New(dsProdutos))
+   .Accept('application/json')
+   .Get;
 
+  with dsProdutos do
+  while not dsProdutos.EOF do
+  begin
+    itemCount := itemCount + 1;
+
+
+      frame := TFrameProduto.Create(nil);
+      frame.Top:= topSpace;
+      frame.Left:=leftSpace;
+      frame.Width:= frameWidth;
+      frame.Height := frameHeight;
+      frame.lblNomeProduto.Caption := FieldByName('name').AsString;
+      frame.lblPrecoProduto.Caption := CurrToStr(FieldByName('price').AsCurrency);
+
+      {Imagem}
+      try
+        img := TImage.Create(frame.imgFoto);
+        //img.Parent := frame.imgFoto;
+        img.Picture.LoadFromFile('./images/'+FieldByName('image').AsString);
+        frame.imgFoto.Picture.Bitmap := img.Picture.Bitmap;
+      finally
+        img.Free;
+      end;
+
+      ScrollBox1.InsertControl(frame);
+
+      frame.Free;
+
+
+    {Espaçamento}
+    leftSpace := leftSpace+ frameWidth + gap;
+    if itemCount = cols then
+    begin
+        topSpace := topSpace + frameHeight + gap;
+        leftSpace := gap;
+        itemCount:=0;
+    end;
+
+    Next;
+  end;
 
 end;
 

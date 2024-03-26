@@ -1,11 +1,12 @@
 object principalF: TprincipalF
-  Left = 352
+  Left = 219
   Height = 518
-  Top = 81
-  Width = 747
+  Top = 141
+  Width = 827
+  BorderStyle = bsSingle
   Caption = 'Cardápio'
   ClientHeight = 518
-  ClientWidth = 747
+  ClientWidth = 827
   Color = 16514043
   Font.CharSet = ANSI_CHARSET
   Font.Name = 'Roboto Th'
@@ -13,8 +14,9 @@ object principalF: TprincipalF
   Font.Quality = fqDraft
   OnShow = FormShow
   LCLVersion = '3.2.0.0'
+  Visible = True
   object pnlTotal: TPanel
-    Left = 577
+    Left = 657
     Height = 518
     Top = 0
     Width = 170
@@ -29,23 +31,23 @@ object principalF: TprincipalF
     Left = 0
     Height = 518
     Top = 0
-    Width = 577
+    Width = 657
     Align = alClient
     BevelOuter = bvNone
     ClientHeight = 518
-    ClientWidth = 577
+    ClientWidth = 657
     ParentBackground = False
     TabOrder = 1
     object pnlTopo: TPanel
       Left = 0
       Height = 88
       Top = 0
-      Width = 577
+      Width = 657
       Align = alTop
       BevelOuter = bvNone
       ClientHeight = 88
-      ClientWidth = 577
-      Color = 16514043
+      ClientWidth = 657
+      Color = 1776411
       ParentBackground = False
       ParentColor = False
       TabOrder = 0
@@ -182,32 +184,48 @@ object principalF: TprincipalF
         Proportional = True
       end
     end
-    object ListView1: TListView
+    object ScrollBox1: TScrollBox
       Left = 0
-      Height = 430
-      Top = 88
-      Width = 577
+      Height = 372
+      Top = 146
+      Width = 657
+      HorzScrollBar.Page = 1
+      VertScrollBar.Page = 1
       Align = alClient
       BorderStyle = bsNone
-      Columns = <      
-        item
-          Width = 10
-        end      
-        item
-          Width = 10
-        end>
+      Color = 16514043
+      ParentBackground = False
+      ParentColor = False
       TabOrder = 1
     end
-    inline FrameProduto1: TFrameProduto
-      Left = 78
-      Top = 157
+    object pnlTitleProdutos: TPanel
+      Left = 0
+      Height = 58
+      Top = 88
+      Width = 657
+      Align = alTop
+      BevelOuter = bvNone
+      Caption = 'Produtos'
+      Font.CharSet = ANSI_CHARSET
+      Font.Height = -19
+      Font.Name = 'Roboto'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
       ParentBackground = False
+      ParentFont = False
       TabOrder = 2
     end
   end
-  object MemDataset: TMemDataset
+  inline FrameProduto1: TFrameProduto
+    Left = 499
+    Top = 285
+    ParentBackground = False
+    TabOrder = 2
+    Visible = False
+  end
+  object dsProdutos: TJSONDataSet
     FieldDefs = <>
-    Left = 32
-    Top = 112
+    Left = 480
+    Top = 200
   end
 end

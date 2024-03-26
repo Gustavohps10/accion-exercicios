@@ -1,22 +1,65 @@
 object FrameProduto: TFrameProduto
   Left = 0
-  Height = 240
+  Height = 252
   Top = 0
-  Width = 230
-  ClientHeight = 240
-  ClientWidth = 230
+  Width = 218
+  ClientHeight = 252
+  ClientWidth = 218
   TabOrder = 0
-  DesignLeft = 310
-  DesignTop = 197
-  object Panel1: TPanel
-    Left = 32
-    Height = 50
-    Top = 88
-    Width = 170
-    Caption = 'Panel1'
-    Color = clWhite
-    ParentBackground = False
-    ParentColor = False
+  DesignLeft = 709
+  DesignTop = 243
+  object imgFoto: TImage
+    Left = 24
+    Height = 114
+    Top = 8
+    Width = 168
+    Proportional = True
+    Stretch = True
+  end
+  object lblNomeProduto: TLabel
+    Left = 24
+    Height = 21
+    Top = 136
+    Width = 119
+    Caption = 'Cachorro Quente'
+    Font.Height = -16
+    ParentFont = False
+  end
+  object lblPrecoProduto: TLabel
+    Left = 142
+    Height = 17
+    Top = 168
+    Width = 50
+    Anchors = [akRight, akBottom]
+    Caption = 'R$ 12,00'
+    Font.Height = -13
+    ParentFont = False
+  end
+  object btnAdicionar: TButton
+    Cursor = crHandPoint
+    Left = 24
+    Height = 25
+    Top = 208
+    Width = 71
+    Caption = 'Adicionar'
     TabOrder = 0
+  end
+  object btnRemover: TButton
+    Cursor = crHandPoint
+    Left = 117
+    Height = 25
+    Top = 208
+    Width = 75
+    Caption = 'Remover'
+    TabOrder = 1
+  end
+  object lblQuantidade: TLabel
+    Left = 24
+    Height = 17
+    Top = 168
+    Width = 39
+    Caption = 'QTD: 0'
+    Font.Height = -13
+    ParentFont = False
   end
 end

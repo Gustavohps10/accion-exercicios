@@ -18,7 +18,7 @@ type
     lblQuantidade: TLabel;
     lblNomeProduto: TLabel;
     lblPrecoProduto: TLabel;
-    pnlProduto: TPanel;
+    Shape1: TShape;
   private
 
   public

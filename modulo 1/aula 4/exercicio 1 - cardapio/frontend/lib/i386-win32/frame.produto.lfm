@@ -6,73 +6,72 @@ object FrameProduto: TFrameProduto
   ClientHeight = 252
   ClientWidth = 218
   TabOrder = 0
-  DesignLeft = 504
-  DesignTop = 298
-  object pnlProduto: TPanel
+  DesignLeft = 500
+  DesignTop = 224
+  object Shape1: TShape
     Left = 0
     Height = 252
     Top = 0
     Width = 218
     Align = alClient
-    ClientHeight = 252
-    ClientWidth = 218
-    Color = clWhite
-    ParentBackground = False
-    ParentColor = False
+    Pen.Color = clNone
+    Shape = stRoundRect
+  end
+  object imgFoto: TImage
+    Left = 24
+    Height = 114
+    Top = 24
+    Width = 170
+    Proportional = True
+    Stretch = True
+  end
+  object lblNomeProduto: TLabel
+    Left = 24
+    Height = 21
+    Top = 144
+    Width = 119
+    Caption = 'Cachorro Quente'
+    Font.Height = -16
+    ParentFont = False
+  end
+  object lblPrecoProduto: TLabel
+    Left = 142
+    Height = 17
+    Top = 176
+    Width = 50
+    Anchors = [akRight, akBottom]
+    Caption = 'R$ 12,00'
+    Font.Height = -13
+    ParentFont = False
+  end
+  object btnAdicionar: TButton
+    Cursor = crHandPoint
+    Left = 24
+    Height = 25
+    Top = 209
+    Width = 71
+    Anchors = [akLeft, akBottom]
+    Caption = 'Adicionar'
     TabOrder = 0
-    object imgFoto: TImage
-      Left = 24
-      Height = 114
-      Top = 8
-      Width = 168
-      Proportional = True
-      Stretch = True
-    end
-    object lblNomeProduto: TLabel
-      Left = 24
-      Height = 21
-      Top = 136
-      Width = 119
-      Caption = 'Cachorro Quente'
-      Font.Height = -16
-      ParentFont = False
-    end
-    object lblPrecoProduto: TLabel
-      Left = 142
-      Height = 17
-      Top = 168
-      Width = 50
-      Anchors = [akRight, akBottom]
-      Caption = 'R$ 12,00'
-      Font.Height = -13
-      ParentFont = False
-    end
-    object btnAdicionar: TButton
-      Cursor = crHandPoint
-      Left = 24
-      Height = 25
-      Top = 208
-      Width = 71
-      Caption = 'Adicionar'
-      TabOrder = 0
-    end
-    object btnRemover: TButton
-      Cursor = crHandPoint
-      Left = 117
-      Height = 25
-      Top = 208
-      Width = 75
-      Caption = 'Remover'
-      TabOrder = 1
-    end
-    object lblQuantidade: TLabel
-      Left = 24
-      Height = 17
-      Top = 168
-      Width = 39
-      Caption = 'QTD: 0'
-      Font.Height = -13
-      ParentFont = False
-    end
+  end
+  object btnRemover: TButton
+    Cursor = crHandPoint
+    Left = 120
+    Height = 25
+    Top = 209
+    Width = 75
+    Anchors = [akRight, akBottom]
+    Caption = 'Remover'
+    TabOrder = 1
+  end
+  object lblQuantidade: TLabel
+    Left = 24
+    Height = 17
+    Top = 176
+    Width = 39
+    Anchors = [akLeft, akBottom]
+    Caption = 'QTD: 0'
+    Font.Height = -13
+    ParentFont = False
   end
 end
