@@ -1,15 +1,13 @@
 inherited CadFornecedorF: TCadFornecedorF
   Left = 509
+  Height = 436
   Top = 153
-  Width = 514
   Caption = 'CadFornecedorF'
-  ClientWidth = 514
+  ClientHeight = 436
   inherited pnlHeader: TPanel
-    Width = 514
     Caption = 'Cadastro de Fornecedores'
-    ClientWidth = 514
     inherited Image1: TImage
-      Left = 392
+      Left = 518
       Picture.Data = {
         055449636F6EBE2500000000010001003030000001002000A825000016000000
         2800000030000000600000000100200000000000000000000000000000000000
@@ -318,113 +316,115 @@ inherited CadFornecedorF: TCadFornecedorF
     end
   end
   inherited pnlButtons: TPanel
+    Height = 372
+    ClientHeight = 372
     inherited btnSair: TButton
-      Top = 368
+      Top = 328
     end
   end
   object lblIdCadFornec: TLabel[2]
-    Left = 178
-    Height = 14
-    Top = 105
-    Width = 11
+    Left = 240
+    Height = 15
+    Top = 104
+    Width = 12
     Caption = 'ID'
     ParentColor = False
   end
   object edtIdCadFornec: TEdit[3]
-    Left = 178
-    Height = 22
-    Top = 120
-    Width = 118
+    Left = 240
+    Height = 23
+    Top = 119
+    Width = 120
     TabOrder = 2
   end
   object lblCpfCnpj: TLabel[4]
-    Left = 312
-    Height = 14
-    Top = 105
+    Left = 374
+    Height = 15
+    Top = 104
     Width = 59
     Caption = 'CPF/CNPJ'
     ParentColor = False
   end
   object edtCpfCnpj: TEdit[5]
-    Left = 312
-    Height = 22
-    Top = 120
-    Width = 112
+    Left = 374
+    Height = 23
+    Top = 119
+    Width = 120
     TabOrder = 3
   end
   object lblNomeFantasia: TLabel[6]
-    Left = 178
-    Height = 14
-    Top = 152
-    Width = 82
+    Left = 240
+    Height = 15
+    Top = 151
+    Width = 85
     Caption = 'Nome Fantasia'
     ParentColor = False
   end
   object edtNomeFantasia: TEdit[7]
-    Left = 178
-    Height = 22
-    Top = 168
-    Width = 118
+    Left = 240
+    Height = 23
+    Top = 167
+    Width = 120
     TabOrder = 4
   end
   object lblRazaoSocial: TLabel[8]
-    Left = 312
-    Height = 14
-    Top = 152
-    Width = 71
+    Left = 374
+    Height = 15
+    Top = 151
+    Width = 72
     Caption = 'Razão Social'
     ParentColor = False
   end
   object edtRazaoSocial: TEdit[9]
-    Left = 312
-    Height = 22
-    Top = 168
-    Width = 112
+    Left = 374
+    Height = 23
+    Top = 167
+    Width = 120
     TabOrder = 5
   end
   object lblEndereco: TLabel[10]
-    Left = 178
-    Height = 14
-    Top = 200
-    Width = 50
+    Left = 240
+    Height = 15
+    Top = 199
+    Width = 53
     Caption = 'Endereço'
     ParentColor = False
   end
   object edtEndereco: TEdit[11]
-    Left = 178
-    Height = 22
-    Top = 216
-    Width = 247
+    Left = 240
+    Height = 23
+    Top = 215
+    Width = 254
     TabOrder = 6
   end
   object lblTelefone: TLabel[12]
-    Left = 179
-    Height = 14
-    Top = 248
-    Width = 46
+    Left = 241
+    Height = 15
+    Top = 247
+    Width = 47
     Caption = 'Telefone'
     ParentColor = False
   end
   object edtTelefone: TEdit[13]
-    Left = 179
-    Height = 22
-    Top = 264
-    Width = 118
+    Left = 241
+    Height = 23
+    Top = 263
+    Width = 120
     TabOrder = 7
   end
   object lblEmail: TLabel[14]
-    Left = 313
-    Height = 14
-    Top = 248
-    Width = 30
+    Left = 375
+    Height = 15
+    Top = 247
+    Width = 32
     Caption = 'Email'
     ParentColor = False
   end
   object edtEmail: TEdit[15]
-    Left = 313
-    Height = 22
-    Top = 264
-    Width = 112
+    Left = 375
+    Height = 23
+    Top = 263
+    Width = 120
     TabOrder = 8
   end
 end

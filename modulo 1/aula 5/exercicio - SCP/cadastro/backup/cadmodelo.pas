@@ -5,22 +5,38 @@ unit CadModelo;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
+  Buttons;
 
 type
 
   { TCadModeloF }
 
   TCadModeloF = class(TForm)
-    btnNovo: TButton;
-    btnEditar: TButton;
-    btnGravar: TButton;
-    btnExcluir: TButton;
     btnSair: TButton;
     Image1: TImage;
+    imgBtnPesquisar: TImage;
+    imgBtnNovo: TImage;
+    imgBtnEditar: TImage;
+    imgBtnGravar: TImage;
+    imgBtnExcluir: TImage;
+    lblPesquisar: TLabel;
+    lblNovo: TLabel;
+    lblEditar: TLabel;
+    lblGravar: TLabel;
+    lblExcluir: TLabel;
     pnlButtons: TPanel;
     pnlHeader: TPanel;
-    procedure btnSairClick(Sender: TObject);
+    sbtPesquisar: TSpeedButton;
+    sbtNovo: TSpeedButton;
+    sbtEditar: TSpeedButton;
+    sbtGravar: TSpeedButton;
+    sbtExcluir: TSpeedButton;
+    shpPesquisar: TShape;
+    shpNovo: TShape;
+    shpEditar: TShape;
+    shpGravar: TShape;
+    shpExcluir: TShape;
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
   private
 
@@ -40,11 +56,6 @@ implementation
 procedure TCadModeloF.FormClose(Sender: TObject; var CloseAction: TCloseAction);
 begin
   CloseAction := caFree;
-end;
-
-procedure TCadModeloF.btnSairClick(Sender: TObject);
-begin
-  Close;
 end;
 
 end.

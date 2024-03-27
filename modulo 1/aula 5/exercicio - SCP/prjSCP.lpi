@@ -94,8 +94,25 @@
         <Filename Value="auth\oplogin.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="OpLoginF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="OpLogin"/>
+      </Unit>
+      <Unit>
+        <Filename Value="opsobre.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="OpSobreF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="OpSobre"/>
+      </Unit>
+      <Unit>
+        <Filename Value="auth\cadesqsenha.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CadEsqSenhaF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CadEsqSenha"/>
       </Unit>
     </Units>
   </ProjectOptions>

@@ -11,7 +11,7 @@ uses
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
   Forms, MenuPrincipal, CadModelo, CadProdutos, CadClientes, CadUsuarios,
-   CadVendedores, CadFornecedor, OpLogin
+   CadVendedores, CadFornecedor, OpLogin, OpSobre, CadEsqSenha
   { you can add units after this };
 
 {$R *.res}

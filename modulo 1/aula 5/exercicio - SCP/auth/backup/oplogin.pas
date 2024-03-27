@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
-  Buttons, MenuPrincipal;
+  Buttons, MenuPrincipal, CadEsqSenha;
 
 type
 
@@ -17,11 +17,14 @@ type
     edtSenha: TEdit;
     Image1: TImage;
     Image2: TImage;
+    Image3: TImage;
     imgSair: TImage;
+    lblEsqSenha: TLabel;
     lblSair: TLabel;
     lblEntrar: TLabel;
     lblEmail: TLabel;
     lblSenha: TLabel;
+    pnlEsqSenha: TPanel;
     pnlButtons: TPanel;
     pnlSair: TPanel;
     pnlGeralHeader: TPanel;
@@ -40,7 +43,11 @@ type
     shpSair: TShape;
     sbtEntrar: TSpeedButton;
     sbtSair: TSpeedButton;
+    procedure lblEsqSenhaClick(Sender: TObject);
+    procedure lblEsqSenhaMouseEnter(Sender: TObject);
+    procedure lblEsqSenhaMouseLeave(Sender: TObject);
     procedure sbtEntrarClick(Sender: TObject);
+    procedure sbtSairClick(Sender: TObject);
   private
 
   public
@@ -61,6 +68,27 @@ begin
     MenuPrincipalF := TMenuPrincipalF.Create(nil);
     MenuPrincipalF.Show();
     Hide;
+end;
+
+procedure TOpLoginF.lblEsqSenhaClick(Sender: TObject);
+begin
+    CadEsqSenhaF := TCadEsqSenhaF.Create(Self);
+    CadEsqSenhaF.Show();
+end;
+
+procedure TOpLoginF.lblEsqSenhaMouseEnter(Sender: TObject);
+begin
+  lblEsqSenha.Font.Color := $00FFFFFF;
+end;
+
+procedure TOpLoginF.lblEsqSenhaMouseLeave(Sender: TObject);
+begin
+  lblEsqSenha.Font.Color := $00FFEBE6;
+end;
+
+procedure TOpLoginF.sbtSairClick(Sender: TObject);
+begin
+  Application.Terminate;
 end;
 
 end.
