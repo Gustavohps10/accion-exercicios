@@ -9,9 +9,9 @@ uses
 
 type
 
-  { TCadModeloF1 }
+  { TCadFornecedorF }
 
-  TCadModeloF1 = class(TCadModeloF)
+  TCadFornecedorF = class(TCadModeloF)
     edtCpfCnpj: TEdit;
     edtEmail: TEdit;
     edtEndereco: TEdit;
@@ -33,7 +33,7 @@ type
   end;
 
 var
-  CadModeloF1: TCadModeloF1;
+  CadFornecedorF: TCadFornecedorF;
 
 implementation
 

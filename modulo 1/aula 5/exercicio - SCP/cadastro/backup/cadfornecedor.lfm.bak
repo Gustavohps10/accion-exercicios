@@ -1,10 +1,17 @@
-inherited CadModeloF1: TCadModeloF1
+inherited CadFornecedorF: TCadFornecedorF
+  Left = 616
+  Top = 156
   Width = 514
   Caption = 'CadFornecedorF'
   ClientWidth = 514
   inherited pnlHeader: TPanel
     Width = 514
     Caption = 'Cadastro de Fornecedores'
+  end
+  inherited pnlButtons: TPanel
+    inherited btnSair: TButton
+      Top = 368
+    end
   end
   object lblIdCadFornec: TLabel[2]
     Left = 178

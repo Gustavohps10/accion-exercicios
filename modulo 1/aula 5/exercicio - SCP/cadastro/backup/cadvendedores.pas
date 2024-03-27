@@ -1,14 +1,31 @@
-unit cadvendedores;
+unit CadVendedores;
 
 {$mode ObjFPC}{$H+}
 
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, CadModelo;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, CadModelo;
 
 type
+
+  { TCadVendedoresF }
+
   TCadVendedoresF = class(TCadModeloF)
+    edtCpfCnpj: TEdit;
+    edtEmail: TEdit;
+    edtEndereco: TEdit;
+    edtIdVend: TEdit;
+    edtNomeFantasia: TEdit;
+    edtRazaoSocial: TEdit;
+    edtTelefone: TEdit;
+    lblIdVend: TLabel;
+    lblCpfCnpj: TLabel;
+    lblEmail: TLabel;
+    lblEndereco: TLabel;
+    lblNomeFantasia: TLabel;
+    lblRazaoSocial: TLabel;
+    lblTelefone: TLabel;
   private
 
   public

@@ -5,7 +5,8 @@ unit CadProdutos;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, CadModelo;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, ExtCtrls,
+  CadModelo;
 
 type
 

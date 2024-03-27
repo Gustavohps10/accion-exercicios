@@ -1,27 +1,19 @@
-inherited CadFornecedorF: TCadFornecedorF
-  Width = 543
-  Caption = 'Cadastro de Fornecedores'
-  ClientWidth = 543
+inherited CadVendedoresF: TCadVendedoresF
+  Width = 500
+  Caption = 'Cadastro de Vendedores'
+  ClientWidth = 500
   inherited pnlHeader: TPanel
-    Width = 543
-    Caption = 'Cadastro de Fornecedores'
+    Width = 500
+    Caption = 'Cadastro de Vendedores'
   end
-  object lblIdCadFornec: TLabel[2]
-    Left = 178
-    Height = 15
-    Top = 105
-    Width = 11
-    Caption = 'ID'
-    ParentColor = False
-  end
-  object edtIdCadFornec: TEdit[3]
+  object edtIdVend: TEdit[2]
     Left = 178
     Height = 23
     Top = 120
     Width = 118
     TabOrder = 2
   end
-  object lblCpfCnpj: TLabel[4]
+  object lblCpfCnpj: TLabel[3]
     Left = 312
     Height = 15
     Top = 105
@@ -29,14 +21,14 @@ inherited CadFornecedorF: TCadFornecedorF
     Caption = 'CPF/CNPJ'
     ParentColor = False
   end
-  object edtCpfCnpj: TEdit[5]
+  object edtCpfCnpj: TEdit[4]
     Left = 312
     Height = 23
     Top = 120
     Width = 112
     TabOrder = 3
   end
-  object lblNomeFantasia: TLabel[6]
+  object lblNomeFantasia: TLabel[5]
     Left = 178
     Height = 15
     Top = 152
@@ -44,14 +36,14 @@ inherited CadFornecedorF: TCadFornecedorF
     Caption = 'Nome Fantasia'
     ParentColor = False
   end
-  object edtNomeFantasia: TEdit[7]
+  object edtNomeFantasia: TEdit[6]
     Left = 178
     Height = 23
     Top = 168
     Width = 118
     TabOrder = 4
   end
-  object lblRazaoSocial: TLabel[8]
+  object lblRazaoSocial: TLabel[7]
     Left = 312
     Height = 15
     Top = 152
@@ -59,14 +51,14 @@ inherited CadFornecedorF: TCadFornecedorF
     Caption = 'Razão Social'
     ParentColor = False
   end
-  object edtRazaoSocial: TEdit[9]
+  object edtRazaoSocial: TEdit[8]
     Left = 312
     Height = 23
     Top = 168
     Width = 112
     TabOrder = 5
   end
-  object lblEndereco: TLabel[10]
+  object lblEndereco: TLabel[9]
     Left = 178
     Height = 15
     Top = 200
@@ -74,14 +66,14 @@ inherited CadFornecedorF: TCadFornecedorF
     Caption = 'Endereço'
     ParentColor = False
   end
-  object edtEndereco: TEdit[11]
+  object edtEndereco: TEdit[10]
     Left = 178
     Height = 23
     Top = 216
     Width = 247
     TabOrder = 6
   end
-  object lblTelefone: TLabel[12]
+  object lblTelefone: TLabel[11]
     Left = 179
     Height = 15
     Top = 248
@@ -89,14 +81,14 @@ inherited CadFornecedorF: TCadFornecedorF
     Caption = 'Telefone'
     ParentColor = False
   end
-  object edtTelefone: TEdit[13]
+  object edtTelefone: TEdit[12]
     Left = 179
     Height = 23
     Top = 264
     Width = 118
     TabOrder = 7
   end
-  object lblEmail: TLabel[14]
+  object lblEmail: TLabel[13]
     Left = 313
     Height = 15
     Top = 248
@@ -104,11 +96,19 @@ inherited CadFornecedorF: TCadFornecedorF
     Caption = 'Email'
     ParentColor = False
   end
-  object edtEmail: TEdit[15]
+  object edtEmail: TEdit[14]
     Left = 313
     Height = 23
     Top = 264
     Width = 112
     TabOrder = 8
+  end
+  object lblIdVend: TLabel[15]
+    Left = 179
+    Height = 15
+    Top = 105
+    Width = 11
+    Caption = 'ID'
+    ParentColor = False
   end
 end

@@ -85,10 +85,17 @@
       <Unit>
         <Filename Value="cadastro\cadfornecedor.pas"/>
         <IsPartOfProject Value="True"/>
-        <ComponentName Value="CadModeloF1"/>
+        <ComponentName Value="CadFornecedorF"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadFornecedor"/>
+      </Unit>
+      <Unit>
+        <Filename Value="auth\oplogin.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="OpLoginF"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="OpLogin"/>
       </Unit>
     </Units>
   </ProjectOptions>
@@ -100,7 +107,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="cadastro"/>
+      <OtherUnitFiles Value="cadastro;auth"/>
       <UnitOutputDirectory Value="lib\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>

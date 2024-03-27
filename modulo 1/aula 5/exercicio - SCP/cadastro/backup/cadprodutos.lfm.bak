@@ -1,15 +1,16 @@
 inherited CadProdutosF: TCadProdutosF
-  Left = 671
-  Top = 395
-  Width = 499
+  Left = 428
+  Top = 193
+  Width = 498
   Caption = 'Cadastro de Produtos'
-  ClientWidth = 499
+  ClientWidth = 498
   inherited pnlHeader: TPanel
-    Width = 499
+    Width = 498
+    Caption = 'Cadastro de Produtos'
   end
   object lblIdProduto: TLabel[2]
     Left = 168
-    Height = 15
+    Height = 14
     Top = 96
     Width = 11
     Caption = 'ID'
@@ -17,47 +18,47 @@ inherited CadProdutosF: TCadProdutosF
   end
   object edtIdCadProduto: TEdit[3]
     Left = 168
-    Height = 23
+    Height = 22
     Top = 112
     Width = 104
     TabOrder = 2
   end
   object edtDescSimples: TEdit[4]
     Left = 286
-    Height = 23
+    Height = 22
     Top = 112
     Width = 114
     TabOrder = 3
   end
   object lblDescSimples: TLabel[5]
     Left = 286
-    Height = 15
+    Height = 14
     Top = 96
-    Width = 95
+    Width = 98
     Caption = 'Descrição Simples'
     ParentColor = False
   end
   object edtValorVenda: TEdit[6]
     Left = 168
-    Height = 23
+    Height = 22
     Top = 240
     Width = 104
     TabOrder = 4
   end
   object lblValorVenda: TLabel[7]
     Left = 168
-    Height = 15
+    Height = 14
     Top = 224
-    Width = 61
+    Width = 67
     Caption = 'Valor Venda'
     ParentColor = False
   end
   object cbTipoProduto: TComboBox[8]
     Left = 296
-    Height = 23
+    Height = 22
     Top = 240
     Width = 104
-    ItemHeight = 15
+    ItemHeight = 14
     TabOrder = 5
     Text = 'Selecionar'
   end
@@ -70,17 +71,17 @@ inherited CadProdutosF: TCadProdutosF
   end
   object lblDescCompleta: TLabel[10]
     Left = 168
-    Height = 15
+    Height = 14
     Top = 144
-    Width = 106
+    Width = 108
     Caption = 'Descrição Completa'
     ParentColor = False
   end
   object lblTipoProduto: TLabel[11]
     Left = 296
-    Height = 15
+    Height = 14
     Top = 224
-    Width = 86
+    Width = 88
     Caption = 'Tipo do Produto'
     ParentColor = False
   end

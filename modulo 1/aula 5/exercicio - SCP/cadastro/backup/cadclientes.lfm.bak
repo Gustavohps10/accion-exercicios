@@ -1,6 +1,6 @@
 inherited CadClientesF: TCadClientesF
-  Left = 836
-  Top = 461
+  Left = 1251
+  Top = 357
   Width = 492
   Caption = 'Cadastro de Clientes'
   ClientWidth = 492

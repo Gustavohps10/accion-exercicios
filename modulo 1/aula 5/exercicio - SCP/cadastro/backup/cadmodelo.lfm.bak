@@ -1,25 +1,43 @@
 object CadModeloF: TCadModeloF
-  Left = 738
+  Left = 432
   Height = 478
-  Top = 530
-  Width = 613
+  Top = 101
+  Width = 581
   Caption = 'CadModeloF'
   ClientHeight = 478
-  ClientWidth = 613
-  LCLVersion = '2.2.6.0'
+  ClientWidth = 581
+  Color = 16514043
+  Font.Name = 'Roboto'
+  OnClose = FormClose
+  Position = poMainFormCenter
+  LCLVersion = '3.2.0.0'
   object pnlHeader: TPanel
     Left = 0
     Height = 64
     Top = 0
-    Width = 613
+    Width = 581
     Align = alTop
     BevelOuter = bvNone
-    Color = 15095682
+    Caption = 'Cadastro'
+    ClientHeight = 64
+    ClientWidth = 581
+    Color = 10178150
     Font.Color = clWhite
     Font.Height = -21
+    Font.Quality = fqAntialiased
+    ParentBackground = False
     ParentColor = False
     ParentFont = False
     TabOrder = 0
+    object Image1: TImage
+      Left = 424
+      Height = 48
+      Top = 8
+      Width = 48
+      Anchors = [akTop, akRight]
+      ParentShowHint = False
+      Proportional = True
+    end
   end
   object pnlButtons: TPanel
     Left = 0
@@ -30,7 +48,8 @@ object CadModeloF: TCadModeloF
     BevelOuter = bvNone
     ClientHeight = 414
     ClientWidth = 120
-    Color = 16514043
+    Color = 15987699
+    ParentBackground = False
     ParentColor = False
     TabOrder = 1
     object btnNovo: TButton
@@ -68,11 +87,12 @@ object CadModeloF: TCadModeloF
     object btnSair: TButton
       Left = 24
       Height = 25
-      Top = 368
+      Top = 248
       Width = 75
       Anchors = [akLeft, akBottom]
       Caption = 'Sair'
       TabOrder = 4
+      OnClick = btnSairClick
     end
   end
 end
