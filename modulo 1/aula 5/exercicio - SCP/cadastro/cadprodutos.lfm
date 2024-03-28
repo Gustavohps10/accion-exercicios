@@ -1,6 +1,6 @@
 inherited CadProdutosF: TCadProdutosF
-  Left = 508
-  Top = 238
+  Left = 332
+  Top = 130
   Caption = 'Cadastro de Produtos'
   inherited pnlHeader: TPanel
     Caption = 'Cadastro de Produtos'
@@ -313,57 +313,65 @@ inherited CadProdutosF: TCadProdutosF
       }
     end
   end
+  inherited pnlButtons: TPanel
+    inherited btnSair: TBCMaterialDesignButton
+      Top = 344
+    end
+    inherited imgSair: TImage
+      Top = 350
+    end
+  end
   object lblIdProduto: TLabel[2]
     Left = 232
-    Height = 15
+    Height = 14
     Top = 104
-    Width = 12
+    Width = 11
     Caption = 'ID'
     ParentColor = False
   end
   object edtIdCadProduto: TEdit[3]
     Left = 232
-    Height = 23
+    Height = 22
     Top = 120
     Width = 130
     TabOrder = 2
   end
   object edtDescSimples: TEdit[4]
     Left = 376
-    Height = 23
+    Height = 22
     Top = 120
     Width = 130
     TabOrder = 3
   end
   object lblDescSimples: TLabel[5]
     Left = 376
-    Height = 15
+    Height = 14
     Top = 104
-    Width = 105
+    Width = 98
     Caption = 'Descrição Simples'
     ParentColor = False
   end
   object edtValorVenda: TEdit[6]
     Left = 232
-    Height = 23
+    Height = 22
     Top = 248
     Width = 130
     TabOrder = 4
   end
   object lblValorVenda: TLabel[7]
     Left = 232
-    Height = 15
+    Height = 14
     Top = 232
-    Width = 64
+    Width = 67
     Caption = 'Valor Venda'
     ParentColor = False
   end
   object cbTipoProduto: TComboBox[8]
     Left = 376
-    Height = 23
+    Height = 22
     Top = 248
     Width = 130
-    ItemHeight = 15
+    ItemHeight = 14
     Items.Strings = (
       'TIPO 1'
       'TIPO 2'
@@ -382,17 +390,17 @@ inherited CadProdutosF: TCadProdutosF
   end
   object lblDescCompleta: TLabel[10]
     Left = 232
-    Height = 15
+    Height = 14
     Top = 152
-    Width = 113
+    Width = 108
     Caption = 'Descrição Completa'
     ParentColor = False
   end
   object lblTipoProduto: TLabel[11]
     Left = 376
-    Height = 15
+    Height = 14
     Top = 232
-    Width = 87
+    Width = 88
     Caption = 'Tipo do Produto'
     ParentColor = False
   end

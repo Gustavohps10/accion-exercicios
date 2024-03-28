@@ -26,6 +26,9 @@
     </RunParams>
     <RequiredPackages>
       <Item>
+        <PackageName Value="bgracontrols"/>
+      </Item>
+      <Item>
         <PackageName Value="LCL"/>
       </Item>
     </RequiredPackages>
@@ -57,14 +60,6 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadProdutos"/>
-      </Unit>
-      <Unit>
-        <Filename Value="cadastro\cadclientes.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="CadClientesF"/>
-        <HasResources Value="True"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="CadClientes"/>
       </Unit>
       <Unit>
         <Filename Value="cadastro\cadusuarios.pas"/>
@@ -113,6 +108,14 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadEsqSenha"/>
+      </Unit>
+      <Unit>
+        <Filename Value="cadastro\cadclientes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CadClientesF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CadClientes"/>
       </Unit>
     </Units>
   </ProjectOptions>

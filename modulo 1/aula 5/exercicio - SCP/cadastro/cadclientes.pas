@@ -12,20 +12,20 @@ type
   { TCadClientesF }
 
   TCadClientesF = class(TCadModeloF)
-    edtEndereco: TEdit;
-    edtNomeFantasia: TEdit;
-    edtIdCadCli: TEdit;
     edtCpfCnpj: TEdit;
-    edtTelefone: TEdit;
-    edtRazaoSocial: TEdit;
     edtEmail: TEdit;
-    lblEndereco: TLabel;
-    lblNomeFantasia: TLabel;
-    lblIdCadCli: TLabel;
+    edtEndereco: TEdit;
+    edtIdCadCli: TEdit;
+    edtNomeFantasia: TEdit;
+    edtRazaoSocial: TEdit;
+    edtTelefone: TEdit;
     lblCpfCnpj: TLabel;
-    lblTelefone: TLabel;
-    lblRazaoSocial: TLabel;
     lblEmail: TLabel;
+    lblEndereco: TLabel;
+    lblIdCadCli: TLabel;
+    lblNomeFantasia: TLabel;
+    lblRazaoSocial: TLabel;
+    lblTelefone: TLabel;
   private
 
   public

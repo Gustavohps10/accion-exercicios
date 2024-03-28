@@ -19,6 +19,7 @@ type
     edtNomeFantasia: TEdit;
     edtRazaoSocial: TEdit;
     edtTelefone: TEdit;
+    edtPerComissao: TEdit;
     lblIdVend: TLabel;
     lblCpfCnpj: TLabel;
     lblEmail: TLabel;
@@ -26,6 +27,7 @@ type
     lblNomeFantasia: TLabel;
     lblRazaoSocial: TLabel;
     lblTelefone: TLabel;
+    lblPerComissao: TLabel;
   private
 
   public

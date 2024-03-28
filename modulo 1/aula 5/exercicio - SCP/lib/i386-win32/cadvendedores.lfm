@@ -1,13 +1,9 @@
 inherited CadVendedoresF: TCadVendedoresF
-  Width = 500
   Caption = 'Cadastro de Vendedores'
-  ClientWidth = 500
   inherited pnlHeader: TPanel
-    Width = 500
     Caption = 'Cadastro de Vendedores'
-    ClientWidth = 500
     inherited Image1: TImage
-      Left = 376
+      Left = 516
       Picture.Data = {
         055449636F6EBE2500000000010001003030000001002000A825000016000000
         2800000030000000600000000100200000000000000000000000000000000000
@@ -315,15 +311,24 @@ inherited CadVendedoresF: TCadVendedoresF
       }
     end
   end
+  inherited pnlButtons: TPanel
+    inherited btnSair: TBCMaterialDesignButton
+      Top = 344
+    end
+    inherited imgSair: TImage
+      Left = 24
+      Top = 351
+    end
+  end
   object edtIdVend: TEdit[2]
-    Left = 178
+    Left = 248
     Height = 22
     Top = 120
     Width = 118
     TabOrder = 2
   end
   object lblCpfCnpj: TLabel[3]
-    Left = 312
+    Left = 382
     Height = 14
     Top = 105
     Width = 59
@@ -331,14 +336,14 @@ inherited CadVendedoresF: TCadVendedoresF
     ParentColor = False
   end
   object edtCpfCnpj: TEdit[4]
-    Left = 312
+    Left = 382
     Height = 22
     Top = 120
     Width = 112
     TabOrder = 3
   end
   object lblNomeFantasia: TLabel[5]
-    Left = 178
+    Left = 248
     Height = 14
     Top = 152
     Width = 82
@@ -346,14 +351,14 @@ inherited CadVendedoresF: TCadVendedoresF
     ParentColor = False
   end
   object edtNomeFantasia: TEdit[6]
-    Left = 178
+    Left = 248
     Height = 22
     Top = 168
     Width = 118
     TabOrder = 4
   end
   object lblRazaoSocial: TLabel[7]
-    Left = 312
+    Left = 382
     Height = 14
     Top = 152
     Width = 71
@@ -361,14 +366,14 @@ inherited CadVendedoresF: TCadVendedoresF
     ParentColor = False
   end
   object edtRazaoSocial: TEdit[8]
-    Left = 312
+    Left = 382
     Height = 22
     Top = 168
     Width = 112
     TabOrder = 5
   end
   object lblEndereco: TLabel[9]
-    Left = 178
+    Left = 248
     Height = 14
     Top = 200
     Width = 50
@@ -376,14 +381,14 @@ inherited CadVendedoresF: TCadVendedoresF
     ParentColor = False
   end
   object edtEndereco: TEdit[10]
-    Left = 178
+    Left = 248
     Height = 22
     Top = 216
     Width = 247
     TabOrder = 6
   end
   object lblTelefone: TLabel[11]
-    Left = 179
+    Left = 249
     Height = 14
     Top = 248
     Width = 46
@@ -391,14 +396,14 @@ inherited CadVendedoresF: TCadVendedoresF
     ParentColor = False
   end
   object edtTelefone: TEdit[12]
-    Left = 179
+    Left = 249
     Height = 22
     Top = 264
     Width = 118
     TabOrder = 7
   end
   object lblEmail: TLabel[13]
-    Left = 313
+    Left = 383
     Height = 14
     Top = 248
     Width = 30
@@ -406,18 +411,33 @@ inherited CadVendedoresF: TCadVendedoresF
     ParentColor = False
   end
   object edtEmail: TEdit[14]
-    Left = 313
+    Left = 383
     Height = 22
     Top = 264
     Width = 112
     TabOrder = 8
   end
   object lblIdVend: TLabel[15]
-    Left = 179
+    Left = 249
     Height = 14
     Top = 105
     Width = 11
     Caption = 'ID'
     ParentColor = False
+  end
+  object lblPerComissao: TLabel[16]
+    Left = 249
+    Height = 14
+    Top = 296
+    Width = 80
+    Caption = '% de comissão'
+    ParentColor = False
+  end
+  object edtPerComissao: TEdit[17]
+    Left = 249
+    Height = 22
+    Top = 312
+    Width = 118
+    TabOrder = 9
   end
 end

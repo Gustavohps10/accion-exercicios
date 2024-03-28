@@ -6,22 +6,22 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
-  Buttons, MenuPrincipal, CadEsqSenha;
+  Buttons, BCMaterialDesignButton, MenuPrincipal, CadEsqSenha;
 
 type
 
   { TOpLoginF }
 
   TOpLoginF = class(TForm)
+    btnSair: TBCMaterialDesignButton;
+    btnEntrar: TBCMaterialDesignButton;
     edtEmail: TEdit;
     edtSenha: TEdit;
     Image1: TImage;
     Image2: TImage;
-    imgBtnEntrar: TImage;
-    imgSair: TImage;
+    imgEntrar: TImage;
+    imgSair1: TImage;
     lblEsqSenha: TLabel;
-    lblSair: TLabel;
-    lblEntrar: TLabel;
     lblEmail: TLabel;
     lblSenha: TLabel;
     pnlEsqSenha: TPanel;
@@ -39,15 +39,11 @@ type
     pnlLogo: TPanel;
     pnlGeral: TPanel;
     pnlLoginBar: TPanel;
-    shpEntrar: TShape;
-    shpSair: TShape;
-    sbtEntrar: TSpeedButton;
-    sbtSair: TSpeedButton;
+    procedure btnEntrarClick(Sender: TObject);
+    procedure btnSairClick(Sender: TObject);
     procedure lblEsqSenhaClick(Sender: TObject);
     procedure lblEsqSenhaMouseEnter(Sender: TObject);
     procedure lblEsqSenhaMouseLeave(Sender: TObject);
-    procedure sbtEntrarClick(Sender: TObject);
-    procedure sbtSairClick(Sender: TObject);
   private
 
   public
@@ -63,17 +59,22 @@ implementation
 
 { TOpLoginF }
 
-procedure TOpLoginF.sbtEntrarClick(Sender: TObject);
-begin
-    MenuPrincipalF := TMenuPrincipalF.Create(nil);
-    MenuPrincipalF.Show();
-    Hide;
-end;
-
 procedure TOpLoginF.lblEsqSenhaClick(Sender: TObject);
 begin
     CadEsqSenhaF := TCadEsqSenhaF.Create(Self);
     CadEsqSenhaF.Show();
+end;
+
+procedure TOpLoginF.btnSairClick(Sender: TObject);
+begin
+    Application.Terminate;
+end;
+
+procedure TOpLoginF.btnEntrarClick(Sender: TObject);
+begin
+  MenuPrincipalF := TMenuPrincipalF.Create(nil);
+  MenuPrincipalF.Show();
+  Hide;
 end;
 
 procedure TOpLoginF.lblEsqSenhaMouseEnter(Sender: TObject);
@@ -86,10 +87,6 @@ begin
   lblEsqSenha.Font.Color := $00FFEBE6;
 end;
 
-procedure TOpLoginF.sbtSairClick(Sender: TObject);
-begin
-  Application.Terminate;
-end;
 
 end.
 

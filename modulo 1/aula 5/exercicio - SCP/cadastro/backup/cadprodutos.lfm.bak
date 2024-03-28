@@ -365,7 +365,10 @@ inherited CadProdutosF: TCadProdutosF
     Width = 130
     ItemHeight = 15
     Items.Strings = (
-      'Teste'
+      'TIPO 1'
+      'TIPO 2'
+      'TIPO 3'
+      'TIPO 4'
     )
     TabOrder = 5
     Text = 'Selecionar'

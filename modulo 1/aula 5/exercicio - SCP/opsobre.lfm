@@ -1,7 +1,7 @@
 object OpSobreF: TOpSobreF
-  Left = 477
+  Left = 424
   Height = 377
-  Top = 326
+  Top = 174
   Width = 472
   Caption = 'Sobre'
   ClientHeight = 377
@@ -9,7 +9,7 @@ object OpSobreF: TOpSobreF
   Color = 16514043
   OnClose = FormClose
   Position = poMainFormCenter
-  LCLVersion = '2.2.6.0'
+  LCLVersion = '3.2.0.0'
   object txtPrincipal: TStaticText
     Left = 40
     Height = 140
@@ -32,6 +32,7 @@ object OpSobreF: TOpSobreF
     Font.Color = clWhite
     Font.Height = -21
     Font.Quality = fqAntialiased
+    ParentBackground = False
     ParentColor = False
     ParentFont = False
     TabOrder = 1
@@ -324,6 +325,7 @@ object OpSobreF: TOpSobreF
       Height = 48
       Top = 8
       Width = 48
+      Anchors = []
       Picture.Data = {
         055449636F6EBE2500000000010001003030000001002000A825000016000000
         2800000030000000600000000100200000000000000000000000000000000000
@@ -636,8 +638,8 @@ object OpSobreF: TOpSobreF
     Left = 40
     Height = 17
     Top = 328
-    Width = 176
-    Caption = 'Todos os direitos reservados. '
+    Width = 193
+    Caption = '© Todos os direitos reservados. '
     Font.Height = -13
     ParentFont = False
     TabOrder = 2
@@ -657,7 +659,7 @@ object OpSobreF: TOpSobreF
     Height = 17
     Top = 344
     Width = 193
-    Caption = 'Feito por Gustavo Henrique 2024'
+    Caption = 'Gustavo Henrique - 2024.'
     Font.Height = -13
     ParentFont = False
     TabOrder = 3

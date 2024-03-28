@@ -5,27 +5,10 @@ unit CadClientes;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, StdCtrls, CadModelo;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, CadModelo;
 
 type
-
-  { TCadClientesF }
-
   TCadClientesF = class(TCadModeloF)
-    edtEndereco: TEdit;
-    edtNomeFantasia: TEdit;
-    edtIdCadCli: TEdit;
-    edtCpfCnpj: TEdit;
-    edtTelefone: TEdit;
-    edtRazaoSocial: TEdit;
-    edtEmail: TEdit;
-    lblEndereco: TLabel;
-    lblNomeFantasia: TLabel;
-    lblIdCadCli: TLabel;
-    lblCpfCnpj: TLabel;
-    lblTelefone: TLabel;
-    lblRazaoSocial: TLabel;
-    lblEmail: TLabel;
   private
 
   public

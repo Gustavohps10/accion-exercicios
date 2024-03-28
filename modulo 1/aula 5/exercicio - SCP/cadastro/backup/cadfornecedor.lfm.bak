@@ -1,7 +1,9 @@
 inherited CadFornecedorF: TCadFornecedorF
   Left = 509
+  Height = 436
   Top = 153
   Caption = 'CadFornecedorF'
+  ClientHeight = 436
   inherited pnlHeader: TPanel
     Caption = 'Cadastro de Fornecedores'
     inherited Image1: TImage
@@ -314,8 +316,10 @@ inherited CadFornecedorF: TCadFornecedorF
     end
   end
   inherited pnlButtons: TPanel
+    Height = 372
+    ClientHeight = 372
     inherited btnSair: TButton
-      Top = 368
+      Top = 328
     end
   end
   object lblIdCadFornec: TLabel[2]

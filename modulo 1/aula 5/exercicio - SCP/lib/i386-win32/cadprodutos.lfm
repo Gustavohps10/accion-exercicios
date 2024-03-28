@@ -1,15 +1,11 @@
 inherited CadProdutosF: TCadProdutosF
-  Left = 428
-  Top = 193
-  Width = 498
+  Left = 332
+  Top = 130
   Caption = 'Cadastro de Produtos'
-  ClientWidth = 498
   inherited pnlHeader: TPanel
-    Width = 498
     Caption = 'Cadastro de Produtos'
-    ClientWidth = 498
     inherited Image1: TImage
-      Left = 360
+      Left = 502
       Picture.Data = {
         055449636F6EBE2500000000010001003030000001002000A825000016000000
         2800000030000000600000000100200000000000000000000000000000000000
@@ -317,79 +313,93 @@ inherited CadProdutosF: TCadProdutosF
       }
     end
   end
+  inherited pnlButtons: TPanel
+    inherited btnSair: TBCMaterialDesignButton
+      Top = 344
+    end
+    inherited imgSair: TImage
+      Top = 350
+    end
+  end
   object lblIdProduto: TLabel[2]
-    Left = 168
+    Left = 232
     Height = 14
-    Top = 96
+    Top = 104
     Width = 11
     Caption = 'ID'
     ParentColor = False
   end
   object edtIdCadProduto: TEdit[3]
-    Left = 168
+    Left = 232
     Height = 22
-    Top = 112
-    Width = 104
+    Top = 120
+    Width = 130
     TabOrder = 2
   end
   object edtDescSimples: TEdit[4]
-    Left = 286
+    Left = 376
     Height = 22
-    Top = 112
-    Width = 114
+    Top = 120
+    Width = 130
     TabOrder = 3
   end
   object lblDescSimples: TLabel[5]
-    Left = 286
+    Left = 376
     Height = 14
-    Top = 96
+    Top = 104
     Width = 98
     Caption = 'Descrição Simples'
     ParentColor = False
   end
   object edtValorVenda: TEdit[6]
-    Left = 168
+    Left = 232
     Height = 22
-    Top = 240
-    Width = 104
+    Top = 248
+    Width = 130
     TabOrder = 4
   end
   object lblValorVenda: TLabel[7]
-    Left = 168
+    Left = 232
     Height = 14
-    Top = 224
+    Top = 232
     Width = 67
     Caption = 'Valor Venda'
     ParentColor = False
   end
   object cbTipoProduto: TComboBox[8]
-    Left = 296
+    Left = 376
     Height = 22
-    Top = 240
-    Width = 104
+    Top = 248
+    Width = 130
     ItemHeight = 14
+    Items.Strings = (
+      'TIPO 1'
+      'TIPO 2'
+      'TIPO 3'
+      'TIPO 4'
+    )
     TabOrder = 5
     Text = 'Selecionar'
   end
   object memoDescCompleta: TMemo[9]
-    Left = 168
+    Left = 232
     Height = 50
-    Top = 160
-    Width = 232
+    Top = 168
+    Width = 272
     TabOrder = 6
   end
   object lblDescCompleta: TLabel[10]
-    Left = 168
+    Left = 232
     Height = 14
-    Top = 144
+    Top = 152
     Width = 108
     Caption = 'Descrição Completa'
     ParentColor = False
   end
   object lblTipoProduto: TLabel[11]
-    Left = 296
+    Left = 376
     Height = 14
-    Top = 224
+    Top = 232
     Width = 88
     Caption = 'Tipo do Produto'
     ParentColor = False

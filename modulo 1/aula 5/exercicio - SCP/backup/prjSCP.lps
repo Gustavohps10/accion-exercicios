@@ -11,7 +11,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="6"/>
         <CursorPos X="75" Y="13"/>
-        <UsageCount Value="28"/>
+        <UsageCount Value="43"/>
       </Unit>
       <Unit>
         <Filename Value="menuprincipal.pas"/>
@@ -20,11 +20,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="MenuPrincipal"/>
-        <EditorIndex Value="2"/>
-        <TopLine Value="58"/>
-        <CursorPos X="16" Y="73"/>
-        <UsageCount Value="28"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="25"/>
+        <CursorPos X="53" Y="35"/>
+        <UsageCount Value="43"/>
         <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="cadastro\cadmodelo.pas"/>
@@ -34,9 +35,9 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadModelo"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="33"/>
-        <CursorPos X="9" Y="47"/>
-        <UsageCount Value="28"/>
+        <TopLine Value="41"/>
+        <CursorPos X="9" Y="56"/>
+        <UsageCount Value="43"/>
       </Unit>
       <Unit>
         <Filename Value="cadastro\cadprodutos.pas"/>
@@ -45,18 +46,17 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadProdutos"/>
-        <UsageCount Value="28"/>
-        <Loaded Value="True"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="43"/>
       </Unit>
       <Unit>
         <Filename Value="cadastro\cadclientes.pas"/>
-        <IsPartOfProject Value="True"/>
         <ComponentName Value="CadClientesF"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadClientes"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="28"/>
+        <UsageCount Value="42"/>
       </Unit>
       <Unit>
         <Filename Value="cadastro\cadusuarios.pas"/>
@@ -66,7 +66,8 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadUsuarios"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="28"/>
+        <CursorPos X="25" Y="32"/>
+        <UsageCount Value="43"/>
       </Unit>
       <Unit>
         <Filename Value="cadastro\cadvendedores.pas"/>
@@ -76,8 +77,9 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadVendedores"/>
         <EditorIndex Value="-1"/>
-        <WindowIndex Value="-1"/>
-        <UsageCount Value="28"/>
+        <TopLine Value="20"/>
+        <CursorPos X="90" Y="38"/>
+        <UsageCount Value="43"/>
       </Unit>
       <Unit>
         <Filename Value="cadastro\cadfornecedor.pas"/>
@@ -87,47 +89,76 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="CadFornecedor"/>
         <EditorIndex Value="-1"/>
-        <TopLine Value="9"/>
-        <UsageCount Value="28"/>
+        <UsageCount Value="43"/>
       </Unit>
       <Unit>
         <Filename Value="auth\oplogin.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="OpLoginF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="OpLogin"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="1"/>
         <TopLine Value="55"/>
-        <CursorPos X="24" Y="69"/>
-        <UsageCount Value="24"/>
+        <CursorPos X="3" Y="77"/>
+        <UsageCount Value="39"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="opsobre.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="OpSobreF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="OpSobre"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="2"/>
+        <CursorPos X="25" Y="42"/>
+        <UsageCount Value="35"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="auth\cadesqsenha.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CadEsqSenhaF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CadEsqSenha"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="46"/>
+        <CursorPos X="9" Y="60"/>
+        <UsageCount Value="34"/>
+      </Unit>
+      <Unit>
+        <Filename Value="cadastro\cadclientes.lfm"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="11"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="cadastro\cadclientes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CadClientesF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CadClientes"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="21"/>
+      </Unit>
     </Units>
-    <JumpHistory HistoryIndex="5">
+    <JumpHistory HistoryIndex="2">
+      <Position>
+        <Filename Value="auth\oplogin.pas"/>
+        <Caret Line="10" Column="63"/>
+      </Position>
       <Position>
         <Filename Value="menuprincipal.pas"/>
-        <Caret Line="72" Column="16" TopLine="57"/>
+        <Caret Line="62" TopLine="53"/>
       </Position>
       <Position>
-        <Filename Value="auth\oplogin.pas"/>
-      </Position>
-      <Position>
-        <Filename Value="auth\oplogin.pas"/>
-        <Caret Line="62" Column="26" TopLine="47"/>
-      </Position>
-      <Position>
-        <Filename Value="auth\oplogin.pas"/>
-        <Caret Line="61" Column="49" TopLine="48"/>
-      </Position>
-      <Position>
-        <Filename Value="auth\oplogin.pas"/>
-        <Caret Line="9" Column="25" TopLine="28"/>
-      </Position>
-      <Position>
-        <Filename Value="auth\oplogin.pas"/>
-        <Caret Line="62" Column="22" TopLine="49"/>
+        <Filename Value="menuprincipal.pas"/>
+        <Caret Line="73" Column="11" TopLine="85"/>
       </Position>
     </JumpHistory>
     <RunParams>

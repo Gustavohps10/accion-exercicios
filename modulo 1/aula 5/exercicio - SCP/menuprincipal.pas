@@ -6,17 +6,17 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, ExtCtrls,
-  Buttons, StdCtrls, CadProdutos, CadClientes, CadFornecedor, CadUsuarios,
-  CadVendedores, OpSobre;
+  Buttons, StdCtrls, BCMaterialDesignButton, CadProdutos, CadClientes,
+  CadFornecedor, CadUsuarios, CadVendedores, OpSobre;
 
 type
 
   { TMenuPrincipalF }
 
   TMenuPrincipalF = class(TForm)
-    Image1: TImage;
-    imgSair: TImage;
-    lblSair: TLabel;
+    btnSair: TBCMaterialDesignButton;
+    imgLogo: TImage;
+    imgSair1: TImage;
     MainMenu1: TMainMenu;
     menuCadastro: TMenuItem;
     menuCadCliente: TMenuItem;
@@ -24,20 +24,16 @@ type
     menuCadUsuario: TMenuItem;
     menuCadFornecedor: TMenuItem;
     menuCadVendedor: TMenuItem;
-    menuSair: TMenuItem;
     menuSobre: TMenuItem;
     pnlHeader: TPanel;
-    sbtSair: TSpeedButton;
-    shpSair: TShape;
+    procedure btnSairClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
     procedure menuCadClienteClick(Sender: TObject);
     procedure menuCadFornecedorClick(Sender: TObject);
     procedure menuCadProdutoClick(Sender: TObject);
     procedure menuCadUsuarioClick(Sender: TObject);
     procedure menuCadVendedorClick(Sender: TObject);
-    procedure menuSairClick(Sender: TObject);
     procedure menuSobreClick(Sender: TObject);
-    procedure sbtSairClick(Sender: TObject);
   private
 
   public
@@ -70,6 +66,12 @@ begin
 
 end;
 
+procedure TMenuPrincipalF.btnSairClick(Sender: TObject);
+begin
+    Close;
+    Application.Terminate;
+end;
+
 procedure TMenuPrincipalF.menuCadUsuarioClick(Sender: TObject);
 begin
     CadUsuariosF := TCadUsuariosF.Create(Self);
@@ -88,21 +90,11 @@ begin
   CadVendedoresF.Show();
 end;
 
-procedure TMenuPrincipalF.menuSairClick(Sender: TObject);
-begin
-  Application.Terminate;
-end;
-
 procedure TMenuPrincipalF.menuSobreClick(Sender: TObject);
 begin
   OpSobreF := TOpSobreF.Create(Self);
   OpSobreF.Show();
 
-end;
-
-procedure TMenuPrincipalF.sbtSairClick(Sender: TObject);
-begin
-   Application.Terminate;
 end;
 
 end.

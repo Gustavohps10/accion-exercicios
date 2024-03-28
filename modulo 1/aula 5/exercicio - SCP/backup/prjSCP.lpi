@@ -26,6 +26,9 @@
     </RunParams>
     <RequiredPackages>
       <Item>
+        <PackageName Value="bgracontrols"/>
+      </Item>
+      <Item>
         <PackageName Value="LCL"/>
       </Item>
     </RequiredPackages>
@@ -59,14 +62,6 @@
         <UnitName Value="CadProdutos"/>
       </Unit>
       <Unit>
-        <Filename Value="cadastro\cadclientes.pas"/>
-        <IsPartOfProject Value="True"/>
-        <ComponentName Value="CadClientesF"/>
-        <HasResources Value="True"/>
-        <ResourceBaseClass Value="Form"/>
-        <UnitName Value="CadClientes"/>
-      </Unit>
-      <Unit>
         <Filename Value="cadastro\cadusuarios.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="CadUsuariosF"/>
@@ -94,8 +89,33 @@
         <Filename Value="auth\oplogin.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="OpLoginF"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="OpLogin"/>
+      </Unit>
+      <Unit>
+        <Filename Value="opsobre.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="OpSobreF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="OpSobre"/>
+      </Unit>
+      <Unit>
+        <Filename Value="auth\cadesqsenha.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CadEsqSenhaF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CadEsqSenha"/>
+      </Unit>
+      <Unit>
+        <Filename Value="cadastro\cadclientes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="CadClientesF"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="CadClientes"/>
       </Unit>
     </Units>
   </ProjectOptions>

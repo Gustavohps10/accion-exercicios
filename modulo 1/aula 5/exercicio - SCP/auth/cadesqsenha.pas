@@ -5,25 +5,29 @@ unit CadEsqSenha;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
+  BCMaterialDesignButton;
 
 type
 
   { TCadEsqSenhaF }
 
   TCadEsqSenhaF = class(TForm)
-    btnEntrar: TButton;
-    btnCancelar: TButton;
+    btnEntrar: TBCMaterialDesignButton;
+    btnCancelar: TBCMaterialDesignButton;
     edtEmail: TEdit;
     edtSenhaNova: TEdit;
     edtConfirmaSenha: TEdit;
     Image1: TImage;
     Image2: TImage;
+    imgEntar: TImage;
+    imgCancelar: TImage;
     lblEmail: TLabel;
     lblSenhaNova: TLabel;
     lblConfirmaSenha: TLabel;
     pnlTopo: TPanel;
     procedure btnCancelarClick(Sender: TObject);
+    procedure btnEntrarClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
   private
 
@@ -44,6 +48,11 @@ procedure TCadEsqSenhaF.FormClose(Sender: TObject; var CloseAction: TCloseAction
   );
 begin
   CloseAction:=caFree;
+end;
+
+procedure TCadEsqSenhaF.btnEntrarClick(Sender: TObject);
+begin
+
 end;
 
 procedure TCadEsqSenhaF.btnCancelarClick(Sender: TObject);

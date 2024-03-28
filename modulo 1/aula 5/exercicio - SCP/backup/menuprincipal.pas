@@ -6,14 +6,17 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, ExtCtrls,
-  CadProdutos, CadClientes, CadFornecedor, CadUsuarios, CadVendedores ;
+  Buttons, StdCtrls, BCMaterialDesignButton, CadProdutos, CadClientes,
+  CadFornecedor, CadUsuarios, CadVendedores, OpSobre;
 
 type
 
   { TMenuPrincipalF }
 
   TMenuPrincipalF = class(TForm)
-    Image1: TImage;
+    btnSair: TBCMaterialDesignButton;
+    imgLogo: TImage;
+    imgSair1: TImage;
     MainMenu1: TMainMenu;
     menuCadastro: TMenuItem;
     menuCadCliente: TMenuItem;
@@ -21,13 +24,18 @@ type
     menuCadUsuario: TMenuItem;
     menuCadFornecedor: TMenuItem;
     menuCadVendedor: TMenuItem;
+    menuSair: TMenuItem;
     menuSobre: TMenuItem;
     pnlHeader: TPanel;
+    procedure btnSairClick(Sender: TObject);
+    procedure FormCreate(Sender: TObject);
     procedure menuCadClienteClick(Sender: TObject);
     procedure menuCadFornecedorClick(Sender: TObject);
     procedure menuCadProdutoClick(Sender: TObject);
     procedure menuCadUsuarioClick(Sender: TObject);
     procedure menuCadVendedorClick(Sender: TObject);
+    procedure menuSairClick(Sender: TObject);
+    procedure menuSobreClick(Sender: TObject);
   private
 
   public
@@ -55,6 +63,17 @@ begin
     CadClientesF.Show();
 end;
 
+procedure TMenuPrincipalF.FormCreate(Sender: TObject);
+begin
+
+end;
+
+procedure TMenuPrincipalF.btnSairClick(Sender: TObject);
+begin
+    Close;
+    Application.Terminate;
+end;
+
 procedure TMenuPrincipalF.menuCadUsuarioClick(Sender: TObject);
 begin
     CadUsuariosF := TCadUsuariosF.Create(Self);
@@ -71,6 +90,18 @@ procedure TMenuPrincipalF.menuCadVendedorClick(Sender: TObject);
 begin
   CadVendedoresF := TCadVendedoresF.Create(Self);
   CadVendedoresF.Show();
+end;
+
+procedure TMenuPrincipalF.menuSairClick(Sender: TObject);
+begin
+  Application.Terminate;
+end;
+
+procedure TMenuPrincipalF.menuSobreClick(Sender: TObject);
+begin
+  OpSobreF := TOpSobreF.Create(Self);
+  OpSobreF.Show();
+
 end;
 
 end.

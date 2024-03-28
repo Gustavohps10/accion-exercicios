@@ -313,6 +313,11 @@ inherited CadUsuariosF: TCadUsuariosF
       }
     end
   end
+  inherited pnlButtons: TPanel
+    inherited btnSair: TButton
+      Top = 288
+    end
+  end
   object lblIdCadUsu: TLabel[2]
     Left = 248
     Height = 15

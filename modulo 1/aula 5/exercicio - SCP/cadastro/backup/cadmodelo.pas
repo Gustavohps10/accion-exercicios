@@ -6,37 +6,30 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, StdCtrls,
-  Buttons;
+  Buttons, BCMaterialDesignButton, BGRASpeedButton, BGRAFlashProgressBar,
+  BCImageButton, BCMDButtonFocus, BCSVGButton, BCMDButton;
 
 type
 
   { TCadModeloF }
 
   TCadModeloF = class(TForm)
-    btnSair: TButton;
+    btnNovo: TBCMaterialDesignButton;
+    btnEditar: TBCMaterialDesignButton;
+    btnGravar: TBCMaterialDesignButton;
+    btnExcluir: TBCMaterialDesignButton;
+    btnPesquisar: TBCMaterialDesignButton;
+    btnSair: TBCMaterialDesignButton;
     Image1: TImage;
-    imgBtnPesquisar: TImage;
-    imgBtnNovo: TImage;
-    imgBtnEditar: TImage;
-    imgBtnGravar: TImage;
-    imgBtnExcluir: TImage;
-    lblPesquisar: TLabel;
-    lblNovo: TLabel;
-    lblEditar: TLabel;
-    lblGravar: TLabel;
-    lblExcluir: TLabel;
+    imgNovo: TImage;
+    imgEditar: TImage;
+    imgGravar: TImage;
+    imgExcluir: TImage;
+    imgPesquisar: TImage;
+    imgSair: TImage;
     pnlButtons: TPanel;
     pnlHeader: TPanel;
-    sbtPesquisar: TSpeedButton;
-    sbtNovo: TSpeedButton;
-    sbtEditar: TSpeedButton;
-    sbtGravar: TSpeedButton;
-    sbtExcluir: TSpeedButton;
-    shpPesquisar: TShape;
-    shpNovo: TShape;
-    shpEditar: TShape;
-    shpGravar: TShape;
-    shpExcluir: TShape;
+    procedure btnSairClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var CloseAction: TCloseAction);
   private
 
@@ -57,6 +50,13 @@ procedure TCadModeloF.FormClose(Sender: TObject; var CloseAction: TCloseAction);
 begin
   CloseAction := caFree;
 end;
+
+procedure TCadModeloF.btnSairClick(Sender: TObject);
+begin
+  Close;
+end;
+
+
 
 end.
 
