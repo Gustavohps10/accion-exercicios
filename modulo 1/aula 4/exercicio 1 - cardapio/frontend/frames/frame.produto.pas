@@ -5,20 +5,25 @@ unit Frame.Produto;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, ComCtrls, ExtCtrls, StdCtrls;
+  Classes, SysUtils, Forms, Controls, ComCtrls, ExtCtrls, StdCtrls,
+  BCMDButtonFocus, BCMaterialDesignButton, BGRAShape, BCMaterialEdit;
 
 type
 
   { TFrameProduto }
 
   TFrameProduto = class(TFrame)
-    btnAdicionar: TButton;
-    btnRemover: TButton;
+    btnFundo: TBCMaterialDesignButton;
+    btnAdicionar: TBCMaterialDesignButton;
+    btnRemover: TBCMaterialDesignButton;
+    imgFavorito: TImage;
+    imgAdicionar: TImage;
+    imgRemover: TImage;
     imgFoto: TImage;
     lblQuantidade: TLabel;
     lblNomeProduto: TLabel;
     lblPrecoProduto: TLabel;
-    Shape1: TShape;
+    lblSubtotal: TLabel;
   private
 
   public
@@ -28,6 +33,9 @@ type
 implementation
 
 {$R *.lfm}
+
+{ TFrameProduto }
+
 
 end.
 
