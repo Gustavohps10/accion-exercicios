@@ -1,9 +1,9 @@
 object FrameProduto: TFrameProduto
   Left = 0
-  Height = 252
+  Height = 261
   Top = 0
   Width = 218
-  ClientHeight = 252
+  ClientHeight = 261
   ClientWidth = 218
   Font.Name = 'Roboto'
   ParentFont = False
@@ -12,7 +12,7 @@ object FrameProduto: TFrameProduto
   DesignTop = 224
   object btnFundo: TBCMaterialDesignButton
     Left = 0
-    Height = 252
+    Height = 261
     Top = 0
     Width = 218
     RoundBorders = 12
@@ -20,12 +20,11 @@ object FrameProduto: TFrameProduto
     TextShadowOffsetX = 2
     TextFont = 'default'
     Align = alClient
-    Enabled = False
   end
   object imgFoto: TImage
     Left = 24
     Height = 106
-    Top = 24
+    Top = 27
     Width = 170
     Anchors = []
     BorderSpacing.Around = 15
@@ -55,13 +54,26 @@ object FrameProduto: TFrameProduto
     Font.Name = 'Roboto'
     ParentFont = False
   end
-  object lblQuantidade: TLabel
-    Left = 154
+  object lblQuantidadeTexto: TLabel
+    Left = 134
     Height = 18
-    Top = 168
-    Width = 40
-    Anchors = []
-    Caption = 'Qtd: 0'
+    Top = 177
+    Width = 32
+    Anchors = [akBottom]
+    Caption = 'Qtd: '
+    Font.Color = 2171169
+    Font.Height = -15
+    Font.Name = 'Roboto'
+    ParentFont = False
+  end
+  object lblQuantidadeValor: TLabel
+    Left = 186
+    Height = 18
+    Top = 177
+    Width = 8
+    Alignment = taRightJustify
+    Anchors = [akRight, akBottom]
+    Caption = '0'
     Font.Color = 2171169
     Font.Height = -15
     Font.Name = 'Roboto'
@@ -70,9 +82,10 @@ object FrameProduto: TFrameProduto
   object lblSubtotal: TLabel
     Left = 78
     Height = 18
-    Top = 184
+    Top = 192
     Width = 116
-    Anchors = []
+    Alignment = taRightJustify
+    Anchors = [akRight, akBottom]
     Caption = 'Subtotal: R$ 0,00'
     Font.Color = 2171169
     Font.Height = -15
@@ -83,7 +96,7 @@ object FrameProduto: TFrameProduto
     Cursor = crHandPoint
     Left = 26
     Height = 27
-    Top = 208
+    Top = 217
     Width = 110
     NormalColor = 1116790
     NormalColorEffect = 1576608
@@ -103,7 +116,7 @@ object FrameProduto: TFrameProduto
   object imgAdicionar: TImage
     Left = 35
     Height = 16
-    Top = 213
+    Top = 222
     Width = 16
     Anchors = [akLeft, akBottom]
     Center = True
@@ -124,9 +137,9 @@ object FrameProduto: TFrameProduto
   end
   object btnRemover: TBCMaterialDesignButton
     Cursor = crHandPoint
-    Left = 159
+    Left = 160
     Height = 27
-    Top = 208
+    Top = 217
     Width = 34
     NormalColor = 5064959
     NormalColorEffect = 393469
@@ -143,9 +156,9 @@ object FrameProduto: TFrameProduto
     Anchors = [akRight, akBottom]
   end
   object imgRemover: TImage
-    Left = 169
+    Left = 170
     Height = 16
-    Top = 214
+    Top = 223
     Width = 16
     Anchors = [akRight, akBottom]
     Center = True

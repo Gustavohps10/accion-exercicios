@@ -16,13 +16,14 @@ type
     btnFundo: TBCMaterialDesignButton;
     btnAdicionar: TBCMaterialDesignButton;
     btnRemover: TBCMaterialDesignButton;
-    Image1: TImage;
+    imgFavorito: TImage;
     imgAdicionar: TImage;
     imgRemover: TImage;
     imgFoto: TImage;
-    lblQuantidade: TLabel;
+    lblQuantidadeValor: TLabel;
     lblNomeProduto: TLabel;
     lblPrecoProduto: TLabel;
+    lblQuantidadeTexto: TLabel;
     lblSubtotal: TLabel;
   private
 

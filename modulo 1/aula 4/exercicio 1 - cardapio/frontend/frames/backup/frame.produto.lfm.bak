@@ -20,7 +20,6 @@ object FrameProduto: TFrameProduto
     TextShadowOffsetX = 2
     TextFont = 'default'
     Align = alClient
-    Enabled = False
   end
   object imgFoto: TImage
     Left = 24
@@ -55,13 +54,26 @@ object FrameProduto: TFrameProduto
     Font.Name = 'Roboto'
     ParentFont = False
   end
-  object lblQuantidade: TLabel
-    Left = 154
+  object lblQuantidadeTexto: TLabel
+    Left = 136
     Height = 18
     Top = 168
-    Width = 40
-    Anchors = []
-    Caption = 'Qtd: 0'
+    Width = 28
+    Anchors = [akBottom]
+    Caption = 'Qtd:'
+    Font.Color = 2171169
+    Font.Height = -15
+    Font.Name = 'Roboto'
+    ParentFont = False
+  end
+  object lblQuantidadeValor: TLabel
+    Left = 186
+    Height = 18
+    Top = 168
+    Width = 8
+    Alignment = taRightJustify
+    Anchors = [akRight, akBottom]
+    Caption = '0'
     Font.Color = 2171169
     Font.Height = -15
     Font.Name = 'Roboto'
@@ -72,7 +84,7 @@ object FrameProduto: TFrameProduto
     Height = 18
     Top = 184
     Width = 116
-    Anchors = []
+    Anchors = [akRight, akBottom]
     Caption = 'Subtotal: R$ 0,00'
     Font.Color = 2171169
     Font.Height = -15
@@ -164,7 +176,7 @@ object FrameProduto: TFrameProduto
     }
     Proportional = True
   end
-  object Image1: TImage
+  object imgFavorito: TImage
     Left = 13
     Height = 40
     Top = 5

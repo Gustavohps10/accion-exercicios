@@ -1,62 +1,168 @@
 object principalF: TprincipalF
-  Left = 237
+  Left = 163
   Height = 605
-  Top = 109
-  Width = 1131
-  HorzScrollBar.Page = 320
-  VertScrollBar.Page = 605
-  AutoScroll = True
+  Top = 8
+  Width = 1136
   Caption = 'Cardápio'
-  ClientHeight = 605
-  ClientWidth = 1114
+  ClientHeight = 0
+  ClientWidth = 0
   Color = 16514043
   Font.CharSet = ANSI_CHARSET
-  Font.Name = 'Roboto Th'
+  Font.Name = 'Roboto'
   Font.Pitch = fpVariable
   Font.Quality = fqDraft
   OnShow = FormShow
   LCLVersion = '3.2.0.0'
   Visible = True
-  object pnlTotal: TPanel
-    Left = 944
-    Height = 656
+  object pnlLateral: TPanel
+    Left = 941
+    Height = 605
     Top = 0
-    Width = 170
+    Width = 195
     Align = alRight
     BevelOuter = bvNone
+    ClientHeight = 605
+    ClientWidth = 195
     Color = 1116790
+    Font.CharSet = ANSI_CHARSET
+    Font.Color = clWhite
+    Font.Height = -16
+    Font.Name = 'Roboto'
+    Font.Pitch = fpVariable
+    Font.Quality = fqDraft
     ParentBackground = False
     ParentColor = False
+    ParentFont = False
     TabOrder = 0
+    object pnlTotal: TPanel
+      Left = 1
+      Height = 125
+      Top = 480
+      Width = 193
+      Align = alBottom
+      BorderSpacing.Left = 1
+      BorderSpacing.Right = 1
+      BevelOuter = bvNone
+      ClientHeight = 125
+      ClientWidth = 193
+      Color = clWhite
+      Font.CharSet = ANSI_CHARSET
+      Font.Color = clWhite
+      Font.Height = -16
+      Font.Name = 'Roboto'
+      Font.Pitch = fpVariable
+      Font.Quality = fqDraft
+      ParentBackground = False
+      ParentColor = False
+      ParentFont = False
+      TabOrder = 0
+      object cbEmbalagem: TBGRAThemeCheckBox
+        Cursor = crHandPoint
+        Left = 16
+        Height = 19
+        Top = 8
+        Width = 165
+        Anchors = [akLeft, akBottom]
+        Caption = ' Deseja embalagem?'
+        Checked = False
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = clWhite
+        Font.Height = -14
+        Font.Name = 'Roboto'
+        Font.Pitch = fpVariable
+        Font.Quality = fqAntialiased
+        TabOrder = 0
+      end
+      object lblTotal: TLabel
+        Left = 16
+        Height = 29
+        Top = 56
+        Width = 62
+        Anchors = [akLeft, akBottom]
+        Caption = 'Total:'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = 2171169
+        Font.Height = -24
+        Font.Name = 'Roboto'
+        Font.Pitch = fpVariable
+        Font.Quality = fqCleartype
+        Font.Style = [fsBold]
+        ParentFont = False
+      end
+      object lblTotalValor: TLabel
+        Left = 16
+        Height = 35
+        Top = 80
+        Width = 96
+        Anchors = [akLeft, akBottom]
+        Caption = 'R$ 0,00'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = 9868950
+        Font.Height = -29
+        Font.Name = 'Roboto'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+      object lblEmbalagemPreco: TLabel
+        Left = 96
+        Height = 19
+        Top = 24
+        Width = 66
+        Caption = '+ R$ 4,00'
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = 502015
+        Font.Height = -16
+        Font.Name = 'Roboto'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentFont = False
+      end
+    end
+    object btnTotalBackground: TBCMaterialDesignButton
+      Left = 1
+      Height = 33
+      Top = 464
+      Width = 193
+      RoundBorders = 10
+      Shadow = False
+      ShadowColor = 13619151
+      ShadowSize = 2
+      TextShadow = False
+      TextShadowColor = clNone
+      TextShadowSize = 0
+      TextFont = 'default'
+      Anchors = [akBottom]
+    end
   end
   object pnlPrincipal: TPanel
     Left = 0
-    Height = 656
+    Height = 605
     Top = 0
-    Width = 944
+    Width = 941
     Align = alClient
     BevelOuter = bvNone
-    ClientHeight = 656
-    ClientWidth = 944
+    ClientHeight = 605
+    ClientWidth = 941
     ParentBackground = False
     TabOrder = 1
     object pnlCabecalho: TPanel
       Left = 0
-      Height = 88
+      Height = 80
       Top = 0
-      Width = 944
+      Width = 941
       Align = alTop
       BevelOuter = bvNone
-      ClientHeight = 88
-      ClientWidth = 944
+      ClientHeight = 80
+      ClientWidth = 941
       Color = 1776411
       ParentBackground = False
       ParentColor = False
       TabOrder = 0
       object Image1: TImage
-        Left = 8
+        Left = 5
         Height = 72
-        Top = 8
+        Top = 4
         Width = 96
         Picture.Data = {
           1754506F727461626C654E6574776F726B47726170686963420F000089504E47
@@ -186,126 +292,156 @@ object principalF: TprincipalF
         Proportional = True
       end
     end
-    object pnlTitleProdutos: TPanel
+    object sbConteudo: TScrollBox
       Left = 0
-      Height = 120
-      Top = 88
-      Width = 944
-      Align = alTop
-      BevelOuter = bvNone
-      Caption = 'Lanches'
-      ClientHeight = 120
-      ClientWidth = 944
-      Font.CharSet = ANSI_CHARSET
-      Font.Color = 2171169
-      Font.Height = -27
-      Font.Name = 'Roboto'
-      Font.Pitch = fpVariable
-      Font.Quality = fqDraft
-      ParentBackground = False
-      ParentFont = False
-      TabOrder = 1
-      object imgTituloProdutos: TImage
-        Left = 338
-        Height = 58
-        Top = 28
-        Width = 66
-        Anchors = []
-        Center = True
-        Picture.Data = {
-          1754506F727461626C654E6574776F726B47726170686963DA03000089504E47
-          0D0A1A0A0000000D4948445200000042000000420806000000E35400E8000000
-          097048597300000B1300000B1301009A9C180000038C49444154789CED9C4968
-          144114863F9298485C70C5E52068448F115144D020B8800B2E1715F1A088A0E2
-          8A6214440C2E7810890A4644050F5144140F891B48C025A2480E425C40D443D4
-          A021A241C42D91877F4331F44C26662699E9D40F45A6FABDAE57FDF5744F55F5
-          EB8057DA95A312690D01CA8107C08E185B2150017C55A9D03657DB81FBC05160
-          2059AA11C02BA0CD29F31DFB716D6B017EEAF331C73E2F66DF37C0C84EF4A700
-          980B9C021E030D8A3D9B34AB5A077016B8AECFA58EFD23D0040C0626C96EDB02
-          EDD4B603409D3EDFFC8F7EF402D6038D31608362DFBAB4698C82DCD3F57F49F5
-          5DB2E7A87EC7395B41C772B5AD54F5D5C068E097EA633BD08F22E0A9D3F60B60
-          373043976ADA412C5190E0BED059103807B428C93E4CD737CEF6791BB2DFDAAE
-          00B142412C58AA40D4AABE3289F8E38166F957017D437C220FA2107829DF2B40
-          5E1CBFC883D8233F83D13F815FA4410C02BEC86F663B7D8C348835F2B99B441F
-          230DA24A3E366EE8D1209AE463E3981E0BA20068057E3B6DF44810A34286E93D
-          124491ECEF92ECA307D19D20CEABBE4FF53EAADB0C158DFE82A9B8D990AFD597
-          47E91BB151F50FC02AA052F5BDCE3E8FB4AD529783F9FE71669B910051E01C68
-          50EA817ECE3E53B550E2FA1C72EC910061CA07D669496E73C8B25C7030655AA9
-          B2D524A208A2B3F220B219C43205B19B64AAF424E657242B409428C8B914B567
-          0BB0DFD4A6DD54B30644BE26403F808929682F586C6948308FC84810A60D0AD4
-          A2E1F264CD0AEDECB6A73C3DD099009CD064AA4D971CD906C27438665C60E513
-          504C7CD97CE47BCC3E36EADC4262653408D334E002F00C78ADE0F6942B4CC334
-          9AFCA39B630D7044ABD2643B8858D99AE269C255EC5C4E1D9507217910920721
-          79109207210DD78DF673262DDE76C7AF064E624AB5C63089CA8D288328719E82
-          275B2209C2345443F15227A7E28CEA6E79187510AE2EABBDB03CA9931EC43F79
-          1092072179109207217910920721791092072179109207217910920721791092
-          07217910920721791092079129209A81AB716CB3D4B9F7298A7531E47DD340E5
-          B2B5976E9036D529717C4082B364EF5DA442656AEF6088AD46B685749336A903
-          B7940F1124A96F555E84D9E6A428D638259958E2C952C5E90DEC579CC638F99E
-          5DA25CE09A3A622FB53E77DEC38A77F63AA36D4EDBEEEBD7F67701DDAC5C65DF
-          D63B406AF5E26C3AB4581938AD8A751B984286293FC987B6A98A15F97FD14057
-          E82FDCA3A35A426F19050000000049454E44AE426082
-        }
-        Proportional = True
-      end
-      object lblTituloProdutos: TLabel
-        Left = 471
-        Height = 1
-        Top = 57
-        Width = 1
-        Anchors = []
-      end
-    end
-    object sbProdutos: TScrollBox
-      Left = 0
-      Height = 340
-      Top = 208
-      Width = 944
+      Height = 525
+      Top = 80
+      Width = 941
       HorzScrollBar.Increment = 1
       HorzScrollBar.Page = 1
       HorzScrollBar.Smooth = True
-      VertScrollBar.Page = 10
+      VertScrollBar.Page = 196
       Align = alClient
       BorderStyle = bsNone
-      ClientHeight = 340
-      ClientWidth = 944
+      ClientHeight = 525
+      ClientWidth = 941
       Constraints.MaxHeight = 700
       Constraints.MinHeight = 340
       Color = 16514043
       ParentBackground = False
       ParentColor = False
-      TabOrder = 2
-      object pnlProdutos: TPanel
-        Left = 474
-        Height = 0
-        Top = 10
-        Width = 0
-        Anchors = [akTop]
-        AutoSize = True
+      TabOrder = 1
+      object pnlTitleProdutos: TPanel
+        Left = 0
+        Height = 88
+        Top = 0
+        Width = 941
+        Align = alTop
         BevelOuter = bvNone
-        Color = 16514043
+        Caption = 'Lanches'
+        ClientHeight = 88
+        ClientWidth = 941
+        Font.CharSet = ANSI_CHARSET
+        Font.Color = 2171169
+        Font.Height = -27
+        Font.Name = 'Roboto'
+        Font.Pitch = fpVariable
+        Font.Quality = fqDraft
+        ParentBackground = False
+        ParentFont = False
+        TabOrder = 0
+        object imgTituloProdutos: TImage
+          Left = 337
+          Height = 58
+          Top = 13
+          Width = 66
+          Anchors = []
+          Center = True
+          Picture.Data = {
+            1754506F727461626C654E6574776F726B47726170686963DA03000089504E47
+            0D0A1A0A0000000D4948445200000042000000420806000000E35400E8000000
+            097048597300000B1300000B1301009A9C180000038C49444154789CED9C4968
+            144114863F9298485C70C5E52068448F115144D020B8800B2E1715F1A088A0E2
+            8A6214440C2E7810890A4644050F5144140F891B48C025A2480E425C40D443D4
+            A021A241C42D91877F4331F44C26662699E9D40F45A6FABDAE57FDF5744F55F5
+            EB8057DA95A312690D01CA8107C08E185B2150017C55A9D03657DB81FBC05160
+            2059AA11C02BA0CD29F31DFB716D6B017EEAF331C73E2F66DF37C0C84EF4A700
+            980B9C021E030D8A3D9B34AB5A077016B8AECFA58EFD23D0040C0626C96EDB02
+            EDD4B603409D3EDFFC8F7EF402D6038D31608362DFBAB4698C82DCD3F57F49F5
+            5DB2E7A87EC7395B41C772B5AD54F5D5C068E097EA633BD08F22E0A9D3F60B60
+            373043976ADA412C5190E0BED059103807B428C93E4CD737CEF6791BB2DFDAAE
+            00B142412C58AA40D4AABE3289F8E38166F957017D437C220FA2107829DF2B40
+            5E1CBFC883D8233F83D13F815FA4410C02BEC86F663B7D8C348835F2B99B441F
+            230DA24A3E366EE8D1209AE463E3981E0BA20068057E3B6DF44810A34286E93D
+            124491ECEF92ECA307D19D20CEABBE4FF53EAADB0C158DFE82A9B8D990AFD597
+            47E91BB151F50FC02AA052F5BDCE3E8FB4AD529783F9FE71669B910051E01C68
+            50EA817ECE3E53B550E2FA1C72EC910061CA07D669496E73C8B25C7030655AA9
+            B2D524A208A2B3F220B219C43205B19B64AAF424E657242B409428C8B914B567
+            0BB0DFD4A6DD54B30644BE26403F808929682F586C6948308FC84810A60D0AD4
+            A2E1F264CD0AEDECB6A73C3DD099009CD064AA4D971CD906C27438665C60E513
+            504C7CD97CE47BCC3E36EADC4262653408D334E002F00C78ADE0F6942B4CC334
+            9AFCA39B630D7044ABD2643B8858D99AE269C255EC5C4E1D9507217910920721
+            79109207210DD78DF673262DDE76C7AF064E624AB5C63089CA8D288328719E82
+            275B2209C2345443F15227A7E28CEA6E79187510AE2EABBDB03CA9931EC43F79
+            1092072179109207217910920721791092072179109207217910920721791092
+            07217910920721791092079129209A81AB716CB3D4B9F7298A7531E47DD340E5
+            B2B5976E9036D529717C4082B364EF5DA442656AEF6088AD46B685749336A903
+            B7940F1124A96F555E84D9E6A428D638259958E2C952C5E90DEC579CC638F99E
+            5DA25CE09A3A622FB53E77DEC38A77F63AA36D4EDBEEEBD7F67701DDAC5C65DF
+            D63B406AF5E26C3AB4581938AD8A751B984286293FC987B6A98A15F97FD14057
+            E82FDCA3A35A426F19050000000049454E44AE426082
+          }
+          Proportional = True
+        end
+        object lblTituloProdutos: TLabel
+          Left = 470
+          Height = 1
+          Top = 42
+          Width = 1
+          Anchors = []
+        end
+      end
+      object pnlRodape: TPanel
+        Left = 0
+        Height = 88
+        Top = 437
+        Width = 941
+        Align = alBottom
+        BorderSpacing.Top = 20
+        BevelOuter = bvNone
+        Color = 1776411
         ParentBackground = False
         ParentColor = False
-        TabOrder = 0
+        TabOrder = 1
+      end
+      object pnlContainerProdutos: TPanel
+        Left = 0
+        Height = 329
+        Top = 88
+        Width = 941
+        Align = alClient
+        AutoSize = True
+        BevelOuter = bvNone
+        ClientHeight = 329
+        ClientWidth = 941
+        ParentBackground = False
+        TabOrder = 2
+        object pnlListaProdutos: TPanel
+          Left = 464
+          Height = 0
+          Top = 0
+          Width = 0
+          Anchors = [akTop]
+          AutoSize = True
+          BevelOuter = bvNone
+          Color = 16514043
+          ParentBackground = False
+          ParentColor = False
+          TabOrder = 0
+        end
       end
     end
-    object pnlRodape: TPanel
-      Left = 0
-      Height = 88
-      Top = 568
-      Width = 944
-      Align = alBottom
-      BorderSpacing.Top = 20
-      BevelOuter = bvNone
-      Color = 1776411
-      ParentBackground = False
-      ParentColor = False
-      TabOrder = 3
-    end
   end
-  object dsProdutos: TJSONDataSet
+  object dsListaProdutos: TJSONDataSet
     FieldDefs = <>
-    Left = 32
+    Left = 48
     Top = 240
+  end
+  object dsProdutosSelecionados: TMemDataset
+    FieldDefs = <    
+      item
+        Name = 'id'
+        DataType = ftInteger
+      end    
+      item
+        Name = 'quantidade'
+        DataType = ftInteger
+      end    
+      item
+        Name = 'preco'
+        DataType = ftFloat
+      end>
+    Left = 48
+    Top = 312
   end
 end

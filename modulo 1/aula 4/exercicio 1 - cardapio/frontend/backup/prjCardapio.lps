@@ -10,7 +10,7 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos Y="22"/>
-        <UsageCount Value="56"/>
+        <UsageCount Value="75"/>
       </Unit>
       <Unit>
         <Filename Value="uprincipal.pas"/>
@@ -20,9 +20,11 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uPrincipal"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="25"/>
-        <CursorPos X="43" Y="41"/>
-        <UsageCount Value="56"/>
+        <TopLine Value="184"/>
+        <CursorPos X="5" Y="199"/>
+        <FoldState Value=" T6kX03 T1kb0FN"/>
+        <ComponentState Value="1"/>
+        <UsageCount Value="75"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -35,8 +37,8 @@
         <UnitName Value="Frame.Produto"/>
         <EditorIndex Value="1"/>
         <TopLine Value="24"/>
-        <CursorPos X="24" Y="26"/>
-        <UsageCount Value="56"/>
+        <CursorPos X="24" Y="27"/>
+        <UsageCount Value="75"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -45,129 +47,129 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="167"/>
         <CursorPos Y="175"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
       <Position>
-        <Filename Value="frames\frame.produto.pas"/>
-        <Caret Line="28" Column="7" TopLine="15"/>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="56" Column="41" TopLine="56"/>
       </Position>
       <Position>
         <Filename Value="uprincipal.pas"/>
-        <Caret Line="73" Column="11" TopLine="64"/>
+        <Caret Line="57" Column="41" TopLine="57"/>
       </Position>
       <Position>
         <Filename Value="uprincipal.pas"/>
-        <Caret Line="74" Column="11" TopLine="65"/>
+        <Caret Line="56" Column="41" TopLine="56"/>
       </Position>
       <Position>
         <Filename Value="uprincipal.pas"/>
-        <Caret Line="75" Column="7" TopLine="66"/>
+        <Caret Line="57" Column="41" TopLine="57"/>
       </Position>
       <Position>
         <Filename Value="uprincipal.pas"/>
-        <Caret Line="80" Column="33" TopLine="68"/>
+        <Caret Line="56" Column="41" TopLine="56"/>
       </Position>
       <Position>
         <Filename Value="uprincipal.pas"/>
-        <Caret Line="79" Column="33" TopLine="67"/>
+        <Caret Line="57" Column="41" TopLine="57"/>
       </Position>
       <Position>
         <Filename Value="uprincipal.pas"/>
-        <Caret Line="75" Column="5" TopLine="68"/>
+        <Caret Line="56" Column="41" TopLine="56"/>
       </Position>
       <Position>
         <Filename Value="uprincipal.pas"/>
-        <Caret Line="74" Column="5" TopLine="67"/>
-      </Position>
-      <Position>
-        <Filename Value="frames\frame.produto.pas"/>
-        <Caret Line="22" Column="14" TopLine="14"/>
+        <Caret Line="57" Column="41" TopLine="57"/>
       </Position>
       <Position>
         <Filename Value="uprincipal.pas"/>
-        <Caret Line="53" Column="28" TopLine="42"/>
+        <Caret Line="56" Column="41" TopLine="56"/>
       </Position>
       <Position>
         <Filename Value="uprincipal.pas"/>
-        <Caret Line="116" Column="39" TopLine="103"/>
-      </Position>
-      <Position>
-        <Filename Value="frames\frame.produto.pas"/>
-        <Caret Line="23" Column="14" TopLine="14"/>
-      </Position>
-      <Position>
-        <Filename Value="frames\frame.produto.pas"/>
-        <Caret Line="24" Column="14" TopLine="14"/>
-      </Position>
-      <Position>
-        <Filename Value="frames\frame.produto.pas"/>
-        <Caret Line="23" Column="14" TopLine="14"/>
-      </Position>
-      <Position>
-        <Filename Value="frames\frame.produto.pas"/>
-        <Caret Line="24" Column="14" TopLine="14"/>
-      </Position>
-      <Position>
-        <Filename Value="frames\frame.produto.pas"/>
-        <Caret Line="23" Column="14" TopLine="14"/>
+        <Caret Line="57" Column="41" TopLine="57"/>
       </Position>
       <Position>
         <Filename Value="uprincipal.pas"/>
-        <Caret Line="11" Column="65"/>
-      </Position>
-      <Position>
-        <Filename Value="frames\frame.produto.pas"/>
-        <Caret Line="23" Column="14" TopLine="14"/>
-      </Position>
-      <Position>
-        <Filename Value="frames\frame.produto.pas"/>
-        <Caret Line="24" Column="14" TopLine="14"/>
-      </Position>
-      <Position>
-        <Filename Value="frames\frame.produto.pas"/>
-        <Caret Line="23" Column="14" TopLine="14"/>
-      </Position>
-      <Position>
-        <Filename Value="frames\frame.produto.pas"/>
-        <Caret Line="24" Column="14" TopLine="14"/>
-      </Position>
-      <Position>
-        <Filename Value="frames\frame.produto.pas"/>
-        <Caret Line="23" Column="14" TopLine="14"/>
-      </Position>
-      <Position>
-        <Filename Value="frames\frame.produto.pas"/>
-        <Caret Line="24" Column="14" TopLine="14"/>
+        <Caret Line="58" Column="41" TopLine="58"/>
       </Position>
       <Position>
         <Filename Value="uprincipal.pas"/>
-        <Caret Line="117" Column="44" TopLine="104"/>
+        <Caret Line="57" Column="41" TopLine="57"/>
       </Position>
       <Position>
         <Filename Value="uprincipal.pas"/>
-        <Caret Line="119" Column="44" TopLine="106"/>
+        <Caret Line="58" Column="41" TopLine="58"/>
       </Position>
       <Position>
         <Filename Value="uprincipal.pas"/>
-        <Caret Line="118" Column="44" TopLine="105"/>
+        <Caret Line="59" Column="41" TopLine="59"/>
       </Position>
       <Position>
         <Filename Value="uprincipal.pas"/>
-        <Caret Line="57" Column="20" TopLine="45"/>
+        <Caret Line="58" Column="41" TopLine="58"/>
       </Position>
       <Position>
         <Filename Value="uprincipal.pas"/>
-        <Caret Line="58" Column="20" TopLine="46"/>
+        <Caret Line="59" Column="41" TopLine="59"/>
       </Position>
       <Position>
         <Filename Value="uprincipal.pas"/>
-        <Caret Line="57" Column="20" TopLine="45"/>
+        <Caret Line="161" Column="64" TopLine="144"/>
+      </Position>
+      <Position>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="135" Column="94" TopLine="121"/>
+      </Position>
+      <Position>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="136" Column="6" TopLine="129"/>
+      </Position>
+      <Position>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="176" Column="30" TopLine="138"/>
+      </Position>
+      <Position>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="154" Column="8" TopLine="140"/>
+      </Position>
+      <Position>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="180" Column="67" TopLine="168"/>
+      </Position>
+      <Position>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="182" Column="88" TopLine="170"/>
       </Position>
       <Position>
         <Filename Value="frames\frame.produto.pas"/>
-        <Caret Line="25" Column="24" TopLine="23"/>
+        <Caret Line="26" Column="24" TopLine="24"/>
+      </Position>
+      <Position>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="172" Column="87" TopLine="162"/>
+      </Position>
+      <Position>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="174" Column="10" TopLine="158"/>
+      </Position>
+      <Position>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="166" Column="82" TopLine="157"/>
+      </Position>
+      <Position>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="172" Column="72" TopLine="157"/>
+      </Position>
+      <Position>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="175" Column="62" TopLine="167"/>
+      </Position>
+      <Position>
+        <Filename Value="frames\frame.produto.pas"/>
+        <Caret Line="27" Column="29" TopLine="24"/>
       </Position>
     </JumpHistory>
     <RunParams>
