@@ -1,0 +1,520 @@
+object principalF: TprincipalF
+  Left = 494
+  Height = 362
+  Top = 154
+  Width = 305
+  BorderIcons = [biSystemMenu, biMinimize]
+  BorderStyle = bsSingle
+  Caption = 'Calculadora'
+  ClientHeight = 362
+  ClientWidth = 305
+  Color = 2105376
+  Font.Color = clWhite
+  LCLVersion = '3.2.0.0'
+  object btnAdicionar: TBCMaterialDesignButton
+    Left = 228
+    Height = 41
+    Top = 272
+    Width = 72
+    RoundBorders = 4
+    NormalColor = 3947580
+    NormalColorEffect = 3289650
+    Shadow = False
+    ShadowColor = 4144959
+    ShadowSize = 2
+    TextColor = clWhite
+    TextSize = 24
+    TextShadow = False
+    TextShadowSize = 0
+    TextFont = 'Segoe UI'
+    OnClick = btnOperacaoClick
+  end
+  object btnSubtrair: TBCMaterialDesignButton
+    Left = 228
+    Height = 41
+    Top = 228
+    Width = 72
+    RoundBorders = 4
+    NormalColor = 3947580
+    NormalColorEffect = 3289650
+    Shadow = False
+    ShadowColor = 4144959
+    ShadowSize = 2
+    TextColor = clWhite
+    TextSize = 24
+    TextShadow = False
+    TextShadowSize = 0
+    TextFont = 'Segoe UI'
+    OnClick = btnOperacaoClick
+  end
+  object btnMultiplicar: TBCMaterialDesignButton
+    Left = 228
+    Height = 41
+    Top = 184
+    Width = 72
+    RoundBorders = 4
+    NormalColor = 3947580
+    NormalColorEffect = 3289650
+    Shadow = False
+    ShadowColor = 4144959
+    ShadowSize = 2
+    TextColor = clWhite
+    TextSize = 24
+    TextShadow = False
+    TextShadowSize = 0
+    TextFont = 'Segoe UI'
+    OnClick = btnOperacaoClick
+  end
+  object btnDividir: TBCMaterialDesignButton
+    Left = 228
+    Height = 41
+    Top = 140
+    Width = 72
+    RoundBorders = 4
+    NormalColor = 3947580
+    NormalColorEffect = 3289650
+    Shadow = False
+    ShadowColor = 4144959
+    ShadowSize = 2
+    TextColor = clWhite
+    TextSize = 24
+    TextShadow = False
+    TextShadowSize = 0
+    TextFont = 'Segoe UI'
+    OnClick = btnOperacaoClick
+  end
+  object lblPadrao: TLabel
+    Left = 8
+    Height = 30
+    Top = 8
+    Width = 64
+    Caption = 'Padrão'
+    Font.Color = clWhite
+    Font.Height = -21
+    Font.Name = 'Segoe UI'
+    ParentFont = False
+  end
+  object Label2: TLabel
+    Left = 232
+    Height = 1
+    Top = 56
+    Width = 1
+    BidiMode = bdRightToLeft
+    Font.Color = clWhite
+    Font.Name = 'Segoe UI'
+    ParentBidiMode = False
+    ParentFont = False
+  end
+  object edtResultado: TEdit
+    Left = 8
+    Height = 37
+    Top = 79
+    Width = 290
+    Alignment = taRightJustify
+    Anchors = [akRight]
+    AutoSize = False
+    BorderStyle = bsNone
+    Color = 2105376
+    Font.Color = clWhite
+    Font.Height = -27
+    Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
+    NumbersOnly = True
+    ParentFont = False
+    ReadOnly = True
+    TabOrder = 0
+    Text = '0'
+  end
+  object btnIgual: TBCMaterialDesignButton
+    Left = 228
+    Height = 41
+    Top = 316
+    Width = 72
+    RoundBorders = 4
+    NormalColor = 14199149
+    NormalColorEffect = 12819044
+    Shadow = False
+    ShadowColor = 4144959
+    ShadowSize = 2
+    TextSize = 24
+    TextShadow = False
+    TextShadowSize = 0
+    TextFont = 'Segoe UI'
+    OnClick = btnIgualClick
+  end
+  object btnPorcentagem: TBCMaterialDesignButton
+    Left = 6
+    Height = 41
+    Top = 140
+    Width = 72
+    RoundBorders = 4
+    NormalColor = 3289650
+    NormalColorEffect = 2631720
+    Shadow = False
+    ShadowColor = 4144959
+    ShadowSize = 2
+    TextColor = clWhite
+    TextShadow = False
+    TextShadowSize = 0
+    TextFont = 'Segoe UI'
+    Caption = '%'
+  end
+  object btnLimpar: TBCMaterialDesignButton
+    Left = 80
+    Height = 41
+    Top = 140
+    Width = 72
+    RoundBorders = 4
+    NormalColor = 3289650
+    NormalColorEffect = 2631720
+    Shadow = False
+    ShadowColor = 4144959
+    ShadowSize = 2
+    TextColor = clWhite
+    TextShadow = False
+    TextShadowSize = 0
+    TextFont = 'Segoe UI'
+    Caption = 'C'
+    OnClick = btnLimparClick
+  end
+  object btnApagar: TBCMaterialDesignButton
+    Left = 154
+    Height = 41
+    Top = 140
+    Width = 72
+    RoundBorders = 4
+    NormalColor = 3289650
+    NormalColorEffect = 2631720
+    Shadow = False
+    ShadowColor = 4144959
+    ShadowSize = 2
+    TextColor = clWhite
+    TextShadow = False
+    TextShadowSize = 0
+    TextFont = 'Segoe UI'
+    OnClick = btnApagarClick
+  end
+  object btn7: TBCMaterialDesignButton
+    Left = 6
+    Height = 41
+    Top = 184
+    Width = 72
+    RoundBorders = 4
+    NormalColor = 3289650
+    NormalColorEffect = 2631720
+    Shadow = False
+    ShadowColor = 4144959
+    ShadowSize = 2
+    TextColor = clWhite
+    TextShadow = False
+    TextShadowSize = 0
+    TextFont = 'Segoe UI'
+    Caption = '7'
+    OnClick = btnNumeroClick
+  end
+  object btn8: TBCMaterialDesignButton
+    Left = 80
+    Height = 41
+    Top = 184
+    Width = 72
+    RoundBorders = 4
+    NormalColor = 3289650
+    NormalColorEffect = 2631720
+    Shadow = False
+    ShadowColor = 4144959
+    ShadowSize = 2
+    TextColor = clWhite
+    TextShadow = False
+    TextShadowSize = 0
+    TextFont = 'Segoe UI'
+    Caption = '8'
+    OnClick = btnNumeroClick
+  end
+  object btn9: TBCMaterialDesignButton
+    Left = 154
+    Height = 41
+    Top = 184
+    Width = 72
+    RoundBorders = 4
+    NormalColor = 3289650
+    NormalColorEffect = 2631720
+    Shadow = False
+    ShadowColor = 4144959
+    ShadowSize = 2
+    TextColor = clWhite
+    TextShadow = False
+    TextShadowSize = 0
+    TextFont = 'Segoe UI'
+    Caption = '9'
+    OnClick = btnNumeroClick
+  end
+  object btn4: TBCMaterialDesignButton
+    Left = 6
+    Height = 41
+    Top = 228
+    Width = 72
+    RoundBorders = 4
+    NormalColor = 3289650
+    NormalColorEffect = 2631720
+    Shadow = False
+    ShadowColor = 4144959
+    ShadowSize = 2
+    TextColor = clWhite
+    TextShadow = False
+    TextShadowSize = 0
+    TextFont = 'Segoe UI'
+    Caption = '4'
+    OnClick = btnNumeroClick
+  end
+  object btn5: TBCMaterialDesignButton
+    Left = 80
+    Height = 41
+    Top = 228
+    Width = 72
+    RoundBorders = 4
+    NormalColor = 3289650
+    NormalColorEffect = 2631720
+    Shadow = False
+    ShadowColor = 4144959
+    ShadowSize = 2
+    TextColor = clWhite
+    TextShadow = False
+    TextShadowSize = 0
+    TextFont = 'Segoe UI'
+    Caption = '5'
+    OnClick = btnNumeroClick
+  end
+  object btn6: TBCMaterialDesignButton
+    Left = 154
+    Height = 41
+    Top = 228
+    Width = 72
+    RoundBorders = 4
+    NormalColor = 3289650
+    NormalColorEffect = 2631720
+    Shadow = False
+    ShadowColor = 4144959
+    ShadowSize = 2
+    TextColor = clWhite
+    TextShadow = False
+    TextShadowSize = 0
+    TextFont = 'Segoe UI'
+    Caption = '6'
+    OnClick = btnNumeroClick
+  end
+  object btn1: TBCMaterialDesignButton
+    Left = 6
+    Height = 41
+    Top = 272
+    Width = 72
+    RoundBorders = 4
+    NormalColor = 3289650
+    NormalColorEffect = 2631720
+    Shadow = False
+    ShadowColor = 4144959
+    ShadowSize = 2
+    TextColor = clWhite
+    TextShadow = False
+    TextShadowSize = 0
+    TextFont = 'Segoe UI'
+    Caption = '1'
+    OnClick = btnNumeroClick
+  end
+  object btn2: TBCMaterialDesignButton
+    Left = 80
+    Height = 41
+    Top = 272
+    Width = 72
+    RoundBorders = 4
+    NormalColor = 3289650
+    NormalColorEffect = 2631720
+    Shadow = False
+    ShadowColor = 4144959
+    ShadowSize = 2
+    TextColor = clWhite
+    TextShadow = False
+    TextShadowSize = 0
+    TextFont = 'Segoe UI'
+    Caption = '2'
+    OnClick = btnNumeroClick
+  end
+  object btn3: TBCMaterialDesignButton
+    Left = 154
+    Height = 41
+    Top = 272
+    Width = 72
+    RoundBorders = 4
+    NormalColor = 3289650
+    NormalColorEffect = 2631720
+    Shadow = False
+    ShadowColor = 4144959
+    ShadowSize = 2
+    TextColor = clWhite
+    TextShadow = False
+    TextShadowSize = 0
+    TextFont = 'Segoe UI'
+    Caption = '3'
+    OnClick = btnNumeroClick
+  end
+  object btnNegar: TBCMaterialDesignButton
+    Left = 6
+    Height = 41
+    Top = 316
+    Width = 72
+    RoundBorders = 4
+    NormalColor = 3289650
+    NormalColorEffect = 2631720
+    Shadow = False
+    ShadowColor = 4144959
+    ShadowSize = 2
+    TextColor = clWhite
+    TextShadow = False
+    TextShadowSize = 0
+    TextFont = 'Segoe UI'
+    Caption = '+/-'
+    OnClick = btnNegarClick
+  end
+  object btn0: TBCMaterialDesignButton
+    Left = 80
+    Height = 41
+    Top = 316
+    Width = 72
+    RoundBorders = 4
+    NormalColor = 3289650
+    NormalColorEffect = 2631720
+    Shadow = False
+    ShadowColor = 4144959
+    ShadowSize = 2
+    TextColor = clWhite
+    TextShadow = False
+    TextShadowSize = 0
+    TextFont = 'Segoe UI'
+    Caption = '0'
+    OnClick = btnNumeroClick
+  end
+  object btnVirgula: TBCMaterialDesignButton
+    Left = 154
+    Height = 41
+    Top = 316
+    Width = 72
+    RoundBorders = 4
+    NormalColor = 3289650
+    NormalColorEffect = 2631720
+    Shadow = False
+    ShadowColor = 4144959
+    ShadowSize = 2
+    TextColor = clWhite
+    TextShadow = False
+    TextShadowSize = 0
+    TextFont = 'Segoe UI'
+    Caption = ','
+    OnClick = btnNumeroClick
+  end
+  object imgApagar: TImage
+    Left = 181
+    Height = 16
+    Top = 153
+    Width = 16
+    Enabled = False
+    Picture.Data = {
+      1754506F727461626C654E6574776F726B477261706869630E02000089504E47
+      0D0A1A0A0000000D4948445200000010000000100804000000B5FA37EA000000
+      206348524D00007A26000080840000FA00000080E8000075300000EA6000003A
+      98000017709CBA513C00000002624B474400FF878FCCBF000000097048597300
+      000EC300000EC301C76FA8640000000774494D4507E8031F14361B614F5D6300
+      0000DD4944415428CF85912D4E03011046DFEC566DD30483C3924A0ED0F4006D
+      56F163302802B277C014570707C0C0014840A1B901C14282C0D4777988DD6577
+      8BD83133C9CCBC7CDF0CF4449449808C2151964050B06613557BC0093392BF36
+      40C21737014270CE84151F5833919423A68878EA9D7B76D641DCF10931F7DE7D
+      CBD1B12371E4D810873E0E9871C615EFD5DA9C5D562CF8E6AD06BD38A9E162E6
+      D2579766521292C66AC77C3456AE59700015E5821F720A2EDB5A731F2A91F15F
+      649FCDE7ED43B523E5906973EA63E6A41D40C227B7DBCF6A3B2958B3E9FB36BF
+      630273C0F54E3CDE0000002574455874646174653A6372656174650032303234
+      2D30332D33315432303A35343A32372B30303A303010C9482800000025744558
+      74646174653A6D6F6469667900323032342D30332D33315432303A35343A3237
+      2B30303A30306194F0940000002874455874646174653A74696D657374616D70
+      00323032342D30332D33315432303A35343A32372B30303A30303681D14B0000
+      000049454E44AE426082
+    }
+  end
+  object imgDividir: TImage
+    Left = 252
+    Height = 24
+    Top = 149
+    Width = 24
+    Enabled = False
+    Picture.Data = {
+      1754506F727461626C654E6574776F726B47726170686963C700000089504E47
+      0D0A1A0A0000000D4948445200000018000000180806000000E0773DF8000000
+      097048597300000B1300000B1301009A9C180000007949444154789CEDD44D0D
+      C2501405E1E70056AD0040500DF0A30201C09A9AA1780101E0E2232FB90A486F
+      08D049667B66774A99F81AD0A20FDB8CC015071C316404EE5860855B46608B67
+      B81E3D50C1AC5AFE1B74D8BF69F7F9C06F8379356B7C8747B8C9BC8A65D6550C
+      7176275CB2EEFA1C36A307264A162FE83AEA5044AD88520000000049454E44AE
+      426082
+    }
+    Proportional = True
+  end
+  object imgMultiplicar: TImage
+    Left = 252
+    Height = 24
+    Top = 192
+    Width = 24
+    Enabled = False
+    Picture.Data = {
+      1754506F727461626C654E6574776F726B47726170686963C800000089504E47
+      0D0A1A0A0000000D4948445200000018000000180806000000E0773DF8000000
+      097048597300000B1300000B1301009A9C180000007A49444154789CED943B0E
+      80201005B992DA88162A5EC2CEC3FBB9C6D86842881224BB1D536FDE24CB3E8C
+      2914D40016A04F986B80354760811318233315B001F36F41209922E12E2B3C58
+      C1EE4BC4C25F240EA845C31F8016386ED160A4415380F70E1AFBB7E125495E90
+      FDEA8244073AD5A2A97F15858249E50221B6DBA6801B403B0000000049454E44
+      AE426082
+    }
+    Proportional = True
+    Stretch = True
+  end
+  object imgAdicionar: TImage
+    Left = 256
+    Height = 16
+    Top = 286
+    Width = 16
+    Enabled = False
+    Picture.Data = {
+      1754506F727461626C654E6574776F726B477261706869638400000089504E47
+      0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000000
+      097048597300000B1300000B1301009A9C180000003649444154789C6360A025
+      F8FFFF7F11085362C06A101E35E0FF6A62437B3516FC188AB1C91551CF005C60
+      341A19A812069465266200008F44BD3935F1D47C0000000049454E44AE426082
+    }
+  end
+  object imgSubtrair: TImage
+    Left = 256
+    Height = 16
+    Top = 240
+    Width = 16
+    Enabled = False
+    Picture.Data = {
+      1754506F727461626C654E6574776F726B477261706869636800000089504E47
+      0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000000
+      097048597300000B1300000B1301009A9C180000001A49444154789C63601805
+      C309FCFFFF7F352998FA068C82A10C00584E57C12E7FAFE70000000049454E44
+      AE426082
+    }
+  end
+  object imgIgual: TImage
+    Left = 256
+    Height = 16
+    Top = 328
+    Width = 16
+    Enabled = False
+    Picture.Data = {
+      1754506F727461626C654E6574776F726B477261706869638C00000089504E47
+      0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000000
+      097048597300000B1300000B1301009A9C180000003E49444154789C63601805
+      2010C2C0C0D041260E0119B0968181E13F99782DC8003B0606863432B11DC3A0
+      0076947A612DA58118424134060F74F00D06000058E83AE80D23CB4800000000
+      49454E44AE426082
+    }
+  end
+end
