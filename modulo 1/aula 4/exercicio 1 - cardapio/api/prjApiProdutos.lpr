@@ -26,7 +26,11 @@ begin
   '{"id":3,"name":"Bauru com Ovo","price":15,"image":"bauru-com-ovo.png"},'+
   '{"id":4,"name":"Hambúrguer","price":12,"image":"hamburguer.png"},'+
   '{"id":5,"name":"Cheeseburguer","price":13,"image":"cheeseburguer.png"},'+
-  '{"id":6,"name":"Refrigerante","price":5,"image":"refrigerante.png"}'+
+  '{"id":6,"name":"X-Salada","price":14.50,"image":"x-salada.png"},'+
+  '{"id":7,"name":"Coca-Cola Lata","price":6.50,"image":"coca-cola-lata.png"},'+
+  '{"id":8,"name":"Sprite Lata","price":6.00,"image":"sprite-lata.png"},'+
+  '{"id":9,"name":"Suco de laranja","price":4.40,"image":"suco-de-laranja.png"},'+
+  '{"id":10,"name":"Chocolate MM","price":3.50,"image":"chocolate-mm.png"}'+
   ']');
   Products := jsonData as TJSONArray;
   Res.Send<TJSONArray>(Products);
