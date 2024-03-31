@@ -1,11 +1,11 @@
 object principalF: TprincipalF
-  Left = 163
+  Left = 223
   Height = 605
-  Top = 8
+  Top = 55
   Width = 1136
   Caption = 'Cardápio'
-  ClientHeight = 0
-  ClientWidth = 0
+  ClientHeight = 605
+  ClientWidth = 1136
   Color = 16514043
   Font.CharSet = ANSI_CHARSET
   Font.Name = 'Roboto'
@@ -71,6 +71,7 @@ object principalF: TprincipalF
         Font.Name = 'Roboto'
         Font.Pitch = fpVariable
         Font.Quality = fqAntialiased
+        OnChange = cbEmbalagemChange
         TabOrder = 0
       end
       object lblTotal: TLabel
@@ -155,7 +156,7 @@ object principalF: TprincipalF
       BevelOuter = bvNone
       ClientHeight = 80
       ClientWidth = 941
-      Color = 1776411
+      Color = 328224
       ParentBackground = False
       ParentColor = False
       TabOrder = 0
@@ -389,7 +390,7 @@ object principalF: TprincipalF
         Align = alBottom
         BorderSpacing.Top = 20
         BevelOuter = bvNone
-        Color = 1776411
+        Color = 328224
         ParentBackground = False
         ParentColor = False
         TabOrder = 1

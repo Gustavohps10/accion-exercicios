@@ -34,6 +34,7 @@ type
     pnlRodape: TPanel;
     pnlLateral: TPanel;
     sbConteudo: TScrollBox;
+    procedure cbEmbalagemChange(Sender: TObject);
     procedure FormShow(Sender: TObject);
 
   private
@@ -133,6 +134,14 @@ begin
   ListarProdutos();
 end;
 
+procedure TprincipalF.cbEmbalagemChange(Sender: TObject);
+begin
+  if cbEmbalagem.Checked
+  then totalPedido := totalPedido + 4
+  else totalPedido := totalPedido - 4;
+  lblTotalValor.Caption := FloatToStrF(totalPedido, ffCurrency, 8,2);
+end;
+
 procedure TprincipalF.AtualizaTotalPedido(idProduto: integer; quantidadeAdicionada: integer);
 begin
     totalPedido := 0;
@@ -155,6 +164,9 @@ begin
        end;
        Close;
     end;
+
+    if cbEmbalagem.Checked then
+      totalPedido := totalPedido + 4;
 
     lblTotalValor.Caption := FloatToStrF(totalPedido, ffCurrency, 8,2);
 end;

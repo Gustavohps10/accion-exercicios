@@ -10,7 +10,7 @@
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <CursorPos Y="22"/>
-        <UsageCount Value="76"/>
+        <UsageCount Value="77"/>
       </Unit>
       <Unit>
         <Filename Value="uprincipal.pas"/>
@@ -20,10 +20,10 @@
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uPrincipal"/>
         <IsVisibleTab Value="True"/>
-        <TopLine Value="191"/>
-        <CursorPos X="5" Y="199"/>
-        <FoldState Value=" T6kX03 T1kb0FN"/>
-        <UsageCount Value="76"/>
+        <TopLine Value="132"/>
+        <CursorPos X="8" Y="141"/>
+        <FoldState Value=" T6l2031 T1l60FV"/>
+        <UsageCount Value="77"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -37,7 +37,7 @@
         <EditorIndex Value="1"/>
         <TopLine Value="24"/>
         <CursorPos X="24" Y="27"/>
-        <UsageCount Value="76"/>
+        <UsageCount Value="77"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
       </Unit>
@@ -50,14 +50,6 @@
       </Unit>
     </Units>
     <JumpHistory HistoryIndex="29">
-      <Position>
-        <Filename Value="uprincipal.pas"/>
-        <Caret Line="56" Column="41" TopLine="56"/>
-      </Position>
-      <Position>
-        <Filename Value="uprincipal.pas"/>
-        <Caret Line="57" Column="41" TopLine="57"/>
-      </Position>
       <Position>
         <Filename Value="uprincipal.pas"/>
         <Caret Line="56" Column="41" TopLine="56"/>
@@ -169,6 +161,14 @@
       <Position>
         <Filename Value="frames\frame.produto.pas"/>
         <Caret Line="27" Column="29" TopLine="24"/>
+      </Position>
+      <Position>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="194" Column="22" TopLine="158"/>
+      </Position>
+      <Position>
+        <Filename Value="uprincipal.pas"/>
+        <Caret Line="143" Column="3" TopLine="125"/>
       </Position>
     </JumpHistory>
     <RunParams>
