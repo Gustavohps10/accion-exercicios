@@ -58,7 +58,7 @@ type
 var
   principalF: TprincipalF;
   operacao: string;
-  valorAnterior: double;
+  valorAnterior: double = 0;
 
 implementation
 
@@ -70,25 +70,34 @@ procedure TprincipalF.btnNumeroClick(Sender: TObject);
 begin
    if Sender is TBCMaterialDesignButton then
    begin
+     {Se já possui virgula, EXIT}
      if (TBCMaterialDesignButton(Sender).Caption = ',') and ContainsText(edtResultado.Text, ',') then Exit;
 
-     if (Trim(edtResultado.Text) = '') or (StrToFloat(edtResultado.Text) = 0)
+     {Permite ponto flutuante no 0}
+     if (edtResultado.Text = '0') and (TBCMaterialDesignButton(Sender).Caption = ',') then
+     begin
+       edtResultado.Text := edtResultado.Text + TBCMaterialDesignButton(Sender).Caption;
+       Exit;
+     end;
+
+     if (edtResultado.Text = '0')
      then edtResultado.Text := TBCMaterialDesignButton(Sender).Caption
      else edtResultado.Text := edtResultado.Text + TBCMaterialDesignButton(Sender).Caption;
-
    end;
 end;
 
 procedure TprincipalF.btnLimparClick(Sender: TObject);
 begin
-    edtResultado.Text := '0';
+   valorAnterior := 0;
+   edtResultado.Text := '0';
 end;
 
 procedure TprincipalF.btnApagarClick(Sender: TObject);
 var valor: string;
 begin
    valor := edtResultado.Text;
-   if Length(valor) = 1
+
+   if (Length(valor) = 1) or ((Length(valor) = 2) and (valor[1] = '-'))
    then valor := '0'
    else SetLength(valor, Length(valor) - 1);
 
@@ -103,7 +112,10 @@ begin
      'btnSubtrair': resultado := valorAnterior - StrToFloat(edtResultado.Text);
      'btnMultiplicar': resultado := valorAnterior * StrToFloat(edtResultado.Text);
      'btnDividir': resultado := valorAnterior / StrToFloat(edtResultado.Text);
+     else resultado := StrToFloat(edtResultado.Text);
   end;
+
+  valorAnterior:=0;
 
   edtResultado.Text := FloatToStr(resultado);
 end;

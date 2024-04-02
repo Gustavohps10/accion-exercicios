@@ -118,6 +118,7 @@ object principalF: TprincipalF
     Font.Color = clWhite
     Font.Height = -27
     Font.Name = 'Segoe UI'
+    Font.Style = [fsBold]
     NumbersOnly = True
     ParentFont = False
     ReadOnly = True
