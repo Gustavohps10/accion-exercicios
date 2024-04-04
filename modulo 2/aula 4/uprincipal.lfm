@@ -1,0 +1,260 @@
+object principalF: TprincipalF
+  Left = 501
+  Height = 531
+  Top = 293
+  Width = 645
+  Caption = 'Principal'
+  ClientHeight = 531
+  ClientWidth = 645
+  OnCreate = FormCreate
+  LCLVersion = '2.2.6.0'
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 531
+    Top = 0
+    Width = 645
+    ActivePage = tsPesquisa
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 0
+    object tsPesquisa: TTabSheet
+      Caption = 'Pesquisa'
+      ClientHeight = 503
+      ClientWidth = 637
+      object grdCategorias: TDBGrid
+        Left = 0
+        Height = 395
+        Top = 50
+        Width = 637
+        Align = alClient
+        Color = clWindow
+        Columns = <        
+          item
+            Title.Caption = 'ID'
+            FieldName = 'categoriaprodutoid'
+          end        
+          item
+            Title.Caption = 'Descrição'
+            FieldName = 'ds_categoria_produto'
+          end>
+        DataSource = DataSource1
+        TabOrder = 0
+      end
+      object pnlPesquisaRodape: TPanel
+        Left = 0
+        Height = 58
+        Top = 445
+        Width = 637
+        Align = alBottom
+        BevelOuter = bvNone
+        ClientHeight = 58
+        ClientWidth = 637
+        TabOrder = 1
+        object btnNovo: TBCMaterialDesignButton
+          Cursor = crHandPoint
+          Left = 8
+          Height = 33
+          Top = 16
+          Width = 88
+          NormalColor = 9724928
+          NormalColorEffect = 6965248
+          Shadow = False
+          TextColor = clWhite
+          TextShadow = False
+          TextShadowColor = clNone
+          TextFont = 'Segoe UI'
+          Anchors = [akLeft, akBottom]
+          Caption = 'Novo'
+          OnClick = btnNovoClick
+        end
+      end
+      object pnlCabecalho: TPanel
+        Left = 0
+        Height = 50
+        Top = 0
+        Width = 637
+        Align = alTop
+        BevelOuter = bvNone
+        ClientHeight = 50
+        ClientWidth = 637
+        TabOrder = 2
+        object edtPesquisar: TEdit
+          Left = 56
+          Height = 23
+          Top = 16
+          Width = 216
+          TabOrder = 0
+        end
+        object btnPesquisar: TBCMaterialDesignButton
+          Cursor = crHandPoint
+          Left = 8
+          Height = 33
+          Top = 8
+          Width = 40
+          NormalColor = 9724928
+          NormalColorEffect = 6965248
+          Shadow = False
+          TextShadow = False
+          TextFont = 'default'
+          OnClick = btnPesquisarClick
+        end
+        object Image1: TImage
+          Left = 20
+          Height = 16
+          Top = 16
+          Width = 16
+          Enabled = False
+          Picture.Data = {
+            1754506F727461626C654E6574776F726B477261706869632101000089504E47
+            0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000000
+            097048597300000B1300000B1301009A9C18000000D349444154789CADD23D4A
+            434114C5F13120A255487620081629B203AB146E20459A34298C8A9D9D698285
+            0B9014A218F205C14617283F199822C87BF362E28569E6DCF3BF87991B4249A1
+            16FE5A68E0092B4CB14CE7621BF3193ED1FA757F8C47DCE7CC87F8423DD3F380
+            CB32B1876E45C238E4A34C7C8B517380D437294C89799539F58D715A243CA3B9
+            0520263D29123AB8AB30D7B1C8352C715EA2D5D25EB4AB26ACD1C7D1C67D2BBE
+            3EBE719D4B197010BF13EF98E115A3B4A1C304196621213F609020B7FF01B9D9
+            077285979D019BF503FBAEE9FC1E5FC06C0000000049454E44AE426082
+          }
+        end
+      end
+    end
+    object tsCadastro: TTabSheet
+      Caption = 'Cadastro'
+      ClientHeight = 503
+      ClientWidth = 637
+      object pnlCadastroRodape: TPanel
+        Left = 0
+        Height = 58
+        Top = 445
+        Width = 637
+        Align = alBottom
+        BevelOuter = bvNone
+        ClientHeight = 58
+        ClientWidth = 637
+        TabOrder = 0
+        object btnEditar: TBCMaterialDesignButton
+          Cursor = crHandPoint
+          Left = 8
+          Height = 33
+          Top = 16
+          Width = 88
+          NormalColor = 9724928
+          NormalColorEffect = 6965248
+          Shadow = False
+          TextColor = clWhite
+          TextShadow = False
+          TextShadowColor = clNone
+          TextFont = 'Segoe UI'
+          Anchors = [akLeft, akBottom]
+          Caption = 'Editar'
+          OnClick = btnEditarClick
+        end
+        object btnGravar: TBCMaterialDesignButton
+          Cursor = crHandPoint
+          Left = 104
+          Height = 33
+          Top = 16
+          Width = 88
+          NormalColor = 9724928
+          NormalColorEffect = 6965248
+          Shadow = False
+          TextColor = clWhite
+          TextShadow = False
+          TextShadowColor = clNone
+          TextFont = 'Segoe UI'
+          Anchors = [akLeft, akBottom]
+          Caption = 'Gravar'
+          OnClick = btnGravarClick
+        end
+        object btnCancelar: TBCMaterialDesignButton
+          Cursor = crHandPoint
+          Left = 200
+          Height = 33
+          Top = 16
+          Width = 88
+          NormalColor = 9724928
+          NormalColorEffect = 6965248
+          Shadow = False
+          TextColor = clWhite
+          TextShadow = False
+          TextShadowColor = clNone
+          TextFont = 'Segoe UI'
+          Anchors = [akLeft, akBottom]
+          Caption = 'Cancelar'
+          OnClick = btnCancelarClick
+        end
+        object btnExcluir: TBCMaterialDesignButton
+          Cursor = crHandPoint
+          Left = 536
+          Height = 33
+          Top = 16
+          Width = 88
+          NormalColor = 9724928
+          NormalColorEffect = 6965248
+          Shadow = False
+          TextColor = clWhite
+          TextShadow = False
+          TextShadowColor = clNone
+          TextFont = 'Segoe UI'
+          Anchors = [akRight, akBottom]
+          Caption = 'Excluir'
+          OnClick = btnExcluirClick
+        end
+      end
+      object Label1: TLabel
+        Left = 48
+        Height = 15
+        Top = 32
+        Width = 14
+        Caption = 'ID:'
+        ParentColor = False
+      end
+      object Label2: TLabel
+        Left = 8
+        Height = 15
+        Top = 64
+        Width = 54
+        Caption = 'Descrição:'
+        ParentColor = False
+      end
+      object dbEdtID: TDBEdit
+        Left = 80
+        Height = 23
+        Top = 24
+        Width = 152
+        DataField = 'categoriaprodutoid'
+        DataSource = DataSource1
+        Alignment = taRightJustify
+        MaxLength = 0
+        TabOrder = 1
+      end
+      object dbEdtDesc: TDBEdit
+        Left = 80
+        Height = 23
+        Top = 56
+        Width = 152
+        DataField = 'ds_categoria_produto'
+        DataSource = DataSource1
+        MaxLength = 50
+        TabOrder = 2
+      end
+    end
+  end
+  object qryCadProd: TZQuery
+    Connection = dmF.ZConnection1
+    OnNewRecord = qryCadProdNewRecord
+    Active = True
+    SQL.Strings = (
+      'SELECT * FROM  CATEGORIA_PRODUTO'
+    )
+    Params = <>
+    Left = 576
+    Top = 104
+  end
+  object DataSource1: TDataSource
+    DataSet = qryCadProd
+    Left = 576
+    Top = 160
+  end
+end
