@@ -1,0 +1,23 @@
+object dmF: TdmF
+  OnCreate = DataModuleCreate
+  OldCreateOrder = False
+  Height = 333
+  HorizontalOffset = 539
+  VerticalOffset = 297
+  Width = 320
+  object ZConnection1: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = True
+    Properties.Strings = (
+      'AutoEncodeStrings=ON'
+    )
+    Port = 0
+    Left = 32
+    Top = 56
+  end
+  object qryGenerica: TZQuery
+    Params = <>
+    Left = 32
+    Top = 112
+  end
+end

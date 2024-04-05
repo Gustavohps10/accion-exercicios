@@ -1,0 +1,44 @@
+object principalF: TprincipalF
+  Left = 563
+  Height = 465
+  Top = 298
+  Width = 622
+  Caption = 'Menu Principal'
+  Color = 16514043
+  Font.Name = 'Segoe UI'
+  Menu = MainMenu1
+  LCLVersion = '2.2.6.0'
+  object MainMenu1: TMainMenu
+    Left = 8
+    Top = 8
+    object menuCadastro: TMenuItem
+      Caption = 'Cadastro'
+      object menuCadCategoria: TMenuItem
+        Caption = 'Categorias'
+        OnClick = menuCadCategoriaClick
+      end
+      object menuCadCliente: TMenuItem
+        Caption = 'Clientes'
+        OnClick = menuCadClienteClick
+      end
+      object menuCadProduto: TMenuItem
+        Caption = 'Produtos'
+        OnClick = menuCadProdutoClick
+      end
+      object menuCadUsuario: TMenuItem
+        Caption = 'Usuarios'
+        OnClick = menuCadUsuarioClick
+      end
+    end
+    object menuVendas: TMenuItem
+      Caption = 'Vendas'
+      object menuOrcamento: TMenuItem
+        Caption = 'Orçamento'
+        OnClick = menuOrcamentoClick
+      end
+    end
+    object menuSobre: TMenuItem
+      Caption = 'Sobre'
+    end
+  end
+end
