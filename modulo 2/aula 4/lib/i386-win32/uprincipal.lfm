@@ -1,88 +1,47 @@
 object principalF: TprincipalF
-  Left = 501
+  Left = 402
   Height = 531
-  Top = 293
-  Width = 645
+  Top = 94
+  Width = 647
   Caption = 'Principal'
   ClientHeight = 531
-  ClientWidth = 645
+  ClientWidth = 647
+  Color = 16514043
+  Font.Name = 'Roboto'
   OnCreate = FormCreate
-  LCLVersion = '2.2.6.0'
+  Position = poScreenCenter
+  LCLVersion = '3.2.0.0'
   object PageControl1: TPageControl
     Left = 0
-    Height = 531
-    Top = 0
-    Width = 645
-    ActivePage = tsPesquisa
+    Height = 465
+    Top = 66
+    Width = 647
+    ActivePage = tsCadastro
     Align = alClient
-    TabIndex = 0
+    TabIndex = 1
     TabOrder = 0
     object tsPesquisa: TTabSheet
       Caption = 'Pesquisa'
-      ClientHeight = 503
-      ClientWidth = 637
-      object grdCategorias: TDBGrid
-        Left = 0
-        Height = 395
-        Top = 50
-        Width = 637
-        Align = alClient
-        Color = clWindow
-        Columns = <        
-          item
-            Title.Caption = 'ID'
-            FieldName = 'categoriaprodutoid'
-          end        
-          item
-            Title.Caption = 'Descrição'
-            FieldName = 'ds_categoria_produto'
-          end>
-        DataSource = DataSource1
-        TabOrder = 0
-      end
-      object pnlPesquisaRodape: TPanel
-        Left = 0
-        Height = 58
-        Top = 445
-        Width = 637
-        Align = alBottom
-        BevelOuter = bvNone
-        ClientHeight = 58
-        ClientWidth = 637
-        TabOrder = 1
-        object btnNovo: TBCMaterialDesignButton
-          Cursor = crHandPoint
-          Left = 8
-          Height = 33
-          Top = 16
-          Width = 88
-          NormalColor = 9724928
-          NormalColorEffect = 6965248
-          Shadow = False
-          TextColor = clWhite
-          TextShadow = False
-          TextShadowColor = clNone
-          TextFont = 'Segoe UI'
-          Anchors = [akLeft, akBottom]
-          Caption = 'Novo'
-          OnClick = btnNovoClick
-        end
-      end
+      ClientHeight = 438
+      ClientWidth = 639
       object pnlCabecalho: TPanel
         Left = 0
         Height = 50
         Top = 0
-        Width = 637
+        Width = 639
         Align = alTop
         BevelOuter = bvNone
         ClientHeight = 50
-        ClientWidth = 637
+        ClientWidth = 639
+        ParentBackground = False
         TabOrder = 2
         object edtPesquisar: TEdit
           Left = 56
-          Height = 23
-          Top = 16
+          Height = 14
+          Top = 18
           Width = 216
+          BorderStyle = bsNone
+          Color = 16514043
           TabOrder = 0
         end
         object btnPesquisar: TBCMaterialDesignButton
@@ -91,14 +50,14 @@ object principalF: TprincipalF
           Height = 33
           Top = 8
           Width = 40
-          NormalColor = 9724928
-          NormalColorEffect = 6965248
+          NormalColor = 8864803
+          NormalColorEffect = 8928523
           Shadow = False
           TextShadow = False
           TextFont = 'default'
           OnClick = btnPesquisarClick
         end
-        object Image1: TImage
+        object imgPesquisar: TImage
           Left = 20
           Height = 16
           Top = 16
@@ -117,94 +76,246 @@ object principalF: TprincipalF
             077285979D019BF503FBAEE9FC1E5FC06C0000000049454E44AE426082
           }
         end
+        object pnlBorderEdtPesquisa: TPanel
+          Left = 56
+          Height = 1
+          Top = 36
+          Width = 216
+          BevelOuter = bvNone
+          Color = 10921638
+          ParentBackground = False
+          ParentColor = False
+          TabOrder = 1
+        end
+      end
+      object grdCategorias: TDBGrid
+        Left = 0
+        Height = 330
+        Top = 50
+        Width = 639
+        Align = alClient
+        Color = 16514043
+        Columns = <        
+          item
+            Title.Caption = 'ID'
+            FieldName = 'categoriaprodutoid'
+          end        
+          item
+            Title.Caption = 'Descrição'
+            FieldName = 'ds_categoria_produto'
+          end>
+        DataSource = DataSource1
+        TabOrder = 0
+      end
+      object pnlPesquisaRodape: TPanel
+        Left = 0
+        Height = 58
+        Top = 380
+        Width = 639
+        Align = alBottom
+        BevelOuter = bvNone
+        ClientHeight = 58
+        ClientWidth = 639
+        ParentBackground = False
+        TabOrder = 1
+        object btnNovo: TBCMaterialDesignButton
+          Cursor = crHandPoint
+          Left = 8
+          Height = 33
+          Hint = 'Novo Registro'
+          Top = 16
+          Width = 88
+          NormalColor = 8864803
+          NormalColorEffect = 8928287
+          Shadow = False
+          TextColor = clWhite
+          TextShadow = False
+          TextShadowColor = clNone
+          TextFont = 'Roboto'
+          Anchors = [akLeft, akBottom]
+          Caption = '    Novo'
+          OnClick = btnNovoClick
+        end
+        object imgEditar1: TImage
+          Left = 20
+          Height = 16
+          Top = 24
+          Width = 16
+          Enabled = False
+          Picture.Data = {
+            1754506F727461626C654E6574776F726B477261706869632A01000089504E47
+            0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000000
+            097048597300000B1300000B1301009A9C18000000DC49444154789CADD23F2B
+            C56118C6F1A324834C4A3A67F21ED8BC0526835919948E57C02ABB539241F937
+            523613CAC0D94806AB5531D8F4D153F76FF9E979CE9F5CF55D9EEEBEF7F5D4DD
+            C09DC1F384D1468AE1335509D68664FCDF1A5479C57BD0CDF05C121CE326D8C9
+            705012ECE222C8FD7BBB24F8C277F091E1B324D8C259B09C61B324B8C443B05F
+            E3D6DF4CD7058F780BAE6BBCC4CC0996B08A2B3407B983D358B88E19B470941E
+            7EFA142C6203F7E8601EE749D0C46C0F56A2769ADDC30226AB563D83B1B88F54
+            7B0E13216CF7250849DA7E98B6066D8CFC0259A53F31AC9301F9000000004945
+            4E44AE426082
+          }
+        end
       end
     end
     object tsCadastro: TTabSheet
       Caption = 'Cadastro'
-      ClientHeight = 503
-      ClientWidth = 637
+      ClientHeight = 438
+      ClientWidth = 639
       object pnlCadastroRodape: TPanel
         Left = 0
         Height = 58
-        Top = 445
-        Width = 637
+        Top = 380
+        Width = 639
         Align = alBottom
         BevelOuter = bvNone
         ClientHeight = 58
-        ClientWidth = 637
+        ClientWidth = 639
+        ParentBackground = False
         TabOrder = 0
         object btnEditar: TBCMaterialDesignButton
           Cursor = crHandPoint
           Left = 8
           Height = 33
+          Hint = 'Editar'
           Top = 16
-          Width = 88
-          NormalColor = 9724928
-          NormalColorEffect = 6965248
+          Width = 104
+          NormalColor = 8864803
+          NormalColorEffect = 8928287
           Shadow = False
           TextColor = clWhite
           TextShadow = False
           TextShadowColor = clNone
-          TextFont = 'Segoe UI'
+          TextFont = 'Roboto'
           Anchors = [akLeft, akBottom]
-          Caption = 'Editar'
+          Caption = '    Editar'
           OnClick = btnEditarClick
+        end
+        object imgEditar: TImage
+          Left = 24
+          Height = 16
+          Top = 24
+          Width = 16
+          Enabled = False
+          Picture.Data = {
+            1754506F727461626C654E6574776F726B47726170686963C200000089504E47
+            0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000000
+            097048597300000B1300000B1301009A9C180000007449444154789CEDD0B10D
+            C2301445512B0A620536801532012C1336610146A08008D26782CC7490E1D3D0
+            805D226E6B9DA72FA754181AECB049157881137A0C5897E28B6707ECB1ADC1AF
+            F2254D2D1EB1FCE3DFF9B01C8E6FF89C471F8F9F428B2BE6621C031D26DCE292
+            EF710CAC62A42D82D11DF7E05922C171874E0000000049454E44AE426082
+          }
         end
         object btnGravar: TBCMaterialDesignButton
           Cursor = crHandPoint
-          Left = 104
+          Left = 120
           Height = 33
+          Hint = 'Gravar'
           Top = 16
-          Width = 88
-          NormalColor = 9724928
-          NormalColorEffect = 6965248
+          Width = 104
+          NormalColor = 8864803
+          NormalColorEffect = 8928287
           Shadow = False
           TextColor = clWhite
           TextShadow = False
           TextShadowColor = clNone
-          TextFont = 'Segoe UI'
+          TextFont = 'Roboto'
           Anchors = [akLeft, akBottom]
-          Caption = 'Gravar'
+          Caption = '    Gravar'
           OnClick = btnGravarClick
+        end
+        object imgGravar: TImage
+          Left = 136
+          Height = 16
+          Top = 24
+          Width = 16
+          Enabled = False
+          Picture.Data = {
+            1754506F727461626C654E6574776F726B47726170686963ED00000089504E47
+            0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000000
+            097048597300000B1300000B1301009A9C180000009F49444154789CCDD1310A
+            C2401005D09CC5CACAC62BA4B1D1CADA523C8185A25808424EE031BC8765CAA4
+            B1F5104F96A4084BB2A451FC30CDCCF07660B3EC6F82336A3CA2FE16572C5062
+            3604549A3CA3FE1E77ACDBF9BB17D1BCDE076C70E80021650A78618A4954970E
+            50A78031F92E50A3C02DAAA2BB930296BDDFD4ECACC6007902C8BF0A54ED7087
+            F940855948D5079C5A245C92AAB0731CBAF2F7F900169EAEC0166351C4000000
+            0049454E44AE426082
+          }
         end
         object btnCancelar: TBCMaterialDesignButton
           Cursor = crHandPoint
-          Left = 200
+          Left = 232
           Height = 33
+          Hint = 'Cancelar'
           Top = 16
-          Width = 88
-          NormalColor = 9724928
-          NormalColorEffect = 6965248
+          Width = 120
+          NormalColor = 8864803
+          NormalColorEffect = 8928287
           Shadow = False
           TextColor = clWhite
           TextShadow = False
           TextShadowColor = clNone
-          TextFont = 'Segoe UI'
+          TextFont = 'Roboto'
           Anchors = [akLeft, akBottom]
-          Caption = 'Cancelar'
+          Caption = '    Cancelar'
           OnClick = btnCancelarClick
+        end
+        object imgCancelar: TImage
+          Left = 248
+          Height = 16
+          Top = 24
+          Width = 16
+          Enabled = False
+          Picture.Data = {
+            1754506F727461626C654E6574776F726B47726170686963BA00000089504E47
+            0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000000
+            097048597300000B1300000B1301009A9C180000006C49444154789CDD92410E
+            80200C04B9096FEAFFFA21BDE0E7C6101BD3204112E241E744DAB2ED1642F817
+            80000AC4462E5A4E7A02CA49F62276B9C40ADA135880D50A7720596C73C2E9C9
+            4674DD7275BE591B9964ACB3A71AFBB2134660C6028D85B516FBEA33CAD447FA
+            2607EE780A3226FAF9000000000049454E44AE426082
+          }
         end
         object btnExcluir: TBCMaterialDesignButton
           Cursor = crHandPoint
-          Left = 536
+          Left = 528
           Height = 33
           Top = 16
-          Width = 88
-          NormalColor = 9724928
-          NormalColorEffect = 6965248
+          Width = 104
+          NormalColor = 4078066
+          NormalColorEffect = 1380591
           Shadow = False
           TextColor = clWhite
           TextShadow = False
           TextShadowColor = clNone
-          TextFont = 'Segoe UI'
+          TextFont = 'Roboto'
           Anchors = [akRight, akBottom]
-          Caption = 'Excluir'
+          Caption = '    Excluir'
           OnClick = btnExcluirClick
+        end
+        object imgExcluir: TImage
+          Left = 544
+          Height = 16
+          Top = 24
+          Width = 16
+          Enabled = False
+          Picture.Data = {
+            1754506F727461626C654E6574776F726B47726170686963EC00000089504E47
+            0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000000
+            097048597300000B1300000B1301009A9C180000009E49444154789CBDD2310A
+            C23014C6F12C5D7A0B8542F71EC04E7577D723E801DA83D88BB48227E819C4AD
+            BB1710FE25984207FBE52DFAE01B92BCF7238138F7CB02F640656D4E81033000
+            CF9057C8BC1E424FFA0DC8801B708FC4F7646BB7C88122925C3DA3275E9D025A
+            0370554063006A059C0CC05101A501D829606B00360A4880B718F667C92AE03E
+            C82880510E07E0023C16DF778EDF3B4781BFD70427CCC8EC9CD44F2400000000
+            49454E44AE426082
+          }
         end
       end
       object Label1: TLabel
         Left = 48
-        Height = 15
+        Height = 14
         Top = 32
         Width = 14
         Caption = 'ID:'
@@ -212,15 +323,15 @@ object principalF: TprincipalF
       end
       object Label2: TLabel
         Left = 8
-        Height = 15
+        Height = 14
         Top = 64
-        Width = 54
+        Width = 56
         Caption = 'Descrição:'
         ParentColor = False
       end
       object dbEdtID: TDBEdit
-        Left = 80
-        Height = 23
+        Left = 72
+        Height = 22
         Top = 24
         Width = 152
         DataField = 'categoriaprodutoid'
@@ -230,8 +341,8 @@ object principalF: TprincipalF
         TabOrder = 1
       end
       object dbEdtDesc: TDBEdit
-        Left = 80
-        Height = 23
+        Left = 72
+        Height = 22
         Top = 56
         Width = 152
         DataField = 'ds_categoria_produto'
@@ -239,22 +350,200 @@ object principalF: TprincipalF
         MaxLength = 50
         TabOrder = 2
       end
+      object btnPrimeiro: TBCMaterialDesignButton
+        Cursor = crHandPoint
+        Left = 257
+        Height = 28
+        Top = 22
+        Width = 32
+        NormalColor = 8864803
+        NormalColorEffect = 11162925
+        Shadow = False
+        TextShadow = False
+        TextFont = 'default'
+        OnClick = btnPrimeiroClick
+      end
+      object imgPrimeiro: TImage
+        Left = 263
+        Height = 20
+        Top = 26
+        Width = 20
+        Enabled = False
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B47726170686963E400000089504E47
+          0D0A1A0A0000000D49484452000000140000001408060000008D891D0D000000
+          097048597300000B1300000B1301009A9C180000009649444154789CB5D4210E
+          C2401005D07A12CE860004DC01246741E008862B80C0C0AD78A449314BDB6D77
+          CAD73F2F93CC64AAEADFC102A74C678E0B9643C02364B027DED884C0067B35D8
+          3E8BF581455817588CB581212C05136C579544034E8225E02D8C25E07D6A7086
+          47F1323A961247FD9E4D0CD57ED85FB4CE210C8650FDCF613C6ADCFBDA0E0157
+          38673A357AC57AD094917C00831F77FA4A480B570000000049454E44AE426082
+        }
+        Proportional = True
+      end
+      object btnAnterior: TBCMaterialDesignButton
+        Cursor = crHandPoint
+        Left = 293
+        Height = 28
+        Top = 22
+        Width = 32
+        NormalColor = 8864803
+        NormalColorEffect = 11162925
+        Shadow = False
+        TextShadow = False
+        TextFont = 'default'
+        OnClick = btnAnteriorClick
+      end
+      object imgAnterior: TImage
+        Left = 299
+        Height = 20
+        Top = 26
+        Width = 20
+        Enabled = False
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B47726170686963AA00000089504E47
+          0D0A1A0A0000000D49484452000000140000001408060000008D891D0D000000
+          097048597300000B1300000B1301009A9C180000005C49444154789CEDD4310A
+          80400C44D1357B6DC15AC1B5B5D3CE637E09A6D8CEC20111F71FE01543484A6F
+          07183001BD0ADBB89A15D81E98A3D6B0AF6EE6C59D69300F18D56007AC811E40
+          6EE88F36B5EA7D95C760852EC02001EF3A0168531AF8A09F0AA2000000004945
+          4E44AE426082
+        }
+        Proportional = True
+      end
+      object btnProximo: TBCMaterialDesignButton
+        Cursor = crHandPoint
+        Left = 329
+        Height = 28
+        Top = 22
+        Width = 32
+        NormalColor = 8864803
+        NormalColorEffect = 11162925
+        Shadow = False
+        TextShadow = False
+        TextFont = 'default'
+        OnClick = btnProximoClick
+      end
+      object imgProximo: TImage
+        Left = 335
+        Height = 20
+        Top = 26
+        Width = 20
+        Enabled = False
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B47726170686963A500000089504E47
+          0D0A1A0A0000000D49484452000000140000001408060000008D891D0D000000
+          097048597300000B1300000B1301009A9C180000005749444154789CEDD4310A
+          80301045418DE7166C0D686DA79DC71C09E6062E5A9877802996CF76DD1B6144
+          468A0217777B088A1E5B454F0C0DFDD14D539D52294783730476840C5EC3BEBD
+          59096BF4FB9A2A1AF3609F7401A7E01AF93BC1F1830000000049454E44AE4260
+          82
+        }
+        Proportional = True
+      end
+      object btnUltimo: TBCMaterialDesignButton
+        Cursor = crHandPoint
+        Left = 365
+        Height = 28
+        Top = 22
+        Width = 32
+        NormalColor = 8864803
+        NormalColorEffect = 11162925
+        Shadow = False
+        TextShadow = False
+        TextFont = 'default'
+        OnClick = btnUltimoClick
+      end
+      object imgUltimo: TImage
+        Left = 371
+        Height = 20
+        Top = 26
+        Width = 20
+        Enabled = False
+        Picture.Data = {
+          1754506F727461626C654E6574776F726B47726170686963E800000089504E47
+          0D0A1A0A0000000D49484452000000140000001408060000008D891D0D000000
+          097048597300000B1300000B1301009A9C180000009A49444154789CB5D4B10D
+          C2301005D04C80C46434200AE8A1425987860E1A5680D61533F15044E892D8B1
+          CDD5D6932DDFFF4DF3EFC106372C22E72E58A5803BBC11A650DF39A7DEF2D0A3
+          2F2C8BC11474361843B3C029341B1C438BC021B418EC06A71E7DD6061F359F1C
+          BA85AFF529E1979E92B5390E453177B1DBB15CE744AF9D2A89B9E5D0C61A2719
+          C4BE6A7D618B7B42C15EB18E82A5F3012D7B78012B06A05B0000000049454E44
+          AE426082
+        }
+        Proportional = True
+      end
+    end
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 66
+    Top = 0
+    Width = 647
+    Align = alTop
+    BevelOuter = bvNone
+    ClientHeight = 66
+    ClientWidth = 647
+    Color = 5121812
+    ParentBackground = False
+    ParentColor = False
+    TabOrder = 1
+    object btnSair: TBCMaterialDesignButton
+      Cursor = crHandPoint
+      Left = 552
+      Height = 33
+      Hint = 'Sair'
+      Top = 16
+      Width = 84
+      NormalColor = 4078066
+      NormalColorEffect = 1380591
+      Shadow = False
+      TextColor = clWhite
+      TextShadow = False
+      TextShadowColor = clNone
+      TextFont = 'Roboto'
+      Anchors = [akTop, akRight]
+      Caption = '    Sair'
+      OnClick = btnSairClick
+    end
+    object imgSair: TImage
+      Left = 564
+      Height = 16
+      Top = 24
+      Width = 16
+      Anchors = [akTop, akRight]
+      Enabled = False
+      Picture.Data = {
+        1754506F727461626C654E6574776F726B477261706869635301000089504E47
+        0D0A1A0A0000000D49484452000000100000001008060000001FF3FF61000000
+        097048597300000B1300000B1301009A9C180000010549444154789C95D3B12B
+        865114C7F187527A43BDEFA6C4A69495582C16A52C06297F0503839291118BB2
+        51CA3FA04CFE809741B2C96450289B451F3D75DE3C713DCFF3DE3ADDBAE79CEF
+        3DE777CFCDB2928566890D6415C923382EB17BF497017AB1878B1C96F0E79046
+        1960D6CFDA8FB306E6EA029A78C227163086295C633109C0011EC36EB08356F8
+        96B08936B6FE00301FE53EE0BD50FE6547AC5C796C245BC0395E318A8F48EE80
+        6E718AC97F45C430C6B156B87D05DB01CE61AB95AF8093487E465F89C84911A7
+        B18CAF000CD502E02CD47D89C1D98D2A8EBA05B4B11E53781595CCD46EE15740
+        2B06E92EA545252082F2717EC3040EBBFA4C05484FEC83A9EFFC0DF9ACEEABB4
+        C6121F0000000049454E44AE426082
+      }
     end
   end
   object qryCadProd: TZQuery
     Connection = dmF.ZConnection1
+    OnDeleteError = qryCadProdDeleteError
     OnNewRecord = qryCadProdNewRecord
     Active = True
     SQL.Strings = (
       'SELECT * FROM  CATEGORIA_PRODUTO'
     )
     Params = <>
-    Left = 576
-    Top = 104
+    Left = 584
+    Top = 144
   end
   object DataSource1: TDataSource
     DataSet = qryCadProd
-    Left = 576
-    Top = 160
+    Left = 584
+    Top = 200
   end
 end

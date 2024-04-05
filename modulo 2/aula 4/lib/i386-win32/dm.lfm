@@ -18,8 +18,9 @@ object dmF: TdmF
     Port = 5432
     Database = 'prjaccion'
     User = 'postgres'
-    Password = '1234'
+    Password = 'guga2004'
     Protocol = 'postgresql'
+    LibraryLocation = 'C:\MyApps\accion-exercicios\libpq-32bits\libpq.dll'
     Left = 48
     Top = 64
   end
